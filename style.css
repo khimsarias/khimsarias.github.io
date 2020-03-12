@@ -1,10 +1,11 @@
 @charset "utf-8";
-
+/* Specificity : In-Line > Id > Class > Header*/
 body
 {
 	background: #292929;
 }
-.h1class
+
+#h1class
 {
 	color: #CCCCCC;
 	text-align: center;

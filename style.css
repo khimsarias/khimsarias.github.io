@@ -5,6 +5,10 @@ body
 	background: #292929;
 }
 
+a
+{
+	text-decoration: none;
+}
 #h1id
 {
 	color: #CCCCCC;

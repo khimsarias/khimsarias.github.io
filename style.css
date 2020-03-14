@@ -43,6 +43,12 @@ section
 	background: #292929;
 }
 
+#abt-me-h1id
+{
+	color: #CCCCCC;
+	text-align: center;
+}
+
 .abt-me-para
 {
 	text-align: center;

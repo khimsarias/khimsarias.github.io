@@ -1,10 +1,11 @@
 @charset "utf-8";
 /* CSS Document */
 
-#h1id
+a
 {
 	color: #CCCCCC;
-	text-align: center;
+	text-decoration: none;
+	font-size: 2em;
 }
 #profile_pic
 {
@@ -65,8 +66,10 @@ body
 {
 	background: #292929;
 	margin: 0;
+	padding: 0;;
+	
 	font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
-	overflow: hidden;
+/*	overflow: hidden;*/
 }
 	
 li
@@ -409,3 +412,4 @@ header
 {
     width: 100%;
 }
+

@@ -1,44 +1,46 @@
-@charset "utf-8";
-/* CSS Document */
-
 a
 {
-	color: #CCCCCC;
 	text-decoration: none;
 }
 
-#home-h1id
+body
 {
-	color: #CCCCCC;
+	
+	padding: 0pt;
+	border: 0pt;
+	margin: 0pt;
+	background: #292929;
+}
+
+#h1-name
+{
+	text-align: center;
+	color: #cccccc;
+}
+#image-div
+{
+	width: 100%;
 	text-align: center;
 }
 
-
-
-body
+#image
 {
-	background: #292929;
-	margin: 0;
-	padding: 0;;
-	
-	font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
-/*	overflow: hidden;*/
+	padding: 20pt;
+	width: 21%;
 }
-	
+
 h4
 {
-	
 	text-align: center;
 	color: #CCCCCC;
 }
 header
 {
-	
+	position: fixed;
 	padding: 2pt;
 	border: 2pt;
 	margin: 0pt;
 	background: #292929;
-	width: 100vw;
 }
 #nav-heading1
 {
@@ -58,17 +60,17 @@ header
 #header-table
 {
 	border: 1pt;
-	width: 100%;
 }
 
 header:hover
 {
-	box-shadow: 1px 2px 2px 1px white;
+	width: 100%;
+	box-shadow: 1px 2px 2px 0px white;
 }
 
 .sticky 
 {
-	border: 2pt;
+	border: 0pt;
 	padding: 2pt;
 	margin: 0;
 	position: fixed;
@@ -76,20 +78,11 @@ header:hover
 	box-shadow: 2px 4px 2px 2px black;
 }
 
-#header-div
-{
-	border: 1pt;
-	width: 100vw;
-}
-
-#div-table
-{
-	padding: 5pt;
-}
-
 #div-para
 {
+	font-size: 20pt;
+	text-align: center;
 	padding: 5pt;
+	color: #cccccc;
 }
 
-    

@@ -3,28 +3,51 @@
 
 a
 {
-	color: #CCCCCC;
 	text-decoration: none;
 }
-
-#home-h1id
-{
-	color: #CCCCCC;
-	text-align: center;
-}
-
-
-
 body
 {
+	padding: 0pt;
+	border: 0pt;
+	margin: 0pt;
 	background: #292929;
-	margin: 0;
-	padding: 0;;
-	
-	font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
-/*	overflow: hidden;*/
 }
-	
+
+#heading1
+{
+	text-align:center;
+	color: #CCCCCC;
+}
+
+#profile_pic_blog
+{
+	width: 105px;
+}
+
+#td-pic
+{
+	width: auto;
+}
+#blog-heading
+{
+	padding-left: 0;
+	text-align: right;
+	color: #CCCCCC;
+	height: auto;
+}
+#date
+{
+	color: #CCCCCC;
+	z-index: auto;
+}
+
+.paragraph
+{
+	color: #CCCCCC;
+	font-size: 20pt;
+	text-align:center; 
+}
+
 h4
 {
 	
@@ -33,12 +56,11 @@ h4
 }
 header
 {
-	
+	position: fixed;
 	padding: 2pt;
 	border: 2pt;
 	margin: 0pt;
 	background: #292929;
-	width: 100vw;
 }
 #nav-heading1
 {
@@ -58,17 +80,17 @@ header
 #header-table
 {
 	border: 1pt;
-	width: 100%;
 }
 
 header:hover
 {
+	width: 100%;
 	box-shadow: 1px 2px 2px 1px white;
 }
 
 .sticky 
 {
-	border: 2pt;
+	border: 0pt;
 	padding: 2pt;
 	margin: 0;
 	position: fixed;
@@ -78,8 +100,6 @@ header:hover
 
 #header-div
 {
-	border: 1pt;
-	width: 100vw;
 }
 
 #div-table

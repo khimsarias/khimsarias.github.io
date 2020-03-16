@@ -37,8 +37,8 @@ h4
 header
 {
 	position: fixed;
-	padding: 2pt;
-	border: 2pt;
+	padding: 0pt;
+	border: 0pt;
 	margin: 0pt;
 	background: #292929;
 }
@@ -49,7 +49,7 @@ header
 #nav-heading-td
 {
 	padding: 5pt;
-	width: 70vw;
+	width: 67vw;
 }
 .nav-sub-heading-td
 {
@@ -57,10 +57,6 @@ header
 	width: 8vw;
 }
 
-#header-table
-{
-	border: 1pt;
-}
 
 header:hover
 {
@@ -71,11 +67,12 @@ header:hover
 .sticky 
 {
 	border: 0pt;
-	padding: 2pt;
+	padding: 0pt;
 	margin: 0;
 	position: fixed;
 	width: 100%;
 	box-shadow: 2px 4px 2px 2px black;
+	
 }
 
 #div-para
@@ -86,3 +83,12 @@ header:hover
 	color: #cccccc;
 }
 
+#header-div
+{
+	width: 100%;
+	border: 0pt;
+	padding: 0pt;
+	margin: 0;
+	position: fixed;
+	
+}

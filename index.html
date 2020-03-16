@@ -8,6 +8,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<script type="text/javascript" src="scripts/script.js"></script>
+	<script type="text/javascript" src="scripts/typed.js"></script>
+	<script type="text/javascript" src="scripts/parallax.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Anonymous+Pro&display=swap" rel="stylesheet">
+	
 </head>
 <body>
 	<div id="header-div">
@@ -19,11 +23,42 @@
 						<td class="nav-sub-heading-td"><a href="pages/about-me.html"><h4>About Me</h4></a></td>
 						<td class="nav-sub-heading-td"><a href = "pages/blog-template.html"><h4>Blogs</h4></a></td>
 						<td class="nav-sub-heading-td"><a href="pages/about-me.html"><h4>Contact Me</h4></a></td>
-						
 					</tr>
 				</tbody>
 			</table>
 		</header>	
 	</div>
+	
+<!--
+	<div class="container">
+		<ul id="scene">
+			<li class="layer" data-depth=".1"><img src="js_logo.png"></li>
+			<li class="layer" data-depth="1"><img src="HTML5_Logo.png"></li>
+			<li class="layer" data-depth="-1"><img src="cpp_logo.png"></li>
+			<li class="layer" data-depth="2"><img src="CSS3_logo.png"></li>
+			<li class="layer" data-depth="0.5"><img src="csharp_logo.png"></li>
+		</ul>
+	</div>
+	<script>
+		var scene = document.getElementById('scene');
+		var parallax = new Parallax(scene);
+	</script>
+-->
+	<div id="div-typed">
+		<h2>
+			<span class="element"></span>
+		</h2>
+	</div>
+	<script>
+		var typed = new Typed('.element', {
+  strings: ["alpha","beta","gamma"],
+			
+  typeSpeed: 350,
+  backSpeed: 60,
+  loop: true,
+  showCursor: true,
+			
+});
+	</script>
 </body>
 </html>

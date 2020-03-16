@@ -20,8 +20,8 @@ body
 	background: #292929;
 	margin: 0;
 	padding: 0;;
-	
-	font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+	font-family: 'Anonymous Pro', monospace;
+/*	font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";*/
 /*	overflow: hidden;*/
 }
 	
@@ -34,8 +34,8 @@ h4
 header
 {
 	
-	padding: 2pt;
-	border: 2pt;
+	padding: 0pt;
+	border: 0pt;
 	margin: 0pt;
 	background: #292929;
 	width: 100vw;
@@ -47,7 +47,7 @@ header
 #nav-heading-td
 {
 	padding: 5pt;
-	width: 70vw;
+	width: 67vw;
 }
 .nav-sub-heading-td
 {
@@ -63,12 +63,13 @@ header
 
 header:hover
 {
-	box-shadow: 1px 2px 2px 1px white;
+	width : 100%;
+	box-shadow: 1px 2px 2px 0px white;
 }
 
 .sticky 
 {
-	border: 2pt;
+	border: 0pt;
 	padding: 2pt;
 	margin: 0;
 	position: fixed;
@@ -92,4 +93,22 @@ header:hover
 	padding: 5pt;
 }
 
-    
+.element
+{
+	font-size: 8vw;
+	color: #CCCCCC;
+}
+   
+#div-typed
+{
+	position: absolute;
+	top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+img
+{
+	width: 5%;
+}

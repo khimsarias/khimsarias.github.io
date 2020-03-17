@@ -14,47 +14,12 @@ body
 	font-family: 'Anonymous Pro', monospace;
 }
 
-#heading1
-{
-	text-align:center;
-	color: #CCCCCC;
-}
-
-#profile_pic_blog
-{
-	width: 105px;
-}
-
-#td-pic
-{
-	width: auto;
-}
-#blog-heading
-{
-	padding-left: 0;
-	text-align: right;
-	color: #CCCCCC;
-	height: auto;
-}
-#date
-{
-	color: #CCCCCC;
-	z-index: auto;
-}
-
-.paragraph
-{
-	color: #CCCCCC;
-	font-size: 20pt;
-	text-align:center; 
-}
-
 h4
 {
-	
 	text-align: center;
 	color: #CCCCCC;
 }
+
 header
 {
 	position: fixed;
@@ -63,6 +28,7 @@ header
 	margin: 0pt;
 	background: #292929;
 }
+
 #nav-heading1
 {
 	color: #CCCCCC;
@@ -72,6 +38,7 @@ header
 	padding: 5pt;
 	width: 70vw;
 }
+
 .nav-sub-heading-td
 {
 	padding: 5pt;
@@ -99,18 +66,43 @@ header:hover
 	box-shadow: 2px 4px 2px 2px black;
 }
 
-#header-div
+#h1-name
+{
+	text-align: center;
+	color: #cccccc;
+}
+
+/* ^^^^^^^^^^^^^^^^^^^^^^^^^^NAVIGATION BAR + TITLE ^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+
+a
+{
+	text-decoration: none;
+}
+
+.blog-card
+{
+	margin: 5vw;
+	width: 90vw;
+	box-shadow: 0px 0px 4px 4px black;
+}
+
+.blog-card-image
+{
+	width: 10vw;
+}
+
+.blog-card-table
+{
+	width: 88vw;
+}
+
+.blog-card-td
 {
 }
 
-#div-table
+.blog-card-title
 {
-	padding: 5pt;
+	font-size: 1.5em;
+	color: #CCCCCC;
+	text-align: right;
 }
-
-#div-para
-{
-	padding: 5pt;
-}
-
-    

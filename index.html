@@ -36,13 +36,16 @@
 	</div>
 	<script>
 		var typed = new Typed('.element', {
-  strings: ["alpha","beta","gamma"],
-			
-  typeSpeed: 350,
-  backSpeed: 60,
+			strings:["\"What you fear most, is fear itself!\"<br>-Remus J. Lupin","\"Don’t let the noise of others’ opinions drown out your own inner voice.\"<br>-Steve Jobs","\"Success is a lousy teacher. It seduces smart people into thinking they can't lose!\"<br>-Bill Gates"],
+  shuffle: true,			
+  typeSpeed: 1,
+  backSpeed: 8,
   loop: true,
-  showCursor: true,
-  cursorChar: '|',
+  fadeOut: true,
+  fadeOutClass: 'typed-fade-out',
+  fadeOutDelay: 500,
+  showCursor: false,
+//  cursorChar: '|',
 			
 });
 	</script>

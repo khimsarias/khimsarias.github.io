@@ -59,13 +59,13 @@ header
 }
 #nav-heading-td
 {
-	padding: 5pt;
+	padding: 4pt;
 	width: 67vw;
 }
 .nav-sub-heading-td
 {
-	padding: 5pt;
-	width: 8vw;
+	padding: 4pt;
+	width: 10vw;
 }
 
 #header-table
@@ -108,7 +108,7 @@ header:hover
 
 .element
 {
-	font-size: 3vw;
+	font-size: 5vw;
 	color: #FFFFFF;
 }
    

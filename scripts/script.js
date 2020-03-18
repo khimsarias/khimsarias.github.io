@@ -5,3 +5,4 @@ $(window).scroll(function() {
       else{
       $("HEADER").removeClass('sticky');
       }});
+

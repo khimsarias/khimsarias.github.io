@@ -46,7 +46,7 @@ header
 }
 #nav-heading-td
 {
-	padding: 5pt;
+	padding: 4pt;
 	width: 25%;
 }
 
@@ -59,6 +59,7 @@ header
 #header-table
 {
 	border: 1pt;
+	width: 100%
 }
 
 header:hover

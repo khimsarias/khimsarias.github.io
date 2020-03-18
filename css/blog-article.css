@@ -83,7 +83,7 @@ header
 }
 #nav-heading-td
 {
-	padding: 5pt;
+	padding: 4pt;
 	width: 25%;
 }
 .nav-sub-heading-td
@@ -94,6 +94,7 @@ header
 
 #header-table
 {
+	width: 100%;
 	border: 1pt;
 }
 

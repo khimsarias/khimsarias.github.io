@@ -61,12 +61,12 @@ header
 #nav-heading-td
 {
 	padding: 5pt;
-	width: 67vw;
+	width: 25%;
 }
 .nav-sub-heading-td
 {
-	padding: 5pt;
-	width: 8vw;
+	padding: 0;
+	width: 15%;
 }
 
 

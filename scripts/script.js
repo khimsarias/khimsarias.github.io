@@ -6,3 +6,10 @@ $(window).scroll(function() {
       $("HEADER").removeClass('sticky');
       }});
 
+$( document ).ready( function()
+{
+	$( '.buzz' ).each( function()
+	{
+		$( this ).attr( 'data-buzz' , $( this ).text() );
+	} );
+} );

@@ -13,8 +13,10 @@
 
 #div-para
 {
-	font-size: 20pt;
-	text-align: center;
+	font-size: 2em;
 	padding: 5pt;
-	color: #000;
+	width: 60%;
+	margin: 0 auto;
+	text-align: left;
+
 }

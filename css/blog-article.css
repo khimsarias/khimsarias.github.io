@@ -62,3 +62,47 @@ td
 	box-shadow: 0px 0px 2px 4px black;
 	border-radius: 4px;
 }
+
+/*TEST*/
+#button {
+  display: inline-block;
+  background-color: rgba(0,0,0,0.00);
+  width: 3.5vw;
+  height: 3.5vw;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color .3s, 
+    opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+#button::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 3.5vw;
+  line-height: 50px;
+  color: #fff;
+}
+#button:hover {
+  cursor: pointer;
+  background-color: rgba(0,0,0,0.00);
+}
+#button:active {
+  background-color: rgba(0,0,0,0.00);
+}
+#button.show {
+  opacity: 1;
+  visibility: visible;
+}	
+
+@media (min-width: 500px) {
+  #button {
+    margin: 2%;
+  }
+}

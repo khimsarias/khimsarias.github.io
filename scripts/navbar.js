@@ -16,6 +16,7 @@ const navSlide= ()=> {
     });
  
 }
+navSlide();
 $( document ).ready( function()
 {
 	$( '.buzz' ).each( function()
@@ -23,5 +24,5 @@ $( document ).ready( function()
 		$( this ).attr( 'data-buzz' , $( this ).text() );
 	} );
 } );
-navSlide();
+
 

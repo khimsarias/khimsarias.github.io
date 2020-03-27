@@ -1,40 +1,44 @@
 <!doctype html>
-<html lang="en">
+<html>
 <head>
-	<title>Saumya Khimsaria</title>
-	<meta charset="UTF-8">
-	<meta name="description" content="This is my first attempt at building a proper website!">
+    <meta charset="utf-8">
+    <meta name="description" content="This is my first attempt at building a proper website!">
 	<meta name="author" content="Saumya Khimsaria">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="css/navbar.css">
-	<script type="text/javascript" src="scripts/script.js"></script>
-	<script type="text/javascript" src="scripts/typed.js"></script>
-	<script type="text/javascript" src="scripts/parallax.js"></script>
-	<link href="https://fonts.googleapis.com/css?family=Anonymous+Pro&display=swap" rel="stylesheet">
-	
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Anonymous+Pro&display=swap" rel="stylesheet">
+    	<script type="text/javascript" src="scripts/typed.js"></script>
+<title>Saumya Khimsaria</title>
 </head>
 <body>
-	<div id="header-div">
-		<header>
-			<table id="header-table">
-				<tbody>
-					<tr>
-						<td id="nav-heading-td"><h2><a href="index.html" data-content="Saumya Khimsaria" class="text-link">Saumya Khimsaria</a></h2></td>
-						<td class="nav-sub-heading-td"><h4><a href="pages/about-me.html" data-content="Me" class="text-link">Me</a></h4></td>
-						<td class="nav-sub-heading-td"><h4><a href = "pages/blogs.html" data-content="Blogs" class="text-link">Blogs</a></h4></td>
-						<td class="nav-sub-heading-td"><h4><a href="pages/about-me.html" data-content="Projects" class="text-link">Projects</a></h4></td>
-					</tr>
-				</tbody>
-			</table>
-		</header>	
-	</div>
-	<div id="div-typed">
+    <nav>
+        <div class="logo"><h4><a data-content="Saumya Khimsaria" class="text-link" href="#">Saumya Khimsaria</a></h4></div>
+        <ul class="nav-links">
+            <li>
+                <a data-content="Home" class="text-link" href="#">Home</a>
+            </li>
+            <li>
+                <a data-content="About Me" class="text-link" href="pages/about-me.html">About Me</a>
+            </li>
+            <li>
+                <a data-content="Blogs" class="text-link" href="pages/blogs.html">Blogs</a>
+            </li>
+            <li>
+                <a data-content="Projects" class="text-link" href="#">Projects</a>
+            </li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+    <div id="div-typed">
 		<h2 >
 			<span class="element"></span>
 		</h2>
 	</div>
-	<script>
+    	<script>
 		var typed = new Typed('.element', {
 			strings:["Die with memories, not dreams!","All limitations are self-imposed!","When words fail, actions speak!"],
   shuffle: true,			
@@ -49,8 +53,8 @@
   cursorChar: '|',
 });
 	</script>
-	
-	<script>
+    <script src="scripts/navbar.js"></script>
+    <script>
 	// three.js - https://github.com/mrdoob/three.js
 'use strict';var THREE=THREE||{REVISION:"56"};self.console=self.console||{info:function(){},log:function(){},debug:function(){},warn:function(){},error:function(){}};self.Int32Array=self.Int32Array||Array;self.Float32Array=self.Float32Array||Array;String.prototype.trim=String.prototype.trim||function(){return this.replace(/^\s+|\s+$/g,"")};
 THREE.extend=function(a,b){if(Object.keys)for(var c=Object.keys(b),d=0,e=c.length;d<e;d++){var f=c[d];Object.defineProperty(a,f,Object.getOwnPropertyDescriptor(b,f))}else for(f in c={}.hasOwnProperty,b)c.call(b,f)&&(a[f]=b[f]);return a};

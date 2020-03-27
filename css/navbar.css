@@ -1,87 +1,104 @@
-a
-{
-	text-decoration: none;
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+
 }
-body
-{
-	padding: 0pt;
-	border: 0pt;
-	margin: 0pt;
-	background: #292929;
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: #000;
 	font-family: 'Anonymous Pro', monospace;
-	background-color: #292929;
-    filter: progid: DXImageTransform.Microsoft.gradient(gradientType=1, startColorstr='#292929', endColorstr='#CCCCCC');
-    background-size: 100%;
-    background-image: -webkit-gradient(linear, 0 0, 100% 100%, color-stop(0, #292929), color-stop(100%, #CCCCCC));
-    background-image: -webkit-linear-gradient(135deg, #292929, #CCCCCC);
-    background-image: -moz-linear-gradient(45deg, #292929, #CCCCCC);
-    background-image: -ms-linear-gradient(45deg, 2929293 0, #CCCCCC 100%);
-    background-image: -o-linear-gradient(45deg, #292929, #CCCCCC);
-    background-image: linear-gradient(135deg, #292929, #CCCCCC);
+    
+}
+.logo{
+    color:whitesmoke;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 20px;
+}
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+    z-index: 1;
+}
+.nav-links li{
+    list-style: none;
+}
+.nav-links a{
+    color:whitesmoke;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 20px;
+}
+.burger{
+    display:none;
+    cursor: pointer;
+}
+.burger div{
+    width: 25px;
+    height:3px;
+    background-color:whitesmoke;
+    margin:5px;
+    transition: all 0.7s ease;
+}
+@media screen and (max-width:1024px){
+.nav-links{
+        width: 60%;
+    }
+}
+@media screen and (max-width:785px){
+        .nav-links{
+            position: absolute;
+            right:0px;
+            height:92vh;
+            top:8vh;
+            background-color: #000;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width:50%;
+            transform: translatex(100%);
+            transition:transform 0.5s ease-in;
+        }
+        .nav-links li{
+            opacity:0;
+        }
+        .burger{
+            display: block;
+        }
+}
+    .nav-active{
+        transform: translateX(0%);
+    }
+
+    @keyframes navLinkFade{
+        from{
+            opacity: 0;
+            transform: translateX(50px);
+        }
+        to{
+            opacity: 1;
+            transform: translateX(0px);
+        }
+    }
+.toggle .line1
+{
+    transform: rotate(-45deg) translate(-5px,6px);
 }
 
-h4
+.toggle .line2
 {
-	text-align: center;
-	color: #FFFFFF;
+    opacity: 0;
 }
 
-header
+.toggle .line3
 {
-	position: fixed;
-	padding: 0pt;
-	border: 0pt;
-	margin: 0pt;
-	background: #292929;
-	width: 100%;
-}
-#header-div
-{
-	border: 3pt;
-	width: 100vw;
-}
-#nav-heading1
-{
-	color: #FFFFFF;
-}
-#nav-heading-td
-{
-	padding: 4pt;
-	width: 25%;
-}
-
-.nav-sub-heading-td
-{
-	padding: 0;
-	width: 15%;
-}
-
-#header-table
-{
-	border: 1pt;
-	width: 100%
-}
-
-header:hover
-{
-	width: 100%;
-	box-shadow: 1px 2px 2px 2px white;
-}
-
-.sticky 
-{
-	border: 0pt;
-	padding: 0pt;
-	margin: 0;
-	position: fixed;
-	width: 100%;
-	box-shadow: 2px 4px 2px 2px black;
-}
-
-#h1-name
-{
-	text-align: center;
-	color: #FFFFFF;
+    transform: rotate(45deg) translate(-5px,-6px);
 }
 
 /*Glitch*/

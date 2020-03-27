@@ -110,29 +110,6 @@ nav{
     transform: rotate(45deg) translate(-5px,-6px);
 }
 
-
-/*Types.js*/
-#div-typed
-{
-	position: absolute;
-	top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-	text-align: center;
-}
-
-
-.element
-{
-    font-size: 5vw;
-    color: white;
-}
-
-.typed-cursor {
-	font-size: 5vw;
-	color: white;
-}
-
 /*Glitch*/
 
 .text-link {

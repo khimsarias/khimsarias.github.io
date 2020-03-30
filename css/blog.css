@@ -8,15 +8,18 @@ img
 }
 body
 {
+	width: 100vw;
 	background-color: black;
+	overflow-x: none;
 }
 .page-title
 {
-	padding: 5% 50%;
+	padding: 5% 50vw;
 	width: 100%;
 	display: flex;
 	color: white;
 	align-items: center;
+	align-content: center;
 }
 .main-body
 {
@@ -25,7 +28,7 @@ body
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	padding: 0 1.1rem;
+	padding-left: 1rem;
 }
 .blog-post
 {

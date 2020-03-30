@@ -10,7 +10,7 @@ body
 {
 	width: 100vw;
 	background-color: black;
-	overflow-x: none;
+	overflow: none;
 }
 .page-title
 {
@@ -28,7 +28,7 @@ body
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	padding-left: 1rem;
+	padding: 0 3%;
 }
 .blog-post
 {

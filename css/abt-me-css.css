@@ -73,7 +73,7 @@ body
 {
     body
     {
-        background-color: aliceblue;
+/*        background-color: aliceblue;*/
     }
     .abt-me-card
     {
@@ -92,6 +92,7 @@ body
     .abt-me-img img
     {
         width: 35vw;
+        height: auto;
         padding-bottom: 2%;
     }
     .abt-me-info

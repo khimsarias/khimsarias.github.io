@@ -93,6 +93,7 @@ body
     {
         width: 35vw;
         height: auto;
+        border-radius: 50vw;
         padding-bottom: 2%;
     }
     .abt-me-info

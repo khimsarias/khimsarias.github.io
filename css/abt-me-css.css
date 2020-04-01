@@ -32,7 +32,7 @@ body
 .abt-me-img img
 {
     width: 15vw;
-    border-radius: 50%;
+    border-radius: 50vw;
 }
 .abt-me-info
 {
@@ -87,7 +87,7 @@ body
     }
     .abt-me-img img
     {
-        width: 60%;
+        width: 35VW;
         padding-bottom: 2%;
     }
     .abt-me-info

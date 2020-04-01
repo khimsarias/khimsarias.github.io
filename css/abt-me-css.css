@@ -71,6 +71,10 @@ body
 
 @media screen and (max-width: 785px)
 {
+    body
+    {
+        background-color: aliceblue;
+    }
     .abt-me-card
     {
         text-align: center;
@@ -87,7 +91,7 @@ body
     }
     .abt-me-img img
     {
-        width: 35VW;
+        width: 35vw;
         padding-bottom: 2%;
     }
     .abt-me-info

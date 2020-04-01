@@ -88,6 +88,9 @@ body
 
 @media screen and (max-width: 1068px)
 {
+    .main-body
+    {
+    }
 	.blog-post
 	{
 		max-width: 80rem;

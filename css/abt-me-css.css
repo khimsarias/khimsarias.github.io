@@ -25,6 +25,7 @@ body
 	height: 100%;
 	display: flex;
 }
+
 .abt-me-img
 {
     width: 20vw;
@@ -33,6 +34,7 @@ body
 {
     width: 15vw;
     border-radius: 50vw;
+    
 }
 .abt-me-info
 {
@@ -94,6 +96,7 @@ body
         width: 100%;
     }
     
+
     .abt-me-img img
     {
         width: 35vw;
@@ -128,3 +131,4 @@ body
         color: white;
     }
 }
+

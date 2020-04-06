@@ -47,6 +47,16 @@ nav{
     margin:5px;
     transition: all 0.7s ease;
 }
+
+@media screen and (max-width:1580px){
+    body{
+/*        overflow: hidden;*/
+    }
+
+.nav-links{
+        width: 40%;
+    }
+}
 @media screen and (max-width:1024px){
     body{
 /*        overflow: hidden;*/

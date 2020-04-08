@@ -8,6 +8,12 @@ body
 
 .enlaregd
 {
+    display: none;
+}
+@media screen and (max-width: 768px)
+{
+.enlaregd
+{
     margin: auto;
     max-width: 50vw;
     max-height: auto;
@@ -45,5 +51,5 @@ body
     font-size: 8em;
 }
 
-@media screen and (max-width: 785px)
-{}
+
+}

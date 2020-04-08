@@ -10,6 +10,7 @@ body
 {
 	width: 100vw;
 	background-color: black;
+    overflow-x: hidden;
 /*	overflow: none;*/
 }
 .page-title
@@ -106,7 +107,7 @@ body
 	}
 	.blog-post
 	{
-		flex-direction: column;
+        flex-direction: column;
 		height: auto;
 	}
 	.blog-img

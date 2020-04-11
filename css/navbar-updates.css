@@ -5,20 +5,26 @@
 
 }
 nav{
+/*	position: absolute;*/
     overflow-y: hidden;
     margin: 0;
     display: flex;
     justify-content: space-around;
     align-items: center;
     min-height: 8vh;
-    background-color: #000;
+    background-color: #FFFFFF;
 	font-family: 'Anonymous Pro', monospace;
 }
 .logo{
-    color:whitesmoke;
+/*    color: purple;*/
     text-transform: uppercase;
     letter-spacing: 5px;
     font-size: 20px;
+}
+
+.logo a
+{
+	color: black;
 }
 .nav-links{
     display: flex;
@@ -30,7 +36,7 @@ nav{
     list-style: none;
 }
 .nav-links a{
-    color:whitesmoke;
+    color:black;
     text-decoration: none;
     letter-spacing: 3px;
     font-weight: bold;
@@ -43,9 +49,50 @@ nav{
 .burger div{
     width: 25px;
     height:3px;
-    background-color:whitesmoke;
+    background-color: black;
     margin:5px;
     transition: all 0.7s ease;
+}
+input[type=checkbox]{
+	height: 0;
+	width: 0;
+	visibility: hidden;
+}
+
+label {
+	cursor: pointer;
+	text-indent: -9999px;
+	width: 2vw;
+	height: 2.3vh;
+	background: grey;
+	display: block;
+	border-radius: 100px;
+	position: relative;
+}
+
+label:after {
+	content: '';
+	position: absolute;
+	top: 0.1vh;
+	left: 0.05vw;
+	width: 1vw;
+	height: 2vh;
+	background: #fff;
+	border-radius: 90px;
+	transition: 0.3s;
+}
+
+input:checked + label {
+	background: #bada55;
+}
+
+input:checked + label:after {
+	left: calc(100% - 0.15vw);
+	transform: translateX(-100%);
+}
+
+label:active:after {
+	width: 130px;
 }
 
 @media screen and (max-width:1580px){
@@ -72,14 +119,12 @@ nav{
             right:0vw;
             height:92vh;
             top:8vh;
-            background-color: #000;
+            background-color: #FFFFFF;
             display: flex;
             flex-direction: column;
             align-items: center;
             width:50%;
-/*            transform: translatex(100%);*/
-/*            z-index: -1;*/opacity: 0;
-/*            transition:transform 0.5s ease-in;*/   
+			opacity: 0;
         }
         .nav-links li{
             opacity:0;
@@ -89,22 +134,18 @@ nav{
         }
 }
     .nav-active{
-/*        z-index: 1;*/
         animation: test 0.5s;
         animation-fill-mode: forwards;
-/*        transform: translateX(0%);*/
     }
 @keyframes test
 {
    from
     {
         opacity: 0;
-/*        z-index: -1;*/
     }
     to
     {
         opacity: 1;
-/*        z-index: 1;*/
     }
 }
 /*li flying in effect*/

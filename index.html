@@ -9,45 +9,6 @@
     <link rel="stylesheet" href="css/navbar-updates.css">
     <link href="https://fonts.googleapis.com/css?family=Anonymous+Pro&display=swap" rel="stylesheet">
     	<script type="text/javascript" src="scripts/typed.js"></script>
- <!--   <script>
-<!--
-
-/*
-Auto Refresh Page with Time script
-By JavaScript Kit (javascriptkit.com)
-Over 200+ free scripts here!
-*/
-
-//enter refresh time in "minutes:seconds" Minutes should range from 0 to inifinity. Seconds should range from 0 to 59
-var limit="0:10"
-
-var doctitle = document.title
-var parselimit=limit.split(":")
-parselimit=parselimit[0]*60+parselimit[1]*1
-
-function beginrefresh(){
-	if (parselimit==1)
-		window.location.reload()
-	else{ 
-		parselimit-=1
-		curmin=Math.floor(parselimit/60)
-		cursec=parselimit%60
-		if (curmin!=0)
-			curtime=curmin+" minutes and "+cursec+" seconds left until page refresh!"
-		else
-			curtime=cursec+" seconds left until page refresh!"
-//		document.title = doctitle + ' (' + curtime +')'
-		setTimeout("beginrefresh()",1000)
-	}
-}
-
-if (window.addEventListener)
-	window.addEventListener("load", beginrefresh, false)
-else if (window.attachEvent)
-	window.attachEvent("load", beginrefresh)
-
-
-</script> -->
 <title>Saumya Khimsaria</title>
 </head>
 <body>
@@ -58,14 +19,19 @@ else if (window.attachEvent)
                 <a data-content="Home" class="text-link" href="index.html">Home</a>
             </li>
             <li>
-                <a data-content="About Me" class="text-link" href="pages/about-me.html">About Me</a>
+                <a data-content="About Me" class="text-link" href="#">About Me</a>
             </li>
             <li>
-                <a data-content="Blogs" class="text-link" href="pages/blogs.html">Blogs</a>
+                <a data-content="Blogs" class="text-link" href="#">Blogs</a>
             </li>
             <li>
                 <a data-content="Projects" class="text-link" href="#">Projects</a>
             </li>
+<!--
+			<li>
+			<input type="checkbox" id="switch" /><label for="switch">Toggle</label>
+			</li>
+-->
         </ul>
         <div class="burger">
             <div class="line1"></div>
@@ -73,29 +39,12 @@ else if (window.attachEvent)
             <div class="line3"></div>
         </div>
     </nav>
-    <div id="div-typed">
-		<h2 >
-			<span class="element"></span>
-		</h2>
-	</div>
-    	<script>
-		var typed = new Typed('.element', {
-			strings:["Die with memories, not dreams.","All limitations are self-imposed.","When words fail, actions speak."],
-  shuffle: true,			
-  typeSpeed: 25,
-  backSpeed: 25,
-  backDelay: 2000,
-  loop: true,
-//  fadeOut: true,
-//  fadeOutClass: 'typed-fade-out',
-//  fadeOutDelay: 50,
-  showCursor: true,
-  cursorChar: '|',
-});
-	</script>
     <script src="scripts/navbar.js"></script>
-    
-    <script>
+	<div class="home">
+	<span>THIS WEBSITE IS MY PENSIEVE</span>
+	</div>
+	
+   <script>
 	// three.js - https://github.com/mrdoob/three.js
 'use strict';var THREE=THREE||{REVISION:"56"};self.console=self.console||{info:function(){},log:function(){},debug:function(){},warn:function(){},error:function(){}};self.Int32Array=self.Int32Array||Array;self.Float32Array=self.Float32Array||Array;String.prototype.trim=String.prototype.trim||function(){return this.replace(/^\s+|\s+$/g,"")};
 THREE.extend=function(a,b){if(Object.keys)for(var c=Object.keys(b),d=0,e=c.length;d<e;d++){var f=c[d];Object.defineProperty(a,f,Object.getOwnPropertyDescriptor(b,f))}else for(f in c={}.hasOwnProperty,b)c.call(b,f)&&(a[f]=b[f]);return a};
@@ -838,7 +787,7 @@ var SEPARATION = 100,
         var PI2 = Math.PI * 2;
         var material = new THREE.ParticleCanvasMaterial({
  
-            color: 0xe1e1e1,
+            color: 0x121212,
             program: function(context) {
  
                 context.beginPath();
@@ -962,5 +911,6 @@ var SEPARATION = 100,
  
     }
 	</script>
+	
 </body>
 </html>

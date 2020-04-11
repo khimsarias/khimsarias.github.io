@@ -4,31 +4,50 @@ a
 }
 img
 {
-	widows: 100%;
+	width: 100%;
 }
 body
 {
 	width: 100vw;
 	background-color: black;
-	overflow: none;
+    overflow-x: hidden;
+/*	overflow: none;*/
 }
 .page-title
 {
+<<<<<<< HEAD
 	padding: 5% 0% 5% 50%;
 	width: 100%;
+=======
+    max-width: 99rem;
+    margin: auto;
+    padding-bottom: 5%;
+    padding-top: 5%;
+>>>>>>> origin/master
 	display: flex;
 	color: white;
 	align-items: center;
 	align-content: center;
+    justify-content: center;
 }
 .main-body
 {
+<<<<<<< HEAD
 	width: 100vw;
+=======
+    margin: 0;
+    overflow: none;
+    padding: 1vw 0;
+	width: 100%;
+>>>>>>> origin/master
 	height: 100%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+<<<<<<< HEAD
 	padding: 0 0 0 1%;
+=======
+>>>>>>> origin/master
 }
 .blog-post
 {
@@ -38,7 +57,6 @@ body
 	background-color: white;
 	display: flex;
 	align-items: center;
-	margin: 1rem;
 	padding: 3rem;
 	border-radius: 12px;
 }
@@ -84,6 +102,9 @@ body
 
 @media screen and (max-width: 1068px)
 {
+    .main-body
+    {
+    }
 	.blog-post
 	{
 		max-width: 80rem;
@@ -94,11 +115,12 @@ body
 {
 	.main-body
 	{
+        margin: 0;
 		align-items: center;
 	}
 	.blog-post
 	{
-		flex-direction: column;
+        flex-direction: column;
 		height: auto;
 	}
 	.blog-img

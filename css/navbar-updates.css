@@ -1,3 +1,17 @@
+html
+{
+	/* Light Mode */
+	--nav-bg-color: white;
+	--text-color: black;
+}
+
+html[data-theme="dark"]
+{
+	/* Dark Mode */
+	--nav-bg-color: #000;
+	--text-color: #ccc;
+}
+
 *{
     margin:0px;
     padding:0px;
@@ -6,14 +20,40 @@
 }
 nav{
 /*	position: absolute;*/
+flex-wrap: wrap;
     overflow-y: hidden;
     margin: 0;
     display: flex;
     justify-content: space-around;
     align-items: center;
     min-height: 8vh;
-    background-color: #FFFFFF;
+    background-color: var(--nav-bg-color);
 	font-family: 'Anonymous Pro', monospace;
+}
+.cmd_box
+{
+    z-index: 0;
+    margin: 0;
+    padding: 0;
+}
+.command
+{
+    /* outline: red; */
+    border: 0;;
+    background-color: transparent;
+    margin: 0;
+    color: var(--text-color);
+    width: 95vw;
+    line-height: 2vh;
+}
+.command:focus
+{
+    
+}
+.execute
+{
+    width: 5vw;
+    background-color: transparent;
 }
 .logo{
 /*    color: purple;*/
@@ -24,7 +64,7 @@ nav{
 
 .logo a
 {
-	color: black;
+	color: var(--text-color);
 }
 .nav-links{
     display: flex;
@@ -36,7 +76,7 @@ nav{
     list-style: none;
 }
 .nav-links a{
-    color:black;
+    color: var(--text-color);
     text-decoration: none;
     letter-spacing: 3px;
     font-weight: bold;
@@ -49,50 +89,9 @@ nav{
 .burger div{
     width: 25px;
     height:3px;
-    background-color: black;
+    background-color: var(--text-color);
     margin:5px;
     transition: all 0.7s ease;
-}
-input[type=checkbox]{
-	height: 0;
-	width: 0;
-	visibility: hidden;
-}
-
-label {
-	cursor: pointer;
-	text-indent: -9999px;
-	width: 2vw;
-	height: 2.3vh;
-	background: grey;
-	display: block;
-	border-radius: 100px;
-	position: relative;
-}
-
-label:after {
-	content: '';
-	position: absolute;
-	top: 0.1vh;
-	left: 0.05vw;
-	width: 1vw;
-	height: 2vh;
-	background: #fff;
-	border-radius: 90px;
-	transition: 0.3s;
-}
-
-input:checked + label {
-	background: #bada55;
-}
-
-input:checked + label:after {
-	left: calc(100% - 0.15vw);
-	transform: translateX(-100%);
-}
-
-label:active:after {
-	width: 130px;
 }
 
 @media screen and (max-width:1580px){
@@ -114,12 +113,17 @@ label:active:after {
     }
 }
 @media screen and (max-width:780px){
+    .logo a
+    {
+        color: var(--text-color);
+    }
         .nav-links{
+            z-index: 2;
             position: absolute;
             right:0vw;
-            height:92vh;
+            height:90vh;
             top:8vh;
-            background-color: #FFFFFF;
+            background-color: var(--nav-bg-color);
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -128,6 +132,9 @@ label:active:after {
         }
         .nav-links li{
             opacity:0;
+        }
+        .nav-links li a{
+            color: var(--text-color);
         }
         .burger{
             display: block;

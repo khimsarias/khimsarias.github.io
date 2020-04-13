@@ -44,7 +44,7 @@ function btn_clicked(){
     msg = document.getElementById('cmd_id').value;
     msg = msg.toLowerCase();
     console.log(msg)
-    if (msg == "knox")
+    if (msg == "nox")
     {
         document.documentElement.classList.add('transition');
     window.setTimeout(() => {

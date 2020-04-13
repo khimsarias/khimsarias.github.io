@@ -35,9 +35,7 @@ function checkEnterClick(e){
 
  function closeAll()
  {
-
-    console.log('success');
-    //  window.close();
+    window.close();
  }
 
 function btn_clicked(){

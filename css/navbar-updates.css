@@ -39,7 +39,7 @@ flex-wrap: wrap;
 .command
 {
     text-align: center;
-    border: 0;;
+    border: 0;
     background-color: transparent;
     margin: 0;
     color: var(--text-color);
@@ -50,11 +50,10 @@ flex-wrap: wrap;
 }
 .command:focus
 {
-    
 }
-
 .button
 {
+    border: 0;
     cursor: pointer;
     width: 5vw;
     background-color: transparent;

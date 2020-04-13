@@ -43,7 +43,8 @@ function checkEnterClick(e){
     window.close();
  }
 // All Display Functions for GIFs
- function displayImage1()
+ 
+function displayImage()
  {
      document.getElementsByClassName("quitgif")[0].style.display = "block";  
  }
@@ -54,6 +55,8 @@ function checkEnterClick(e){
      await sleep (1380);
      document.getElementsByClassName("quitgif")[1].style.display = "none"; 
  }
+
+// All Display Functions for GIFs
 
 function btn_clicked(){
     msg = document.getElementById('cmd_id').value;
@@ -82,10 +85,11 @@ function btn_clicked(){
     else if (msg == "quit" || msg == 'exit' || msg == "avada kedavra")
     {
         document.getElementById('cmd_id').value = '';
+
         if (msg == "avada kedavra")
         {
-        displayImage();
-        closeAll();
+            displayImage();
+            closeAll();
         }
         else
         {

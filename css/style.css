@@ -50,5 +50,19 @@ body
     body
     {
         overflow: none;
-    }
+	}
+	.home
+	{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 0;
+		padding: 0, 10%;
+		height: 80%;
+		width: 100%;
+	}
+	.home span
+	{
+		font-size: 15vw;
+	}
 }

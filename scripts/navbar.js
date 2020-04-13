@@ -84,7 +84,6 @@ function btn_clicked(){
 
     else if (msg == "quit" || msg == 'exit' || msg == "avada kedavra")
     {
-        document.getElementById('cmd_id').value = '';
 
         if (msg == "avada kedavra")
         {
@@ -95,6 +94,7 @@ function btn_clicked(){
         {
             window.close();
         }
+        document.getElementById('cmd_id').value = '';
     }
 
     else if (msg == "morsmordre")

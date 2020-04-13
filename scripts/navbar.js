@@ -33,15 +33,33 @@ function checkEnterClick(e){
     }
  }
 
- function closeAll()
+ function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+  }
+  
+ async function closeAll()
  {
+    await sleep (3760);
     window.close();
+ }
+// All Display Functions for GIFs
+ function displayImage1()
+ {
+     document.getElementsByClassName("quitgif")[0].style.display = "block";  
+ }
+
+ async function displayImage1()
+ {
+     document.getElementsByClassName("quitgif")[1].style.display = "block";  
+     await sleep (1380);
+     document.getElementsByClassName("quitgif")[1].style.display = "none"; 
  }
 
 function btn_clicked(){
     msg = document.getElementById('cmd_id').value;
     msg = msg.toLowerCase();
     console.log(msg)
+
     if (msg == "nox")
     {
         document.documentElement.classList.add('transition');
@@ -51,7 +69,7 @@ function btn_clicked(){
         document.documentElement.setAttribute('data-theme', 'dark');
         document.getElementById('cmd_id').value = '';
     }
-    if (msg == "lumos")
+   else if (msg == "lumos")
     {
         document.documentElement.classList.add('transition');
     window.setTimeout(() => {
@@ -60,8 +78,51 @@ function btn_clicked(){
         document.documentElement.setAttribute('data-theme', 'light');
         document.getElementById('cmd_id').value = '';
     }    
-    if (msg == "quit" || msg == 'exit' || msg == "avada kedavra")
+
+    else if (msg == "quit" || msg == 'exit' || msg == "avada kedavra")
     {
+        document.getElementById('cmd_id').value = '';
+        if (msg == "avada kedavra")
+        {
+        displayImage();
         closeAll();
+        }
+        else
+        {
+            window.close();
+        }
+    }
+
+    else if (msg == "morsmordre")
+    {
+        document.getElementById('cmd_id').value = '';
+        displayImage1();
+    }
+
+   else  if (msg == "reducio")
+    {
+        document.getElementById('cmd_id').value = '';
+        if (document.body.style.zoom > 1.0)
+        {
+            document.body.style.zoom=1.0;this.blur();
+        }
+        else
+        {
+            document.body.style.zoom=0.2;this.blur();
+        }
+    }
+
+    else if (msg == "engorgio")
+    {
+        document.getElementById('cmd_id').value = '';
+        if (document.body.style.zoom < 1.0)
+        {
+        document.body.style.zoom=1.0;this.blur();
+        }
+        else
+        {
+            document.body.style.zoom=1.5;this.blur();
+        }
+
     }
 };

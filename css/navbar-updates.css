@@ -98,7 +98,6 @@ flex-wrap: wrap;
     transition: all 0.7s ease;
 }
 
-
 @media screen and (max-width:1580px){
     body{
 /*        overflow: hidden;*/

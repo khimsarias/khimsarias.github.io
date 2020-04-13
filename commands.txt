@@ -1,0 +1,9 @@
+All commands and spells:
+
+lumos: light mode
+nox: dark mode
+quit/exit: closes tab
+avada kedavra: plays gif and then closes tab
+morsmordre: plays gif and closes gif
+reducio: zooms everything out
+engorgio: zooms everything in

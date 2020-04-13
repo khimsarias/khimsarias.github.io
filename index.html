@@ -34,17 +34,17 @@
             <div class="line3"></div>
         </div>
         <div class="cmd_box">
-            <input type="text" class="command" name="command" placeholder="Enter Command Here">
+            <input type="text" class="command" name="command" placeholder="Enter Command Here" id="cmd_id" onkeypress="checkEnterClick(event)">
         </div>
         <div class="execute">
-            <button class="button">Execute</button>
+            <button class="button" onclick="btn_clicked();" id="btn_id" >Execute</button>
         </div>
     </nav>
     <script src="scripts/navbar.js"></script>
 	<div class="home">
 	<span>THIS WEBSITE IS MY PENSIEVE</span>
 	</div>
-    
+
     <script>
        var light_partcle = "black";
        var dark_particle = "white";

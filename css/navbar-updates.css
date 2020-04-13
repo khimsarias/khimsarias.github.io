@@ -1,4 +1,4 @@
-html[data-theme="light"]
+    html[data-theme="light"]
 {
 	/* Light Mode */
 	--nav-bg-color: white;
@@ -58,6 +58,7 @@ flex-wrap: wrap;
     cursor: pointer;
     width: 5vw;
     background-color: transparent;
+    color: var(--text-color);
 }
 .logo{
 /*    color: purple;*/
@@ -262,4 +263,12 @@ flex-wrap: wrap;
     -webkit-transform: translate(-2px, 2px);
             transform: translate(-2px, 2px);
   }
+}
+
+html.transition,
+html.transition *,
+html.transition *:before,
+html.transition *:after {
+  transition: all 750ms !important;
+  transition-delay: 0 !important;
 }

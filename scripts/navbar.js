@@ -17,7 +17,7 @@ const navSlide= ()=> {
  
 }
 navSlide();
-$( document ).ready( function()
+$(document).ready( function()
 {
 	$( '.buzz' ).each( function()
 	{
@@ -26,3 +26,44 @@ $( document ).ready( function()
 } );
 
 
+function checkEnterClick(e){
+    if(e.keyCode == 13){
+    document.getElementById('btn_id').click();
+    document.getElementById('cmd_id').blur();
+    }
+ }
+
+ function closeAll()
+ {
+
+    console.log('success');
+    //  window.close();
+ }
+
+function btn_clicked(){
+    msg = document.getElementById('cmd_id').value;
+    msg = msg.toLowerCase();
+    console.log(msg)
+    if (msg == "knox")
+    {
+        document.documentElement.classList.add('transition');
+    window.setTimeout(() => {
+        document.documentElement.classList.remove('transition')
+    }, 1000)
+        document.documentElement.setAttribute('data-theme', 'dark');
+        document.getElementById('cmd_id').value = '';
+    }
+    if (msg == "lumos")
+    {
+        document.documentElement.classList.add('transition');
+    window.setTimeout(() => {
+        document.documentElement.classList.remove('transition')
+    }, 1000)
+        document.documentElement.setAttribute('data-theme', 'light');
+        document.getElementById('cmd_id').value = '';
+    }    
+    if (msg == "quit" || msg == 'exit' || msg == "avada kedavra")
+    {
+        closeAll();
+    }
+};

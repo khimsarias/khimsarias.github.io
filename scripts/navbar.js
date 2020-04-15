@@ -45,16 +45,19 @@ function checkEnterClick(e){
  }
 // All Display Functions for GIFs
  
-function displayImage()
- {
-     document.getElementsByClassName("quitgif")[0].style.display = "block";  
- }
 
- async function displayImage1()
+ async function displayImage(i)
  {
-     document.getElementsByClassName("quitgif")[1].style.display = "block";  
-     await sleep (1380);
-     document.getElementsByClassName("quitgif")[1].style.display = "none"; 
+    document.getElementsByClassName("quitgif")[i].style.display = "block";  
+    switch (i) {
+    case 0 :
+                await sleep (3760);
+                break;
+    case 1 :
+        await sleep (1380);
+        break;
+}         
+    document.getElementsByClassName("quitgif")[i].style.display = "none"; 
  }
 
 // All Display Functions for GIFs
@@ -87,29 +90,22 @@ function btn_clicked(){
     }, 1000)
         document.documentElement.setAttribute('data-theme', 'light');
         document.getElementById('cmd_id').value = '';
+        if (document.documentElement.getAttribute("data-theme")=="light")
+        {
+            container.removeAttribute("class", "flip");
+        }
     }    
 
-    else if (msg == "quit" || msg == 'exit' || msg == "avada kedavra")
+    else if (msg == "avada kedavra")
     {
-
-        if (msg == "avada kedavra")
-        {
-            
-            displayImage();
-            closeAll();
-        }
-        else
-        {
-            Minimize();
-            // window.close();
-        }
+            displayImage(0);
         document.getElementById('cmd_id').value = '';
     }
 
     else if (msg == "morsmordre")
     {
         document.getElementById('cmd_id').value = '';
-        displayImage1();
+        displayImage(1);
     }
 
    else  if (msg == "reducio")

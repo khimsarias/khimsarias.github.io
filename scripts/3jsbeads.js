@@ -723,18 +723,8 @@ var SEPARATION = 100,
  
     var windowHalfX = window.innerWidth / 2;
     var windowHalfY = window.innerHeight / 2;
- 
-//  if(document.documentElement.getAttribute("data-theme")=="light")
-//  {
-//     init();
-//     console.log("Light Mode");
-//  }
-//   else if (document.documentElement.getAttribute("data-theme")=="dark")
-//   {
-//     console.log("Dark Mode");
-//     init();
-//   }
-  init();
+
+    init();
     animate();
  
     function init() {

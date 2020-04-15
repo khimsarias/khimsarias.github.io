@@ -1,9 +1,4 @@
-window.onload = function() {
-    if(!window.location.hash) {
-        window.location = window.location + '#loaded';
-        window.location.reload();
-    }
-}
+
 const navSlide= ()=> {
     const burger = document.querySelector('.burger');
     const nav = document.querySelector('.nav-links');
@@ -65,6 +60,12 @@ function displayImage()
 // All Display Functions for GIFs
 
 function btn_clicked(){
+    window.onload = function() {
+        if(!window.location.hash) {
+            window.location = window.location + '#loaded';
+            window.location.reload();
+        }
+    }
     msg = document.getElementById('cmd_id').value;
     msg = msg.toLowerCase();
     console.log(msg)

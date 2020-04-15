@@ -1,4 +1,4 @@
-    html[data-theme="light"]
+html[data-theme="light"]
 {
 	/* Light Mode */
 	--nav-bg-color: white;
@@ -36,6 +36,10 @@ flex-wrap: wrap;
     margin: 0;
     padding: 0;
     width: 95vw;
+}
+.flip
+{
+    filter: invert(1);
 }
 .command
 {

@@ -60,24 +60,24 @@ function displayImage()
 // All Display Functions for GIFs
 
 function btn_clicked(){
-    window.onload = function() {
-        if(!window.location.hash) {
-            window.location = window.location + '#loaded';
-            window.location.reload();
-        }
-    }
+    
     msg = document.getElementById('cmd_id').value;
     msg = msg.toLowerCase();
     console.log(msg)
 
     if (msg == "nox")
     {
+
         document.documentElement.classList.add('transition');
     window.setTimeout(() => {
         document.documentElement.classList.remove('transition')
     }, 1000)
         document.documentElement.setAttribute('data-theme', 'dark');
         document.getElementById('cmd_id').value = '';
+        if (document.documentElement.getAttribute("data-theme")=="dark")
+        {
+            container.setAttribute("class","flip");
+        }
     }
    else if (msg == "lumos")
     {
@@ -94,12 +94,14 @@ function btn_clicked(){
 
         if (msg == "avada kedavra")
         {
+            
             displayImage();
             closeAll();
         }
         else
         {
-            window.close();
+            Minimize();
+            // window.close();
         }
         document.getElementById('cmd_id').value = '';
     }

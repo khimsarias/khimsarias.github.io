@@ -76,11 +76,14 @@ function btn_clicked(){
         document.documentElement.classList.remove('transition')
     }, 1000)
         document.documentElement.setAttribute('data-theme', 'dark');
+        container.setAttribute("class","flip");
+        document.getElementById("wand").setAttribute("style", "filter:invert(1)");
         document.getElementById('cmd_id').value = '';
-        if (document.documentElement.getAttribute("data-theme")=="dark")
-        {
-            container.setAttribute("class","flip");
-        }
+        // if (document.documentElement.getAttribute("data-theme")=="dark")
+        // {
+        //     container.setAttribute("class","flip");
+
+        // }
     }
    else if (msg == "lumos")
     {

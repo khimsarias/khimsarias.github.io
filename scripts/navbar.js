@@ -92,11 +92,10 @@ function btn_clicked(){
         document.documentElement.classList.remove('transition')
     }, 1000)
         document.documentElement.setAttribute('data-theme', 'light');
+        document.getElementById("wand").setAttribute("style", "filter:invert(0)");
         document.getElementById('cmd_id').value = '';
-        if (document.documentElement.getAttribute("data-theme")=="light")
-        {
             container.removeAttribute("class", "flip");
-        }
+        
     }    
 
     else if (msg == "avada kedavra")

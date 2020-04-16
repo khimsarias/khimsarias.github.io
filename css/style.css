@@ -28,10 +28,11 @@ body
 }
 .home span
 {
-	text-align: center;
+	text-align: left;
 	margin: auto;
 	font-size: 16.5vh;
 	color:var(--text-color);
+	font-family: Georgia;
 }
 
 

@@ -32,7 +32,7 @@ flex-wrap: wrap;
 }
 .cmd_box
 {
-    z-index: 0;
+    z-index: 2;
     margin: 0;
     padding: 0;
     width: 90vw;
@@ -66,7 +66,10 @@ flex-wrap: wrap;
     outline: var(--text-color);
     /* padding: 0 2vw; */
 }
-
+.execute
+{
+    z-index: 2;
+}
 .button img
 {
     width: 8vw;
@@ -150,8 +153,8 @@ flex-wrap: wrap;
             /* z-index: 2; */
             position: absolute;
             right:0vw;
-            height:92vh;
-            top:8vh;
+            height:95vh;
+            top:5vh;
             background-color: var(--nav-bg-color);
             display: flex;
             flex-direction: column;

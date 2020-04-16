@@ -1,5 +1,6 @@
 
 const navSlide= ()=> {
+
     const burger = document.querySelector('.burger');
     const nav = document.querySelector('.nav-links');
     const navLinks=document.querySelectorAll('.nav-links li');
@@ -12,12 +13,23 @@ const navSlide= ()=> {
             link.style.animation=`navLinkFade 0.5s ease forwards ${index /7 + 0.5}s`;
         }
     });
-        
     burger.classList.toggle('toggle');
+    document.getElementsByClassName("nav-links")[0].style.zIndex = "3";
+    // if (document.getElementsByClassName("burger")[0].classList.contains("toggle"))
+    // {
+    //     document.getElementsByClassName("execute")[0].style.zIndex = "0";
+    //     document.getElementsByClassName("cmd_box")[0].style.zIndex = "-1";
+    // }
+    // else
+    // {
+    //     document.getElementsByClassName("execute")[0].style.zIndex = "2";
+    //     document.getElementsByClassName("cmd_box")[0].style.zIndex = "2";
+    // }
     });
- 
+
 }
 navSlide();
+
 $(document).ready( function()
 {
 	$( '.buzz' ).each( function()
@@ -79,11 +91,6 @@ function btn_clicked(){
         container.setAttribute("class","flip");
         document.getElementById("wand").setAttribute("style", "filter:invert(1)");
         document.getElementById('cmd_id').value = '';
-        // if (document.documentElement.getAttribute("data-theme")=="dark")
-        // {
-        //     container.setAttribute("class","flip");
-
-        // }
     }
    else if (msg == "lumos")
     {
@@ -95,7 +102,6 @@ function btn_clicked(){
         document.getElementById("wand").setAttribute("style", "filter:invert(0)");
         document.getElementById('cmd_id').value = '';
             container.removeAttribute("class", "flip");
-        
     }    
 
     else if (msg == "avada kedavra")

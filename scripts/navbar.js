@@ -33,7 +33,7 @@ const navSlide= ()=> {
             document.getElementsByTagName("DIV")[i].classList.remove("blurall");
             document.getElementById("cmd_id").disabled = false;
             document.getElementById("btn_id").disabled = false;
-            
+            document.getElementsByClassName("nav-links")[0].style.zIndex = "-2";
         }
     }
     // CLose Nav when clicked anywhere else

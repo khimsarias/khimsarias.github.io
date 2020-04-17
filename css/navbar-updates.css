@@ -18,6 +18,16 @@ html[data-theme="dark"]
     box-sizing: border-box;
 
 }
+
+.blurall
+{
+    
+    -webkit-filter: blur(2px);
+    -moz-filter: blur(2px);
+    -o-filter: blur(2px);
+    -ms-filter: blur(2px);
+    filter : blur(2px);
+}
 nav{
 /*	position: absolute;*/
 flex-wrap: wrap;

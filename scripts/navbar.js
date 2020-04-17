@@ -1,6 +1,4 @@
-
 const navSlide= ()=> {
-
     const burger = document.querySelector('.burger');
     const nav = document.querySelector('.nav-links');
     const navLinks=document.querySelectorAll('.nav-links li');
@@ -12,19 +10,26 @@ const navSlide= ()=> {
         } else {
             link.style.animation=`navLinkFade 0.5s ease forwards ${index /7 + 0.5}s`;
         }
+        
     });
-    burger.classList.toggle('toggle');
+    burger.classList.toggle('toggle'); 
     document.getElementsByClassName("nav-links")[0].style.zIndex = "3";
-    // if (document.getElementsByClassName("burger")[0].classList.contains("toggle"))
-    // {
-    //     document.getElementsByClassName("execute")[0].style.zIndex = "0";
-    //     document.getElementsByClassName("cmd_box")[0].style.zIndex = "-1";
-    // }
-    // else
-    // {
-    //     document.getElementsByClassName("execute")[0].style.zIndex = "2";
-    //     document.getElementsByClassName("cmd_box")[0].style.zIndex = "2";
-    // }
+    if (document.getElementsByClassName("burger")[0].classList.contains("toggle"))
+    {
+        for (let i = 5; i < document.getElementsByTagName("DIV").length; i++)
+        {
+            document.getElementsByTagName("DIV")[i].classList.add("blurall");
+        }
+        
+    }
+    else
+    {
+        for (let i = 5; i < document.getElementsByTagName("DIV").length; i++)
+        {
+            document.getElementsByTagName("DIV")[i].classList.remove("blurall");
+        }
+    }
+
     });
 
 }
@@ -79,7 +84,7 @@ function btn_clicked(){
     msg = document.getElementById('cmd_id').value;
     msg = msg.toLowerCase();
     console.log(msg)
-
+    document.getElementById('cmd_id').value = '';
     if (msg == "nox")
     {
 
@@ -90,7 +95,7 @@ function btn_clicked(){
         document.documentElement.setAttribute('data-theme', 'dark');
         container.setAttribute("class","flip");
         document.getElementById("wand").setAttribute("style", "filter:invert(1)");
-        document.getElementById('cmd_id').value = '';
+        // document.getElementById('cmd_id').value = '';
     }
    else if (msg == "lumos")
     {
@@ -100,25 +105,25 @@ function btn_clicked(){
     }, 1000)
         document.documentElement.setAttribute('data-theme', 'light');
         document.getElementById("wand").setAttribute("style", "filter:invert(0)");
-        document.getElementById('cmd_id').value = '';
+        // document.getElementById('cmd_id').value = '';
             container.removeAttribute("class", "flip");
     }    
 
     else if (msg == "avada kedavra")
     {
             displayImage(0);
-        document.getElementById('cmd_id').value = '';
+        // document.getElementById('cmd_id').value = '';
     }
 
     else if (msg == "morsmordre")
     {
-        document.getElementById('cmd_id').value = '';
+        // document.getElementById('cmd_id').value = '';
         displayImage(1);
     }
 
    else  if (msg == "reducio")
     {
-        document.getElementById('cmd_id').value = '';
+        // document.getElementById('cmd_id').value = '';
         if (document.body.style.zoom > 1.0)
         {
             document.body.style.zoom=1.0;this.blur();
@@ -131,7 +136,7 @@ function btn_clicked(){
 
     else if (msg == "engorgio")
     {
-        document.getElementById('cmd_id').value = '';
+        // document.getElementById('cmd_id').value = '';
         if (document.body.style.zoom < 1.0)
         {
         document.body.style.zoom=1.0;this.blur();

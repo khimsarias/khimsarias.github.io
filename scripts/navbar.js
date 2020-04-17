@@ -119,6 +119,7 @@ function btn_clicked(){
     
     msg = document.getElementById('cmd_id').value;
     msg = msg.toLowerCase();
+    msg = msg.trim();
     console.log(msg);
     document.getElementById('cmd_id').value = '';
     if (msg == "nox")
@@ -185,4 +186,21 @@ function btn_clicked(){
         }
 
     }
+    else if (msg == "help")
+    {
+        window.open('commands.txt','_blank');
+    }
+    else if (msg == "cd blogs" || msg == "cd blog")
+    {
+        window.open('pages/blogs.html','_self');
+    }
+    else if (msg == "cd /" || msg == "cd ~" || msg == "cd")
+    {
+        window.open('index.html','_self');
+    }
+    else if (msg == "cd -" || msg == "cd ..")
+    {
+        window.history.back();
+    }
 };
+

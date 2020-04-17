@@ -47,6 +47,10 @@ flex-wrap: wrap;
     padding: 0;
     width: 90vw;
 }
+.command
+{
+    padding: 0.5vh;
+}
 .flip
 {
     filter: invert(1);

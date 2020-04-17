@@ -1,3 +1,19 @@
+function themeLoader()
+{
+    document.documentElement.setAttribute("data-theme", localStorage.getItem("mode"));
+    
+    if(localStorage.getItem("mode") == "light")
+    {
+        document.getElementById("wand").setAttribute("style", "filter:invert(0)");
+        container.removeAttribute("class", "flip");
+    }
+    else if (localStorage.getItem("mode") == "dark")
+    {
+        container.setAttribute("class","flip");
+        document.getElementById("wand").setAttribute("style", "filter:invert(1)");
+    }
+}
+
 const navSlide= ()=> {
     const burger = document.querySelector('.burger');
     const nav = document.querySelector('.nav-links');
@@ -113,6 +129,7 @@ function btn_clicked(){
         document.documentElement.classList.remove('transition')
     }, 1000)
         document.documentElement.setAttribute('data-theme', 'dark');
+        localStorage.setItem("mode", document.documentElement.getAttribute("data-theme"));
         container.setAttribute("class","flip");
         document.getElementById("wand").setAttribute("style", "filter:invert(1)");
         // document.getElementById('cmd_id').value = '';
@@ -120,10 +137,11 @@ function btn_clicked(){
    else if (msg == "lumos")
     {
         document.documentElement.classList.add('transition');
-    window.setTimeout(() => {
+        window.setTimeout(() => {
         document.documentElement.classList.remove('transition')
     }, 1000)
         document.documentElement.setAttribute('data-theme', 'light');
+        localStorage.setItem("mode", document.documentElement.getAttribute("data-theme"));
         document.getElementById("wand").setAttribute("style", "filter:invert(0)");
         // document.getElementById('cmd_id').value = '';
             container.removeAttribute("class", "flip");

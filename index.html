@@ -8,12 +8,11 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/navbar-updates.css">
     <link href="https://fonts.googleapis.com/css?family=Anonymous+Pro&display=swap" rel="stylesheet">
-    <script type="text/javascript" src="scripts/typed.js"></script>
-    <script type="text/javascript" src="scripts/cookies.js"></script>
+    <script src="scripts/navbar.js"></script>
 <title>Saumya Khimsaria</title>
 
 </head>
-<body>
+<body onload="themeLoader();">
     <nav>
         <div class="logo"><h4><a data-content="Saumya Khimsaria" class="text-link" href="index.html">Saumya Khimsaria</a></h4></div>
         <ul class="nav-links">
@@ -36,7 +35,7 @@
             <div class="line3"></div>
         </div>
         <div class="cmd_box">
-            <input type="text" class="command" name="command" placeholder="Type Harry Potter Spells Here" id="cmd_id" onkeypress="checkEnterClick(event)">
+            <input type="text" value="" class="command" name="command" placeholder="Type Harry Potter Spells Here" id="cmd_id" onkeypress="checkEnterClick(event)">
         </div>
         <div class="execute">
             <button class="button" onclick="btn_clicked();" id="btn_id" ><img id="wand" src="wand.png" alt=""></button>
@@ -44,7 +43,7 @@
     </nav>
     <div class="quitgif" style="display: none"><img src="0.gif"></div>
     <div class="quitgif" style="display: none"><img src="1.gif"></div>
-    <script src="scripts/navbar.js"></script>
+    <!-- <script src="scripts/navbar.js"></script> -->
 	<div class="home" >
 	<span>This website is my pensieve.</span>
 	</div>

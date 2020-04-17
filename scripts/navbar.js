@@ -1,19 +1,3 @@
-function themeLoader()
-{
-    document.documentElement.setAttribute("data-theme", localStorage.getItem("mode"));
-    
-    if(localStorage.getItem("mode") == "light")
-    {
-        document.getElementById("wand").setAttribute("style", "filter:invert(0)");
-        container.removeAttribute("class", "flip");
-    }
-    else if (localStorage.getItem("mode") == "dark")
-    {
-        container.setAttribute("class","flip");
-        document.getElementById("wand").setAttribute("style", "filter:invert(1)");
-    }
-}
-
 const navSlide= ()=> {
     const burger = document.querySelector('.burger');
     const nav = document.querySelector('.nav-links');
@@ -79,6 +63,22 @@ $(document).ready( function()
 	} );
 } );
 
+
+function themeLoader()
+{
+    document.documentElement.setAttribute("data-theme", localStorage.getItem("mode"));
+    
+    if(localStorage.getItem("mode") == "light")
+    {
+        document.getElementById("wand").setAttribute("style", "filter:invert(0)");
+        container.removeAttribute("class", "flip");
+    }
+    else if (localStorage.getItem("mode") == "dark")
+    {
+        container.setAttribute("class","flip");
+        document.getElementById("wand").setAttribute("style", "filter:invert(1)");
+    }
+}
 
 function checkEnterClick(e){
     if(e.keyCode == 13){

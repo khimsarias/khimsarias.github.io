@@ -1,4 +1,5 @@
 const navSlide= ()=> {
+    console.clear();
     const burger = document.querySelector('.burger');
     const nav = document.querySelector('.nav-links');
     const navLinks=document.querySelectorAll('.nav-links li');
@@ -19,6 +20,9 @@ const navSlide= ()=> {
         for (let i = 5; i < document.getElementsByTagName("DIV").length; i++)
         {
             document.getElementsByTagName("DIV")[i].classList.add("blurall");
+            document.getElementById("cmd_id").disabled = true;
+            document.getElementById("btn_id").disabled = true;
+            document.getElementById('cmd_id').value = '';
         }
         
     }
@@ -27,8 +31,25 @@ const navSlide= ()=> {
         for (let i = 5; i < document.getElementsByTagName("DIV").length; i++)
         {
             document.getElementsByTagName("DIV")[i].classList.remove("blurall");
+            document.getElementById("cmd_id").disabled = false;
+            document.getElementById("btn_id").disabled = false;
+            
         }
     }
+    // CLose Nav when clicked anywhere else
+    
+    if (document.getElementsByClassName("burger")[0].classList.contains("toggle"))
+    {
+        for (let i = 5; i < document.getElementsByTagName("DIV").length; i++)
+        {
+            document.getElementsByTagName("DIV")[i].addEventListener("click", () =>
+            {
+                if(document.getElementsByTagName("DIV")[i].classList.contains("blurall"))
+                burger.click();
+            })
+        }   
+    }
+  
 
     });
 

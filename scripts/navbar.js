@@ -1,5 +1,4 @@
 const navSlide= ()=> {
-    console.clear();
     const burger = document.querySelector('.burger');
     const nav = document.querySelector('.nav-links');
     const navLinks=document.querySelectorAll('.nav-links li');
@@ -104,7 +103,7 @@ function btn_clicked(){
     
     msg = document.getElementById('cmd_id').value;
     msg = msg.toLowerCase();
-    console.log(msg)
+    console.log(msg);
     document.getElementById('cmd_id').value = '';
     if (msg == "nox")
     {

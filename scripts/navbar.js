@@ -67,14 +67,15 @@ $(document).ready( function()
 function themeLoader()
 {
     document.documentElement.setAttribute("data-theme", localStorage.getItem("mode"));
-    
     if(localStorage.getItem("mode") == "light")
     {
+        document.documentElement.setAttribute('data-theme', 'light');
         document.getElementById("wand").setAttribute("style", "filter:invert(0)");
         container.removeAttribute("class", "flip");
     }
-    else if (localStorage.getItem("mode") == "dark")
+    if (localStorage.getItem("mode") == "dark")
     {
+        document.documentElement.setAttribute('data-theme', 'dark');
         container.setAttribute("class","flip");
         document.getElementById("wand").setAttribute("style", "filter:invert(1)");
     }

@@ -204,7 +204,6 @@ function btn_clicked(){
         mmmap_span.appendChild(message);
         mmap_div.appendChild(mmmap_span);
         document.body.appendChild(mmap_div) ;
-        
         remove_Element();
     }
     else if (msg == "help")

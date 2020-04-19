@@ -35,25 +35,6 @@ body
 	font-family: Georgia;
 }
 
-.quitgif
-{
-	margin: auto;
-	width: 100vw;
-	height: 100vh;
-	padding: 25vh 30%;
-}
-
-.quitgif img
-{
-	z-index: 3;
-	/* left: 25%;
-	top: 25%; */
-	margin: 0 auto;
-	position: absolute;
-	height: auto;
-	width: 40vw;
-	height: 50vh;
-}
 
 @media screen and (max-width:780px){
     body

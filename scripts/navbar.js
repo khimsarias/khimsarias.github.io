@@ -198,7 +198,7 @@ function btn_clicked(){
         }
 
     }
-    else if (msg == "rys")
+    else if (msg == "reveal your secrets")
     {
         displayImage(2);
     }

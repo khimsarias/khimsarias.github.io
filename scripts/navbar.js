@@ -117,6 +117,9 @@ function checkEnterClick(e){
     case 1 :
         await sleep (1380);
         break;
+    case 2 :
+        await sleep (6000);
+        break;
 }         
     document.getElementsByClassName("quitgif")[i].style.display = "none"; 
  }
@@ -197,14 +200,7 @@ function btn_clicked(){
     }
     else if (msg == "rys")
     {
-        var mmap_div = document.createElement("DIV");
-        mmap_div.setAttribute("class","rys");
-        var mmmap_span = document.createElement("SPAN");
-        var message = document.createTextNode(`Mr. Moony presents his compliments to Professor Snape, and begs him to keep his abnormally large nose out of other people's business. Mr. Prongs agrees with Mr. Moony, and would like to add that Professor Snape is an ugly git.Mr. Padfoot would like to register his astonishment that an idiot like that ever became a professor.Mr. Wormtail bids Professor Snape good day, and advises him to wash his hair, the slimeball.`)
-        mmmap_span.appendChild(message);
-        mmap_div.appendChild(mmmap_span);
-        document.body.appendChild(mmap_div) ;
-        remove_Element();
+        displayImage(2);
     }
     else if (msg == "help")
     {

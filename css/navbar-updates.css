@@ -42,35 +42,6 @@ flex-wrap: wrap;
     font-family: 'Anonymous Pro', monospace;
     
 }
-.rys
-{
-    width: 100vw;
-    height: 100vh;
-    background-color: var(--nav-bg-color);
-    z-index: 99;
-    color: var(--text-color);
-    display: flex;
-    transform: translateY(-101vh);
-    text-align: center;
-    margin: auto;
-    padding: auto;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-    justify-items: center;
-    flex-direction: column;
-}
-
-.rys span
-{
-    padding: 0 3%;
-    width: 100%;
-    text-align: left;
-    margin: auto;
-    font-size: 25px;
-	color:var(--text-color);
-	font-family: Georgia;
-}
 
 .cmd_box
 {
@@ -170,6 +141,25 @@ flex-wrap: wrap;
     margin:5px;
     transition: all 0.7s ease;
 }
+.quitgif
+{
+	margin: auto;
+	width: 100vw;
+	height: 100vh;
+	padding: 25vh 30%;
+}
+
+.quitgif img
+{
+	z-index: 3;
+	/* left: 25%;
+	top: 25%; */
+	margin: 0 auto;
+	position: absolute;
+	height: auto;
+	width: 40vw;
+	height: 50vh;
+}
 
 @media screen and (max-width:1580px){
 .nav-links{
@@ -181,8 +171,46 @@ flex-wrap: wrap;
 .nav-links{
         width: 60%;
     }
+    .quitgif
+{
+	margin: auto;
+	width: 100vw;
+	height: 100vh;
+	padding: 15vh 20%;
+}
+
+.quitgif img
+{
+	z-index: 3;
+	/* left: 25%;
+	top: 25%; */
+	margin: 0 auto;
+	position: absolute;
+	height: auto;
+	width: 60vw;
+	height: 70vh;
+}
 }
 @media screen and (max-width:780px){
+    .quitgif
+{
+	margin: auto;
+	width: 100vw;
+	height: 100vh;
+	padding: 0 10%;
+}
+
+.quitgif img
+{
+	z-index: 3;
+	/* left: 25%;
+	top: 25%; */
+	margin: 0 auto;
+	position: absolute;
+	height: auto;
+	width: 80vw;
+	height: 70vh;
+}
     .button
     {
         height: 2vh;

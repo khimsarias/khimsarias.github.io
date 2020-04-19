@@ -66,7 +66,11 @@ $(document).ready( function()
 
 function themeLoader()
 {
-    document.documentElement.setAttribute("data-theme", localStorage.getItem("mode"));
+	if (localStorage.getItem("mode") == null)
+	{
+		localStorage.setItem("mode","light");
+    	document.documentElement.setAttribute("data-theme", localStorage.getItem("mode"));
+	}
     if(localStorage.getItem("mode") == "light")
     {
         document.documentElement.setAttribute('data-theme', 'light');

@@ -6,3 +6,4 @@ avada kedavra: plays gif and closes gif
 morsmordre: plays gif and closes gif
 reducio: zooms everything out
 engorgio: zooms everything in
+reveal your secrets: snape's insult

@@ -80,8 +80,8 @@ function themeLoader()
     if (localStorage.getItem("mode") == "dark")
     {
         document.documentElement.setAttribute('data-theme', 'dark');
-        container.setAttribute("class","flip");
         document.getElementById("wand").setAttribute("style", "filter:invert(1)");
+        container.setAttribute("class","flip");
     }
 }
 
@@ -96,11 +96,14 @@ function checkEnterClick(e){
     return new Promise(resolve => setTimeout(resolve, ms));
   }
   
- async function closeAll()
+  
+ async function remove_Element()
  {
-    await sleep (3760);
-    window.close();
- }
+    await sleep (7760);
+    var element = document.getElementsByClassName("rys")[0];
+    element.parentNode.removeChild(element);
+}
+ 
 // All Display Functions for GIFs
  
 
@@ -136,8 +139,9 @@ function btn_clicked(){
     }, 1000)
         document.documentElement.setAttribute('data-theme', 'dark');
         localStorage.setItem("mode", document.documentElement.getAttribute("data-theme"));
-        container.setAttribute("class","flip");
+        
         document.getElementById("wand").setAttribute("style", "filter:invert(1)");
+        container.setAttribute("class","flip");
         // document.getElementById('cmd_id').value = '';
     }
    else if (msg == "lumos")
@@ -190,6 +194,18 @@ function btn_clicked(){
             document.body.style.zoom=1.5;this.blur();
         }
 
+    }
+    else if (msg == "rys")
+    {
+        var mmap_div = document.createElement("DIV");
+        mmap_div.setAttribute("class","rys");
+        var mmmap_span = document.createElement("SPAN");
+        var message = document.createTextNode(`Mr. Moony presents his compliments to Professor Snape, and begs him to keep his abnormally large nose out of other people's business. Mr. Prongs agrees with Mr. Moony, and would like to add that Professor Snape is an ugly git.Mr. Padfoot would like to register his astonishment that an idiot like that ever became a professor.Mr. Wormtail bids Professor Snape good day, and advises him to wash his hair, the slimeball.`)
+        mmmap_span.appendChild(message);
+        mmap_div.appendChild(mmmap_span);
+        // document.body.appendChild(mmap_div) ;
+        
+        remove_Element();
     }
     else if (msg == "help")
     {

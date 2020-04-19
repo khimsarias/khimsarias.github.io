@@ -2,14 +2,15 @@ html[data-theme="light"]
 {
 	/* Light Mode */
 	--nav-bg-color: white;
-	--text-color: black;
+    --text-color: black;
 }
 
 html[data-theme="dark"]
 {
 	/* Dark Mode */
-	--nav-bg-color: #000;
-	--text-color: #ccc;
+    /* --nav-bg-color: #000; */
+    --nav-bg-color: #292929;
+    --text-color: #ccc;
 }
 
 *{
@@ -38,14 +39,53 @@ flex-wrap: wrap;
     align-items: center;
     min-height: 8vh;
     background-color: var(--nav-bg-color);
-	font-family: 'Anonymous Pro', monospace;
+    font-family: 'Anonymous Pro', monospace;
+    
 }
+.rys
+{
+    width: 100vw%;
+    height: 100vh;
+    background-color: var(--nav-bg-color);
+    z-index: 99;
+    color: var(--text-color);
+    display: flex;
+    /* transform: translateY(-101vh); */
+    text-align: center;
+    margin: auto;
+    padding: auto;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    flex-direction: column;
+}
+
+.rys span
+{
+    padding: 0 3%;
+    width: 100%;
+    text-align: left;
+    margin: auto;
+    font-size: 25px;
+	color:var(--text-color);
+	font-family: Georgia;
+}
+
 .cmd_box
 {
     z-index: 2;
     margin: 0;
     padding: 0;
     width: 90vw;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.034), 
+                0 2px 5px rgba(0, 0, 0, 0.048), 
+                0 2px 5px rgba(0, 0, 0, 0.06), 
+                0 2px 5px rgba(0, 0, 0, 0.072), 
+                0 2px 5px rgba(0, 0, 0, 0.086), 
+                0 2px 5px rgba(0, 0, 0, 0.12);
+    
+
 }
 .command
 {
@@ -67,6 +107,7 @@ flex-wrap: wrap;
 }
 .button
 {
+    
     width: 8vw;
     border: 0px solid var(--text-color);
     border-radius: 12px;
@@ -75,7 +116,6 @@ flex-wrap: wrap;
     background-color: transparent;
     color: var(--text-color);
     outline: var(--text-color);
-    /* padding: 0 2vw; */
 }
 .execute
 {
@@ -83,13 +123,14 @@ flex-wrap: wrap;
 }
 .button img
 {
-    width: 8vw;
+    width: 6vw;
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
     filter: invert(0);
 }
 .logo{
 /*    color: purple;*/
+    padding: 1vh;
     text-transform: uppercase;
     letter-spacing: 5px;
     font-size: 20px;
@@ -97,7 +138,8 @@ flex-wrap: wrap;
 
 .logo a
 {
-	color: var(--text-color);
+    color: var(--text-color);
+    
 }
 .nav-links{
     display: flex;
@@ -106,6 +148,7 @@ flex-wrap: wrap;
     z-index: 1;
 }
 .nav-links li{
+    padding: 1vh;
     list-style: none;
 }
 .nav-links a{
@@ -118,6 +161,7 @@ flex-wrap: wrap;
 .burger{
     display:none;
     cursor: pointer;
+
 }
 .burger div{
     width: 25px;

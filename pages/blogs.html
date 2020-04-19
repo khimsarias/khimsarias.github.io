@@ -1,7 +1,54 @@
 <!doctype html>
-<html>
-    <head></head>
-    <body>
-        <h1>BLOGS</h1>
-    </body>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="This is my first attempt at building a proper website!">
+	<meta name="author" content="Saumya Khimsaria">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/blog.css">
+    <link rel="stylesheet" href="../css/navbar-updates.css">
+    <link href="https://fonts.googleapis.com/css?family=Anonymous+Pro&display=swap" rel="stylesheet">
+	<link rel="icon" href="../favicon.ico" type="image/x-icon" >
+<title>Saumya Khimsaria</title>
+
+</head>
+<body onload="themeLoader()">
+    <nav>
+        <div class="logo"><h4><a data-content="Saumya Khimsaria" class="text-link" href="../index.html">Saumya Khimsaria</a></h4></div>
+        <ul class="nav-links">
+            <li>
+                <a data-content="Home" class="text-link" href="../index.html">Home</a>
+            </li>
+            <li>
+                <a data-content="About Me" class="text-link" href="#">About Me</a>
+            </li>
+            <li>
+                <a data-content="Blogs" class="text-link" href="#">Blogs</a>
+            </li>
+            <li>
+                <a data-content="Projects" class="text-link" href="#">Projects</a>
+            </li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+        <div class="cmd_box">
+            <input type="text" value="" class="command" name="command" placeholder="Harry Potter Spells / Linux Commands / Help" id="cmd_id" onkeypress="checkEnterClick(event)">
+        </div>
+        <div class="execute">
+            <button class="button" onclick="btn_clicked();" id="btn_id" ><img id="wand" src="../images/wand.png" alt=""></button>
+        </div>
+    </nav>
+    <div class="quitgif" style="display: none"><img src="../images/0.gif"></div>
+    <div class="quitgif" style="display: none"><img src="../images/1.gif"></div>
+    <script src="../scripts/navbar.js"></script>
+	<div class="home" >
+	<span>BLOGS</span>
+    </div>
+    <!-- <script type="text/javascript" src="../scripts/3jsbeads.js"> </script> -->
+
+	
+</body>
 </html>

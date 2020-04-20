@@ -118,7 +118,7 @@ function checkEnterClick(e){
         await sleep (1380);
         break;
     case 2 :
-        await sleep (6000);
+        await sleep (16000);
         break;
 }         
     document.getElementsByClassName("quitgif")[i].style.display = "none"; 

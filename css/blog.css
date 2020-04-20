@@ -3,6 +3,8 @@ html
 	/* Light Mode */
 	--bg-color: white;
 	--text-color: black;
+	--shadow-up:#8a8888;
+	--shadow-down:#ffffff;
 }
 
 html[data-theme="dark"]
@@ -10,28 +12,121 @@ html[data-theme="dark"]
 	/* Dark Mode */
 	--bg-color: #292929;
 	--text-color: #ccc;
+	--shadow-up:#1c1c1c;
+	--shadow-down:#363636;
 }
 
 body
 {
-    background-color: var(--bg-color);
+	background-color: var(--bg-color);
+	width: 100%;
+	overflow-x: hidden;
 }
 
-.quitgif img
+
+.grid-container
 {
-	z-index: 2;
-	/* left: 25%;
-	top: 25%; */
-	margin: 0 auto;
 	position: absolute;
-	 height: 100vh;
+	display: grid;
 	width: 100vw;
+	height: auto;
+	padding-bottom: 2vh;
+	grid-gap: 4vh 5vw;
+	grid-template-columns: 40vw 40vw;
+	grid-template-rows: repeat(5, 20vh);
+	align-content: center;
+	/* background: paleturquoise; */
+	justify-content: center;
+	
+}
+.blog
+{
+	display: flex;
+	padding: 5%;
+	justify-content: center;
+	width: 40vw;
+	height: auto;
+	color: var(--text-color);
+	background: var(--bg-color);
+	border-radius: 12px;
+	animation: shadow-transition-reverse 0.5s;
+	animation-fill-mode: forwards;
+	box-shadow:  6px 6px 12px var(--shadow-up),
+				 -6px -6px 12px var(--shadow-down);
+}
+.blog:hover
+{
+	animation: shadow-transition 0.5s;
+	animation-fill-mode: forwards;
+	/* box-shadow:  -6px -6px 12px var(--shadow-up),
+	6px 6px 12px var(--shadow-down); */
+	cursor: pointer;
 }
 
+.title
+{
+	display: flex;
+	padding: 5% 0%;
+	margin: auto;
+	width: 100%;
+	justify-self: center;
+	align-self: center;
+	text-justify: center;
+}
+
+.title span
+{
+	color: var(--text-color);
+	font-size: 12vh;
+	text-align: center;
+	margin: auto;
+}
 
 @media screen and (max-width:780px){
-    body
-    {
-        overflow: none;
-    }
+
+    .grid-container
+{
+	padding: 2vh 2vw;
+	grid-gap: 2vh 5vw;
+	grid-template-columns: 80vw;
+	grid-template-rows: repeat(9, 20vh);
+	
+	justify-content: center;
+	
+}
+.blog
+{
+	width: 80vw;
+	height: auto;
+
+}
+}
+
+@keyframes shadow-transition
+{
+	from
+	{
+		box-shadow:  6px 6px 12px var(--shadow-up),
+		-6px -6px 12px var(--shadow-down);
+	}
+	to
+	{
+		box-shadow:  -6px -6px 12px var(--shadow-up),
+		6px 6px 12px var(--shadow-down);
+	}
+}
+
+@keyframes shadow-transition-reverse
+{
+	from
+	{
+		box-shadow:  -6px -6px 12px var(--shadow-up),
+		6px 6px 12px var(--shadow-down);
+	}
+
+	to
+	{
+		box-shadow:  6px 6px 12px var(--shadow-up),
+		-6px -6px 12px var(--shadow-down);
+	}
 }

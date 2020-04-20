@@ -50,8 +50,8 @@ body
 	border-radius: 12px;
 	animation: shadow-transition-reverse 0.5s;
 	animation-fill-mode: forwards;
-	box-shadow:  6px 6px 12px var(--shadow-up),
-				 -6px -6px 12px var(--shadow-down);
+	/* box-shadow:  6px 6px 12px var(--shadow-up),
+				 -6px -6px 12px var(--shadow-down); */
 }
 .blog:hover
 {
@@ -83,15 +83,13 @@ body
 
 @media screen and (max-width:780px){
 
-    .grid-container
+.grid-container
 {
 	padding: 2vh 2vw;
 	grid-gap: 2vh 5vw;
 	grid-template-columns: 80vw;
 	grid-template-rows: repeat(9, 20vh);
-	
-	justify-content: center;
-	
+	justify-content: center;	
 }
 .blog
 {
@@ -118,8 +116,8 @@ body
 {
 	from
 	{
-		box-shadow:  -6px -6px 12px var(--shadow-up),
-		6px 6px 12px var(--shadow-down);
+		box-shadow:  0 0 0 var(--shadow-up),
+		0 0 0 var(--shadow-down);
 	}
 
 	to

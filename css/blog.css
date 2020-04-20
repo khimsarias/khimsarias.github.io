@@ -35,7 +35,6 @@ body
 	grid-template-columns: 40vw 40vw;
 	grid-template-rows: repeat(5, 20vh);
 	align-content: center;
-	/* background: paleturquoise; */
 	justify-content: center;
 	
 }
@@ -98,7 +97,6 @@ body
 {
 	width: 80vw;
 	height: auto;
-
 }
 }
 

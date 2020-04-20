@@ -167,8 +167,6 @@ flex-wrap: wrap;
 .quitgif img
 {
 	z-index: 3;
-	/* left: 25%;
-	top: 25%; */
 	margin: 0 auto;
 	position: absolute;
 	height: auto;
@@ -197,8 +195,6 @@ flex-wrap: wrap;
 .quitgif img
 {
 	z-index: 3;
-	/* left: 25%;
-	top: 25%; */
 	margin: 0 auto;
 	position: absolute;
 	height: auto;
@@ -218,8 +214,6 @@ flex-wrap: wrap;
 .quitgif img
 {
 	z-index: 3;
-	/* left: 25%;
-	top: 25%; */
 	margin: 0 auto;
 	position: absolute;
 	height: auto;
@@ -241,7 +235,6 @@ flex-wrap: wrap;
         color: var(--text-color);
     }
         .nav-links{
-            /* z-index: 2; */
             position: absolute;
             right:0vw;
             height:95vh;
@@ -271,6 +264,13 @@ flex-wrap: wrap;
         .command
         {
             height: 3.5vh;
+            box-shadow:  4px 4px 12px var(--shadow-up),
+                        -4px -4px 12px var(--shadow-down);
+        }
+        .command:focus
+        {
+            box-shadow: inset 6px 4px 12px var(--shadow-up),
+                        inset -6px -6px 12px var(--shadow-down);
         }
 }
     .nav-active{

@@ -84,7 +84,7 @@ body
 @media screen and (max-width:780px){
 
 .grid-container
-{
+4
 	padding: 2vh 2vw;
 	grid-gap: 2vh 5vw;
 	grid-template-columns: 80vw;
@@ -95,6 +95,13 @@ body
 {
 	width: 80vw;
 	height: auto;
+	animation: shadow-transition-reverse-mobile 0.5s;
+	animation-fill-mode: forwards;
+}
+.blog:hover
+{
+	animation: shadow-transition-mobile 0.5s;
+	animation-fill-mode: forwards;
 }
 }
 
@@ -124,5 +131,34 @@ body
 	{
 		box-shadow:  6px 6px 12px var(--shadow-up),
 		-6px -6px 12px var(--shadow-down);
+	}
+}
+
+@keyframes shadow-transition-mobile
+{
+	from
+	{
+		box-shadow:  4px 4px 10px var(--shadow-up),
+		-4px -4px 10px var(--shadow-down);
+	}
+	to
+	{
+		box-shadow:  -4px -4px 10px var(--shadow-up),
+		4px 4px 10px var(--shadow-down);
+	}
+}
+
+@keyframes shadow-transition-reverse-mobile
+{
+	from
+	{
+		box-shadow:  0 0 0 var(--shadow-up),
+		0 0 0 var(--shadow-down);
+	}
+
+	to
+	{
+		box-shadow:  4px 4px 10px var(--shadow-up),
+		-4px -4px 10px var(--shadow-down);
 	}
 }

@@ -75,14 +75,23 @@ function themeLoader()
     {
         document.documentElement.setAttribute('data-theme', 'light');
         document.getElementById("wand").setAttribute("style", "filter:invert(0)");
+        try
+        {
         container.removeAttribute("class", "flip");
+        }
+        catch{}
+        animation_loader();
     }
     if (localStorage.getItem("mode") == "dark")
     {
         document.documentElement.setAttribute('data-theme', 'dark');
         document.getElementById("wand").setAttribute("style", "filter:invert(1)");
+        try{
         container.setAttribute("class","flip");
+        }
+        catch{}
     }
+    animation_loader();
 }
 
 function checkEnterClick(e){
@@ -126,6 +135,21 @@ function checkEnterClick(e){
 
 // All Display Functions for GIFs
 
+function animation_loader()
+{
+    for (let i = 0; i < document.getElementsByClassName("blog").length; i++)
+    {
+        document.getElementsByClassName("blog")[i].classList.add("run-animation");
+        
+    }
+    for (let i = 0; i < document.getElementsByClassName("blog").length; i++)
+    {
+        document.getElementsByClassName("blog")[i].classList.add("run-animation");
+        
+    }
+}
+
+
 function btn_clicked(){
     
     msg = document.getElementById('cmd_id').value;
@@ -144,7 +168,8 @@ function btn_clicked(){
         localStorage.setItem("mode", document.documentElement.getAttribute("data-theme"));
         
         document.getElementById("wand").setAttribute("style", "filter:invert(1)");
-        container.setAttribute("class","flip");
+        try{container.setAttribute("class","flip");}catch{}
+
         // document.getElementById('cmd_id').value = '';
     }
    else if (msg == "lumos")
@@ -157,7 +182,7 @@ function btn_clicked(){
         localStorage.setItem("mode", document.documentElement.getAttribute("data-theme"));
         document.getElementById("wand").setAttribute("style", "filter:invert(0)");
         // document.getElementById('cmd_id').value = '';
-            container.removeAttribute("class", "flip");
+            try{container.removeAttribute("class", "flip");}catch{}
     }    
 
     else if (msg == "avada kedavra")

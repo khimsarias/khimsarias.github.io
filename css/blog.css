@@ -23,6 +23,11 @@ body
 	overflow-x: hidden;
 }
 
+.run-animation
+{
+	animation: shadow-transition-reverse 0.5s;
+	animation-fill-mode: forwards;
+}
 
 .grid-container
 {
@@ -48,15 +53,15 @@ body
 	color: var(--text-color);
 	background: var(--bg-color);
 	border-radius: 12px;
-	animation: shadow-transition-reverse 0.5s;
-	animation-fill-mode: forwards;
+	/* animation: shadow-transition-reverse 0.5s;
+	animation-fill-mode: forwards; */
 	/* box-shadow:  6px 6px 12px var(--shadow-up),
 				 -6px -6px 12px var(--shadow-down); */
 }
 .blog:hover
 {
-	animation: shadow-transition 0.5s;
-	animation-fill-mode: forwards;
+	/* animation: shadow-transition 0.5s;
+	animation-fill-mode: forwards; */
 	/* box-shadow:  -6px -6px 12px var(--shadow-up),
 	6px 6px 12px var(--shadow-down); */
 	cursor: pointer;
@@ -95,13 +100,13 @@ body
 {
 	width: 80vw;
 	height: auto;
-	animation: shadow-transition-reverse-mobile 0.5s;
-	animation-fill-mode: forwards;
+	/* animation: shadow-transition-reverse-mobile 0.5s;
+	animation-fill-mode: forwards; */
 }
 .blog:hover
 {
-	animation: shadow-transition-mobile 0.5s;
-	animation-fill-mode: forwards;
+	/* animation: shadow-transition-mobile 0.5s;
+	animation-fill-mode: forwards; */
 }
 }
 

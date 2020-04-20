@@ -84,7 +84,7 @@ body
 @media screen and (max-width:780px){
 
 .grid-container
-4
+{
 	padding: 2vh 2vw;
 	grid-gap: 2vh 5vw;
 	grid-template-columns: 80vw;

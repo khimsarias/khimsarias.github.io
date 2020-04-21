@@ -80,7 +80,6 @@ function themeLoader()
 			container.removeAttribute("class", "flip");
         }
         catch{}
-        // animation_loader();
     }
     if (localStorage.getItem("mode") == "dark")
     {
@@ -91,7 +90,6 @@ function themeLoader()
         }
         catch{}
     }
-    // animation_loader();
 }
 
 function checkEnterClick(e){
@@ -135,21 +133,6 @@ function checkEnterClick(e){
 
 // All Display Functions for GIFs
 
-function animation_loader()
-{
-    for (let i = 0; i < document.getElementsByClassName("blog").length; i++)
-    {
-        document.getElementsByClassName("blog")[i].classList.add("run-animation");
-        
-    }
-    for (let i = 0; i < document.getElementsByClassName("blog").length; i++)
-    {
-        document.getElementsByClassName("blog")[i].classList.add("run-animation");
-        
-    }
-}
-
-
 function btn_clicked(){
     
     msg = document.getElementById('cmd_id').value;
@@ -169,10 +152,8 @@ function btn_clicked(){
         
         document.getElementById("wand").setAttribute("style", "filter:invert(1)");
         try{container.setAttribute("class","flip");}catch{}
-
-        // document.getElementById('cmd_id').value = '';
     }
-   else if (msg == "lumos")
+    else if (msg == "lumos")
     {
         document.documentElement.classList.add('transition');
         window.setTimeout(() => {
@@ -181,25 +162,21 @@ function btn_clicked(){
         document.documentElement.setAttribute('data-theme', 'light');
         localStorage.setItem("mode", document.documentElement.getAttribute("data-theme"));
         document.getElementById("wand").setAttribute("style", "filter:invert(0)");
-        // document.getElementById('cmd_id').value = '';
             try{container.removeAttribute("class", "flip");}catch{}
     }    
 
     else if (msg == "avada kedavra")
     {
             displayImage(0);
-        // document.getElementById('cmd_id').value = '';
     }
 
     else if (msg == "morsmordre")
     {
-        // document.getElementById('cmd_id').value = '';
         displayImage(1);
     }
 
    else  if (msg == "reducio")
     {
-        // document.getElementById('cmd_id').value = '';
         if (document.body.style.zoom > 1.0)
         {
             document.body.style.zoom=1.0;this.blur();
@@ -212,7 +189,6 @@ function btn_clicked(){
 
     else if (msg == "engorgio")
     {
-        // document.getElementById('cmd_id').value = '';
         if (document.body.style.zoom < 1.0)
         {
         document.body.style.zoom=1.0;this.blur();

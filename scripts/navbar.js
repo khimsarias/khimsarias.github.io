@@ -92,13 +92,6 @@ function themeLoader()
         catch{}
     }
     // animation_loader();
-    if (screen.width < 1025)
-    {
-        for(let i = 0; i < document.getElementsByClassName("blog").length; i++)
-        {
-            document.getElementsByClassName("blog")[i].click();
-        }
-    }
 }
 
 function checkEnterClick(e){
@@ -176,13 +169,6 @@ function btn_clicked(){
         
         document.getElementById("wand").setAttribute("style", "filter:invert(1)");
         try{container.setAttribute("class","flip");}catch{}
-        if (screen.width < 1025)
-    {
-        for(let i = 0; i < document.getElementsByClassName("blog").length; i++)
-        {
-            document.getElementsByClassName("blog")[i].click();
-        }
-    }
 
         // document.getElementById('cmd_id').value = '';
     }
@@ -197,13 +183,6 @@ function btn_clicked(){
         document.getElementById("wand").setAttribute("style", "filter:invert(0)");
         // document.getElementById('cmd_id').value = '';
             try{container.removeAttribute("class", "flip");}catch{}
-            if (screen.width < 1025)
-    {
-        for(let i = 0; i < document.getElementsByClassName("blog").length; i++)
-        {
-            document.getElementsByClassName("blog")[i].click();
-        }
-    }
     }    
 
     else if (msg == "avada kedavra")

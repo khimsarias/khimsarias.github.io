@@ -59,15 +59,30 @@ a
 	border-radius: 12px;
 	animation: shadow-transition-reverse 0.5s;
 	animation-fill-mode: forwards;
-	 /* box-shadow:  6px 6px 12px var(--shadow-up),
-				 -6px -6px 12px var(--shadow-down); */
+	box-shadow:  6px 6px 12px var(--shadow-up),
+	 -6px -6px 12px var(--shadow-down);
+	-moz-box-shadow:  6px 6px 12px var(--shadow-up),
+	-6px -6px 12px var(--shadow-down);
+	-o-box-shadow:  6px 6px 12px var(--shadow-up),
+	-6px -6px 12px var(--shadow-down);
+	-webkit-box-shadow:  6px 6px 12px var(--shadow-up),
+	-6px -6px 12px var(--shadow-down);
+	-webkit-appearance: none;
+				
 }
 .blog:hover
 {
 	animation: shadow-transition 0.5s;
 	animation-fill-mode: forwards; 
-	 /* box-shadow:  -6px -6px 12px var(--shadow-up),
-	6px 6px 12px var(--shadow-down); */
+	box-shadow:  -6px -6px 12px var(--shadow-up),
+	6px 6px 12px var(--shadow-down);
+	-moz-box-shadow:  -6px -6px 12px var(--shadow-up),
+	6px 6px 12px var(--shadow-down);
+	-o-box-shadow:  -6px -6px 12px var(--shadow-up),
+	6px 6px 12px var(--shadow-down);
+	-webkit-box-shadow:  -6px -6px 12px var(--shadow-up),
+	6px 6px 12px var(--shadow-down);
+	-webkit-appearance: none;
 	/* cursor: pointer; */
 }
 
@@ -104,12 +119,12 @@ a
 {
 	width: 80vw;
 	height: auto;
-	animation: shadow-transition-reverse-mobile 0.5s;
+	animation: shadow-transition-reverse-mobile 0.3s;
 	animation-fill-mode: forwards;
 }
 .blog:hover
 {
-	animation: shadow-transition-mobile 0.5s;
+	animation: shadow-transition-mobile 0.3s;
 	animation-fill-mode: forwards;
 }
 }

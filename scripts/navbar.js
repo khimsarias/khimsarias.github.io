@@ -77,7 +77,7 @@ function themeLoader()
         document.getElementById("wand").setAttribute("style", "filter:invert(0)");
         try
         {
-        container.removeAttribute("class", "flip");
+			container.removeAttribute("class", "flip");
         }
         catch{}
         animation_loader();

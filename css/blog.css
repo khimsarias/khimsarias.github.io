@@ -121,11 +121,29 @@ a
 	height: auto;
 	animation: shadow-transition-reverse-mobile 0.3s;
 	animation-fill-mode: forwards;
+	box-shadow:  4px 4px 10px var(--shadow-up),
+		-4px -4px 10px var(--shadow-down);
+	-moz-box-shadow:  4px 4px 10px var(--shadow-up),
+	-4px -4px 10px var(--shadow-down);
+	-o-box-shadow:  4px 4px 10px var(--shadow-up),
+	-4px -4px 10px var(--shadow-down);
+	-webkit-box-shadow:  4px 4px 10px var(--shadow-up),
+	-4px -4px 10px var(--shadow-down);
+	-webkit-appearance: none;
 }
 .blog:hover
 {
 	animation: shadow-transition-mobile 0.3s;
 	animation-fill-mode: forwards;
+	box-shadow:  -4px -4px 10px var(--shadow-up),
+		4px 4px 10px var(--shadow-down);
+	-moz-box-shadow:  -4px -4px 10px var(--shadow-up),
+	4px 4px 10px var(--shadow-down);
+	-o-box-shadow:  -4px -4px 10px var(--shadow-up),
+	4px 4px 10px var(--shadow-down);
+	-webkit-box-shadow:  -4px -4px 10px var(--shadow-up),
+	4px 4px 10px var(--shadow-down);
+	-webkit-appearance: none;
 }
 }
 

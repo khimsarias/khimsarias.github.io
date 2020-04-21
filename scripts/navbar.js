@@ -80,7 +80,7 @@ function themeLoader()
         container.removeAttribute("class", "flip");
         }
         catch{}
-        animation_loader();
+        // animation_loader();
     }
     if (localStorage.getItem("mode") == "dark")
     {
@@ -91,7 +91,7 @@ function themeLoader()
         }
         catch{}
     }
-    animation_loader();
+    // animation_loader();
 }
 
 function checkEnterClick(e){

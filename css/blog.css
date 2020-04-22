@@ -147,7 +147,7 @@ a
 	padding: 2vh 2vw;
 	grid-gap: 2vh 5vw;
 	grid-template-columns: 80vw;
-	grid-template-rows: repeat(9, 20vh);
+	grid-template-rows: repeat(8, 30vh);
 	justify-content: center;	
 }
 .blog

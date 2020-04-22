@@ -138,7 +138,13 @@ a
 	margin: auto;
 }
 
-
+@media screen and (max-width:1024px){
+	.picture img
+	{
+		height: 120.5px;
+		width: 120.5px;
+	}
+}
 
 @media screen and (max-width:780px){
 
@@ -181,7 +187,7 @@ a
 	text-overflow: ellipsis;
 	overflow: hidden;
 	white-space: nowrap;
-	font-size: 1em;;
+	font-size: 1.2em;;
 }
 .blog_info
 {

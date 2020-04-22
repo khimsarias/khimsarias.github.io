@@ -181,7 +181,7 @@ a
 	text-overflow: ellipsis;
 	overflow: hidden;
 	white-space: nowrap;
-	font-size: 1.2em;;
+	font-size: 1em;;
 }
 .blog_info
 {
@@ -205,6 +205,18 @@ a
 }
 @media screen and (max-width:645px){
 
+.blog_info
+{
+	font-size: 0.6em;
+}
+.name
+{
+	font-size: 0.8em;
+}
+.date_time
+{
+	font-size: 0.4em;
+}
 .picture img
 {
 	width: 80px;

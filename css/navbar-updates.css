@@ -278,13 +278,6 @@ flex-wrap: wrap;
         .command
         {
             height: 3.5vh;
-            /* box-shadow:  4px 4px 12px var(--shadow-up),
-                        -4px -4px 12px var(--shadow-down); */
-        }
-        .command:focus
-        {
-            /* box-shadow: inset 6px 4px 12px var(--shadow-up),
-                        inset -6px -6px 12px var(--shadow-down); */
         }
 }
     .nav-active{

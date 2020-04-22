@@ -142,6 +142,16 @@ a
 	margin: auto;
 }
 
+@media screen and (max-width:1020px){
+	.blog_info
+	{
+		font-size: 1em;
+	}
+	.date_time
+	{
+		font-size: 0.8em;
+	}
+}
 
 
 @media screen and (max-width:1020px){

@@ -219,5 +219,9 @@ function btn_clicked(){
     {
         window.history.back();
     }
+    else if (msg == "cd home")
+    {
+        window.open('index.html','_self');
+    }
 };
 

@@ -141,8 +141,8 @@ a
 @media screen and (max-width:1020px){
 	.picture img
 	{
-		height: 120.5px;
-		width: 120.5px;
+		height: 130.5px;
+		width: 130.5px;
 	}
 }
 
@@ -153,7 +153,7 @@ a
 	padding: 2vh 2vw;
 	grid-gap: 2vh 5vw;
 	grid-template-columns: 80vw;
-	grid-template-rows: repeat(8, 30vh);
+	grid-template-rows: repeat(8, 26vh);
 	justify-content: center;	
 }
 .blog

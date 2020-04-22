@@ -27,11 +27,6 @@ a
 	text-decoration: none;
 	color: var(--text-color);
 }
-.run-animation
-{
-	animation: shadow-transition-reverse 0.5s;
-	animation-fill-mode: forwards;
-}
 
 .grid-container
 {
@@ -206,5 +201,13 @@ a
 {
 	height: 100.5px;
 	width: 100.5px;
+}
+}
+@media screen and (max-width:645px){
+
+.picture img
+{
+	width: 80px;
+	height: 80px;
 }
 }

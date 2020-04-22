@@ -100,6 +100,10 @@ a
 	margin: auto;
 	font-size: 1.2em;
 	justify-content: center;
+	display: -webkit-box;
+	-webkit-line-clamp: 3; /* number of lines to show */
+	-webkit-box-orient: vertical;
+	overflow: hidden;
 	/* background-color: blue; */
 }
 .date_time
@@ -138,11 +142,19 @@ a
 	margin: auto;
 }
 
+
+
 @media screen and (max-width:1020px){
 	.picture img
 	{
 		height: 130.5px;
 		width: 130.5px;
+	}
+	.blog_info
+	{
+		text-overflow: ellipsis;
+		/* overflow: hidden; */
+		/* white-space: nowrap; */
 	}
 }
 
@@ -213,15 +225,15 @@ a
 
 .blog_info
 {
-	font-size: 0.6em;
+	font-size: 1em;
 }
 .name
 {
-	font-size: 0.8em;
+	font-size: 1em;
 }
 .date_time
 {
-	font-size: 0.4em;
+	font-size: 0.6em;
 }
 .picture img
 {

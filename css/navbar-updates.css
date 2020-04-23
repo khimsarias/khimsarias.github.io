@@ -273,7 +273,8 @@ flex-wrap: wrap;
 
         .cmd_box
         {
-            margin: 4.5vh;
+            padding-top: 1.5vh;
+            /* margin: 4.5vh; */
         }
         .command
         {

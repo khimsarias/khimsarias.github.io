@@ -61,10 +61,6 @@ $(document).ready( function()
 	{
 		$( this ).attr( 'data-buzz' , $( this ).text() );
     } );
-    if(screen.width < 788)
-    {
-        alert("It Worked");
-    }
 } );
 
 
@@ -228,4 +224,3 @@ function btn_clicked(){
         window.open('index.html','_self');
     }
 };
-

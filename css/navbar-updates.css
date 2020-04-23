@@ -278,6 +278,7 @@ flex-wrap: wrap;
         .command
         {
             height: 3.5vh;
+            font-size: 18px;
         }
 }
     .nav-active{

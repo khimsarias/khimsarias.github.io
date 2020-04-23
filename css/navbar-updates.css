@@ -277,8 +277,8 @@ flex-wrap: wrap;
         }
         .command
         {
-            height: 4.5vh;
-            font-size: 18px;
+            height: 4vh;
+            font-size: 16px;
         }
 }
     .nav-active{

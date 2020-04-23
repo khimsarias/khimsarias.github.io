@@ -37,7 +37,7 @@ a
 	padding-bottom: 2vh;
 	grid-gap: 4vh 5vw;
 	grid-template-columns: 40vw 40vw;
-	grid-template-rows: repeat(5, 20vh);
+	grid-template-rows: repeat(5, 23vh);
 	align-content: center;
 	justify-content: center;
 	

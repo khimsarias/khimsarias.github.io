@@ -273,11 +273,11 @@ flex-wrap: wrap;
 
         .cmd_box
         {
-            margin: 2vh;
+            margin: 3.5vh;
         }
         .command
         {
-            height: 3.5vh;
+            height: 4.5vh;
             font-size: 18px;
         }
 }

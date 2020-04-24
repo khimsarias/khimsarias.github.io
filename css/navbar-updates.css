@@ -1,9 +1,3 @@
-@font-face
-{
-    font-family: icon;
-    src: url(../font/icons.otf);
-}
-
 html[data-theme="light"]
 {
 	/* Light Mode */
@@ -16,7 +10,6 @@ html[data-theme="light"]
 html[data-theme="dark"]
 {
 	/* Dark Mode */
-    /* --nav-bg-color: #000; */
     --nav-bg-color: #292929;
     --text-color: #ccc;
     --shadow-up:#1c1c1c;
@@ -40,7 +33,6 @@ html[data-theme="dark"]
     filter : blur(2px);
 }
 nav{
-/*	position: absolute;*/
 flex-wrap: wrap;
     overflow-y: hidden;
     margin: 0;
@@ -60,8 +52,6 @@ flex-wrap: wrap;
     margin: 0;
     padding-bottom: 2vh;
     width: 90vw;
-
-
 }
 
 .flip
@@ -72,7 +62,6 @@ flex-wrap: wrap;
 {
     text-align: center;
     border: 0;
-    /* border-color: #ff00ff; */
     background-color: transparent;
     margin: 0;
     color: var(--text-color);
@@ -107,7 +96,6 @@ flex-wrap: wrap;
 }
 .button
 {
-    
     width: 8vw;
     border: 0px solid var(--text-color);
     border-radius: 12px;
@@ -129,7 +117,6 @@ flex-wrap: wrap;
     filter: invert(0);
 }
 .logo{
-/*    color: purple;*/
     padding: 1vh;
     text-transform: uppercase;
     letter-spacing: 5px;
@@ -274,7 +261,6 @@ flex-wrap: wrap;
         .cmd_box
         {
             padding-top: 1.5vh;
-            /* margin: 4.5vh; */
         }
         .command
         {

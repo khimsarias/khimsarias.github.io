@@ -55,6 +55,7 @@ const navSlide= ()=> {
 }
 navSlide();
 
+
 $(document).ready( function()
 {
 	$( '.buzz' ).each( function()

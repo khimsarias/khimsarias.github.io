@@ -59,7 +59,7 @@ $(document).ready( function()
 {
 	$( '.buzz' ).each( function()
 	{
-		$( this ).attr( 'data-buzz' , $( this ).text() );
+        $( this ).attr( 'data-buzz' , $( this ).text() );
     } );
 } );
 
@@ -91,47 +91,67 @@ function themeLoader()
         catch{}
     }
 }
-
+$(document).keyup(function (e)
+{
+    if(e.keyCode == 13)
+    {
+        checkEnterClick(e);
+    }
+    if (e.shiftKey && e.keyCode === 67)
+    {
+        
+        document.getElementById("cmd_id").focus(); 
+    }
+    if (e.keyCode == 27)
+    {
+        document.getElementById("cmd_id").blur();
+    }
+})
 function checkEnterClick(e){
     if(e.keyCode == 13){
     document.getElementById('btn_id').click();
     document.getElementById('cmd_id').blur();
     }
+
+ }
+ function clear_content()
+ {
+    document.getElementById("cmd_id").value = "";
  }
 
- function sleep(ms) {
-    return new Promise(resolve => setTimeout(resolve, ms));
-  }
+//  function sleep(ms) {
+//     return new Promise(resolve => setTimeout(resolve, ms));
+//   }
   
   
- async function remove_Element()
- {
-    await sleep (7760);
-    var element = document.getElementsByClassName("rys")[0];
-    element.parentNode.removeChild(element);
-}
+//  async function remove_Element()
+//  {
+//     // await sleep (7760);
+//     var element = document.getElementsByClassName("rys")[0];
+//     element.parentNode.removeChild(element);
+// }
  
-// All Display Functions for GIFs
+// // Display Function for GIFs
  
 
- async function displayImage(i)
- {
-    document.getElementsByClassName("quitgif")[i].style.display = "block";  
-    switch (i) {
-    case 0 :
-                await sleep (3760);
-                break;
-    case 1 :
-        await sleep (1380);
-        break;
-    case 2 :
-        await sleep (16000);
-        break;
-}         
-    document.getElementsByClassName("quitgif")[i].style.display = "none"; 
- }
+//  async function displayImage(i)
+//  {
+//     document.getElementsByClassName("quitgif")[i].style.display = "block";  
+//     switch (i) {
+//     case 0 :
+//                 await sleep (3760);
+//                 break;
+//     case 1 :
+//         await sleep (1380);
+//         break;
+//     case 2 :
+//         await sleep (16000);
+//         break;
+// }         
+//     document.getElementsByClassName("quitgif")[i].style.display = "none"; 
+//  }
 
-// All Display Functions for GIFs
+// Display Function for GIFs
 
 function btn_clicked(){
     
@@ -165,44 +185,44 @@ function btn_clicked(){
             try{container.removeAttribute("class", "flip");}catch{}
     }    
 
-    else if (msg == "avada kedavra")
-    {
-            displayImage(0);
-    }
+//     else if (msg == "avada kedavra")
+//     {
+//             displayImage(0);
+//     }
 
-    else if (msg == "morsmordre")
-    {
-        displayImage(1);
-    }
+//     else if (msg == "morsmordre")
+//     {
+//         displayImage(1);
+//     }
 
-   else  if (msg == "reducio")
-    {
-        if (document.body.style.zoom > 1.0)
-        {
-            document.body.style.zoom=1.0;this.blur();
-        }
-        else
-        {
-            document.body.style.zoom=0.2;this.blur();
-        }
-    }
+//    else  if (msg == "reducio")
+//     {
+//         if (document.body.style.zoom > 1.0)
+//         {
+//             document.body.style.zoom=1.0;this.blur();
+//         }
+//         else
+//         {
+//             document.body.style.zoom=0.2;this.blur();
+//         }
+//     }
 
-    else if (msg == "engorgio")
-    {
-        if (document.body.style.zoom < 1.0)
-        {
-        document.body.style.zoom=1.0;this.blur();
-        }
-        else
-        {
-            document.body.style.zoom=1.5;this.blur();
-        }
+//     else if (msg == "engorgio")
+//     {
+//         if (document.body.style.zoom < 1.0)
+//         {
+//         document.body.style.zoom=1.0;this.blur();
+//         }
+//         else
+//         {
+//             document.body.style.zoom=1.5;this.blur();
+//         }
 
-    }
-    else if (msg == "reveal your secrets")
-    {
-        displayImage(2);
-    }
+//     }
+//     else if (msg == "reveal your secrets")
+//     {
+//         displayImage(2);
+//     }
     else if (msg == "help")
     {
         window.open('commands.txt','_blank');

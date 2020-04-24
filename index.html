@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/navbar-updates.css">
     <link href="https://fonts.googleapis.com/css?family=Anonymous+Pro&display=swap" rel="stylesheet">
-	<link rel="icon" href="favicon.ico" type="image/x-icon" >
+    <link rel="icon" href="favicon.ico" type="image/x-icon" >
+    <script src="scripts/jquery-3.5.0.min.js"></script>
 <title>Saumya Khimsaria</title>
 
 </head>
@@ -35,7 +36,7 @@
             <div class="line3"></div>
         </div>
         <div class="cmd_box">
-            <input type="text" value="" class="command" name="command" placeholder="Harry Potter Spells / Linux Commands / Help" id="cmd_id" onkeypress="checkEnterClick(event)">
+            <input type="text" value="" class="command" name="command" placeholder="Harry Potter Spells / Linux Commands / Help" id="cmd_id" onkeypress="checkEnterClick(event)" onfocus="clear_content()">
         </div>
         <div class="execute">
             <button class="button" onclick="btn_clicked();" id="btn_id" ><img id="wand" src="images/wand.png" alt=""></button>
@@ -50,6 +51,7 @@
 	<span>This website is my pensieve.</span>
     </div>
     <script type="text/javascript" src="scripts/3jsbeads.js"> </script>
+
     <!--  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ EVERY PAGE MUST HAVE THE BELOW CODE ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ -->
 </body>
 </html>

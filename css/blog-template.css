@@ -93,12 +93,27 @@ nav
 .article
 {
     display: flex;
+    flex-direction: column;
     width: 100vw;
-    height: 100vh;
-    background-color: peru;
-    scroll-snap-align: center;
+    height: auto;
+    padding: 0 30vh 5vh 30vh;
+    background-color:var(--bg-color);
+    scroll-snap-align: start;
 }
 
+.article p
+{
+    padding: 3vh 0;
+    font-size: 27px;
+}
+
+.stop_scroll
+{
+    width: 100vw;
+    /* height: 2vh; */
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+}
 /* ------------------------ */
 @media screen and (max-width:1444px){
 
@@ -121,6 +136,23 @@ nav
 
 }
 
+@media screen and (max-width: 1337px)
+{
+    .article
+{
+    padding: 0 6vh 2vh 6vh;
+}
+.article p
+{
+    font-size: 26px;
+    line-height: 1.3em;
+}
+.article img
+{
+    max-height: 45vh;
+    max-width: auto;
+}
+}
 /* --------------------------- */
 
 @media screen and (max-width:768px){
@@ -146,6 +178,20 @@ nav
 .author
 {
     font-size: 13px;
+}
+.article
+{
+    padding: 0 6vh 2vh 6vh;
+}
+.article p
+{
+    font-size: 18px;
+    line-height: 1.3em;
+}
+.article img
+{
+    max-height: 45vh;
+    max-width: auto;
 }
 }
 @media screen and (max-width:375px){

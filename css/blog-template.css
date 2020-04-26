@@ -95,7 +95,7 @@ nav
     display: flex;
     width: 100vw;
     height: 100vh;
-    background-color: turquoise;
+    background-color: peru;
     scroll-snap-align: center;
 }
 

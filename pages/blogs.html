@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../css/navbar-updates.css">
     <link href="https://fonts.googleapis.com/css?family=Anonymous+Pro&display=swap" rel="stylesheet">
     <link rel="icon" href="../favicon.ico" type="image/x-icon" >
+    <script src="../scripts/blog.js"></script>
     <script src="../scripts/jquery-3.5.0.min.js"></script>
     <script src="../scripts/jquery.suggest.js"></script>
 <title>Blogs</title>
@@ -43,19 +44,17 @@
             <button class="button" onclick="btn_clicked();" id="btn_id" ><img id="wand" src="../images/wand.png" alt=""></button>
         </div>
     </nav>
-    <div class="quitgif" style="display: none"><img src="../images/0.gif"></div>
-    <div class="quitgif" style="display: none"><img src="../images/1.gif"></div>
-    <div class="quitgif" style="display: none"><img src="../images/2.jpg"></div>
     <script src="../scripts/navbar.js"></script>
     <!--  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ EVERY PAGE MUST HAVE THE ABOVE CODE ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ -->
     <div class="title"><span>BLOGS</span></div>
-    <div class="grid-container">
-        <div class="blog" id = "item-1">
+        <div class="grid-container">
+        <div class="blog" id = "item-1" onclick="blogLoader(1);">
             <div class="name">Questions that plague the human mind.</div>
             <div class="picture"><img src="../images/blog-1.jpg" alt=""></div>
             <div class="blog_info">Curious minds tend to find answers to the questions that no one asked.</div>
             <div class="date_time"><span>Friday, March 27, 2020</span></div>
-        </div> 
+        
+        </div>
         <div class="blog" id = "item-2">
             <div class="name">Stuff I wish I knew earlier in life.</div>
             <div class="picture"><img src="../images/blog-2.jpg" alt=""></div>

@@ -22,10 +22,13 @@ body
 	width: 100%;
 	overflow-x: hidden;
 }
+/* ^^^^^^^^^^^^^^^^^ MUST BE IN ALL CSS FILES ^^^^^^^^^^^^^^^^^^^^^^ */
 a
 {
 	text-decoration: none;
 	color: var(--text-color);
+	height: 23vh;
+	width: 40vw;
 }
 
 .grid-container
@@ -45,10 +48,6 @@ a
 .blog
 {
 	display: grid;
-	/* grid-template-columns: 40% 40%; */
-	/* grid-template-rows: 10% 50% 20% 20%; */
-	/* grid-template-rows: 100% 50% 50% 100%;
-	grid-template-columns: 10% 40% 40%; */
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: 1fr 3fr 1fr;
 	grid-gap: 2% 1%; 
@@ -57,7 +56,7 @@ a
 	width: 40vw;
 	height: auto;
 	color: var(--text-color);
-	/* background: var(--bg-color); */
+	cursor: pointer;
 	flex-direction: row;
 	border-radius: 12px;
 	box-shadow:  6px 6px 12px var(--shadow-up),

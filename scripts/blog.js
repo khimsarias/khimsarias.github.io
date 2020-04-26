@@ -1,5 +1,7 @@
-window.onload = function()
+function blogLoader(x)
 {
-	if (screen.width < 2000)
-		window.location.reload(true);
+	switch (x)
+	{
+		case 1: window.open('blog-template.html','_self');
+	}
 }

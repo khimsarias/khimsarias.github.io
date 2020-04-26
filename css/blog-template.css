@@ -37,7 +37,7 @@ nav
     flex-direction: column;
     width: 100vw;
     height: 92vh;
-    background-image: url(../images/trial-1.jpg);
+    background-image: url(../images/blog-1.jpg);
     background-repeat:  no-repeat;
     background-size: cover;
     /* scroll-snap-align: start; */
@@ -132,7 +132,7 @@ nav
 .big-title
 {
     height: 50vh;
-    font-size: 48px;
+    font-size: 44px;
 }
 .info
 {

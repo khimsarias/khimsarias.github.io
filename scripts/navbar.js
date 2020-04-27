@@ -120,40 +120,6 @@ function checkEnterClick(e){
     document.getElementById("cmd_id").value = "";
  }
 
-//  function sleep(ms) {
-//     return new Promise(resolve => setTimeout(resolve, ms));
-//   }
-  
-  
-//  async function remove_Element()
-//  {
-//     // await sleep (7760);
-//     var element = document.getElementsByClassName("rys")[0];
-//     element.parentNode.removeChild(element);
-// }
- 
-// // Display Function for GIFs
- 
-
-//  async function displayImage(i)
-//  {
-//     document.getElementsByClassName("quitgif")[i].style.display = "block";  
-//     switch (i) {
-//     case 0 :
-//                 await sleep (3760);
-//                 break;
-//     case 1 :
-//         await sleep (1380);
-//         break;
-//     case 2 :
-//         await sleep (16000);
-//         break;
-// }         
-//     document.getElementsByClassName("quitgif")[i].style.display = "none"; 
-//  }
-
-// Display Function for GIFs
-
 function btn_clicked(){
     
     msg = document.getElementById('cmd_id').value;
@@ -185,45 +151,6 @@ function btn_clicked(){
         document.getElementById("wand").setAttribute("style", "filter:invert(0)");
             try{container.removeAttribute("class", "flip");}catch{}
     }    
-
-//     else if (msg == "avada kedavra")
-//     {
-//             displayImage(0);
-//     }
-
-//     else if (msg == "morsmordre")
-//     {
-//         displayImage(1);
-//     }
-
-//    else  if (msg == "reducio")
-//     {
-//         if (document.body.style.zoom > 1.0)
-//         {
-//             document.body.style.zoom=1.0;this.blur();
-//         }
-//         else
-//         {
-//             document.body.style.zoom=0.2;this.blur();
-//         }
-//     }
-
-//     else if (msg == "engorgio")
-//     {
-//         if (document.body.style.zoom < 1.0)
-//         {
-//         document.body.style.zoom=1.0;this.blur();
-//         }
-//         else
-//         {
-//             document.body.style.zoom=1.5;this.blur();
-//         }
-
-//     }
-//     else if (msg == "reveal your secrets")
-//     {
-//         displayImage(2);
-//     }
     else if (msg == "help")
     {
         window.open('commands.txt','_blank');
@@ -253,9 +180,5 @@ function btn_clicked(){
     else if (msg == "cat 1")
     {
         blogLoader(1);
-    }
-    else if (msg == "sort(date)")
-    {
-        dateSort();
     }
 };

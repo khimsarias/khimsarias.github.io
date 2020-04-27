@@ -1,0 +1,211 @@
+html
+{
+	/* Light Mode */
+	--bg-color: white;
+	--text-color: black;
+	--shadow-up:#8a8888;
+    --shadow-down:#ffffff;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+}
+
+html[data-theme="dark"]
+{
+	/* Dark Mode */
+	--bg-color: #292929;
+	--text-color: #ccc;
+	--shadow-up:#1c1c1c;
+	--shadow-down:#363636;
+}
+
+body
+{
+    background-color: var(--bg-color);
+    color: var(--text-color);
+	width: 100%;
+    overflow-x: hidden;
+}
+/* ^^^^^^^^^^^^^^^^^ MUST BE IN ALL CSS FILES ^^^^^^^^^^^^^^^^^^^^^^ */
+nav
+{
+    scroll-snap-align: start;
+}
+.main-title
+{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 92vh;
+    background-image: url(../images/blog-2.jpg);
+    background-repeat:  no-repeat;
+    background-size: cover;
+    /* scroll-snap-align: start; */
+}
+.all-info
+{
+    display: flex;
+    flex-direction: column;
+    width: 70vw;
+    height: 92vh;
+    background-image: linear-gradient(to right, var(--bg-color),transparent);
+}
+
+.big-title
+{
+    font-family: 'Notable', sans-serif;
+    width: 50vw;
+    font-size: 95px;
+}
+.info
+{
+    font-family: 'Notable', sans-serif;
+    width: 70vw;
+    font-size: 60px;
+}
+.date
+{
+    font-size: 25px;
+}
+.author
+{
+    font-size: 25px;
+}
+.scroll_down
+{
+    position: relative;
+    margin: auto;
+    text-transform: uppercase;
+    width: 100vw;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-self: flex-start;
+}
+.scroll_down a
+{
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+
+.article
+{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: auto;
+    padding: 0 30vh 5vh 30vh;
+    background-color:var(--bg-color);
+    scroll-snap-align: start;
+}
+
+.article p
+{
+    padding: 3vh 0;
+    font-size: 27px;
+}
+
+.stop_scroll
+{
+    width: 100vw;
+    /* height: 2vh; */
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+}
+/* ------------------------ */
+@media screen and (max-width:1444px){
+
+.big-title
+{
+    font-size: 75px;
+}
+.info
+{
+    font-size: 50px;
+}
+.date
+{
+    font-size: 35px;
+}
+.author
+{
+    font-size: 35px;
+}
+
+}
+
+@media screen and (max-width: 1337px)
+{
+    .article
+{
+    padding: 0 6vh 2vh 6vh;
+}
+.article p
+{
+    font-size: 26px;
+    line-height: 1.3em;
+}
+.article img
+{
+    max-height: 45vh;
+    max-width: auto;
+}
+}
+/* --------------------------- */
+
+@media screen and (max-width:768px){
+.all-info
+{
+    height: 88vh;
+}
+
+.big-title
+{
+    height: 50vh;
+    font-size: 44px;
+}
+.info
+{
+    width: 90vw;
+    font-size: 20px;
+}
+.date
+{
+    font-size: 13px;
+}
+.author
+{
+    font-size: 13px;
+}
+.article
+{
+    padding: 0 6vh 2vh 6vh;
+}
+.article p
+{
+    font-size: 18px;
+    line-height: 1.3em;
+}
+.article img
+{
+    max-height: 45vh;
+    max-width: auto;
+}
+}
+@media screen and (max-width:375px){
+    .big-title
+    {
+        font-size: 38px;
+    }
+}
+
+@media screen and (max-width:320px){
+    .big-title
+    {
+        font-size: 37px;
+    }
+}
+
+@media screen and (max-width:645px){}

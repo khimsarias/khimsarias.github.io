@@ -15,7 +15,7 @@
 <title>Blogs</title>
 
 </head>
-<body onload="themeLoader(), blogSort()">
+<body onload="themeLoader(), numbering_blogs()">
     <nav>
         <div class="logo"><h4><a data-content="Saumya Khimsaria" class="text-link" href="../index.html">Saumya Khimsaria</a></h4></div>
         <ul class="nav-links">
@@ -47,15 +47,15 @@
     <script src="../scripts/navbar.js"></script>
     <!--  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ EVERY PAGE MUST HAVE THE ABOVE CODE ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ -->
     <div class="title"><span>BLOGS</span></div>
-        <div class="grid-container">
-        <div class="blog" id = "20200301" onclick="blogLoader(1);">
+        <div class="grid-container" id="start_div">
+        <div class="blog" id = "20200301" onclick="blogLoader(1)">
             <div class="name"><snap class="number"></snap>Questions that plague the human mind.</div>
             <div class="picture"><img src="../images/blog-1.jpg" alt=""></div>
             <div class="blog_info">Curious minds tend to find answers to the questions that no one asked.</div>
             <div class="date_time"><span>Friday, March 1, 2020</span></div>
         
         </div>
-        <div class="blog" id = "20200202">
+        <div class="blog" id = "20200202" onclick="blogLoader(2);">
             <div class="name"><snap class="number"></snap>Stuff I wish I knew earlier in life.</div>
             <div class="picture"><img src="../images/blog-2.jpg" alt=""></div>
             <div class="blog_info">Life would have been so much easier had I known a few things sooner.</div>

@@ -234,7 +234,10 @@ function btn_clicked(){
     }
     else if (msg == "cd /" || msg == "cd ~" || msg == "cd")
     {
+        if(document.title == "Saumya Khimsaria")
         window.open('index.html','_self');
+        else
+        window.open('../index.html','_self');
     }
     else if (msg == "cd -" || msg == "cd ..")
     {
@@ -243,5 +246,9 @@ function btn_clicked(){
     else if (msg == "cd home")
     {
         window.open('index.html','_self');
+    }
+    else if (msg == "cat 1")
+    {
+        blogLoader(1);
     }
 };

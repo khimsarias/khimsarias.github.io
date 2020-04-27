@@ -37,7 +37,7 @@ nav
     flex-direction: column;
     width: 100vw;
     height: 92vh;
-    background-image: url(../images/blog-1.jpg);
+    background-image: url(../images/blog-3.jpg);
     background-repeat:  no-repeat;
     background-size: cover;
     /* scroll-snap-align: start; */
@@ -210,6 +210,7 @@ nav
 }
 
 @media screen and (max-width:645px){}
+
 @keyframes bounce
 {
     0%{

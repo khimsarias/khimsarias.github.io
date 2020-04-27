@@ -181,4 +181,8 @@ function btn_clicked(){
     {
         blogLoader(1);
     }
+    else if (msg == "cat 2")
+    {
+        blogLoader(2);
+    }
 };

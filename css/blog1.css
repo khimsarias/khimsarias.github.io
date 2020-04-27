@@ -81,7 +81,9 @@ nav
     margin: auto;
     justify-content: center;
     align-self: flex-start;
+    animation: bounce 1.5s infinite;
 }
+
 .scroll_down a
 {
     background-color: var(--bg-color);
@@ -209,3 +211,19 @@ nav
 }
 
 @media screen and (max-width:645px){}
+
+
+@keyframes bounce
+{
+    0%{
+        transform: translateY(0);
+    }
+    50%
+    {
+        transform: translateY(-15px);
+    }
+    100%
+    {
+        transform: translateY(0px);
+    }
+}

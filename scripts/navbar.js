@@ -245,10 +245,17 @@ function btn_clicked(){
     }
     else if (msg == "cd home")
     {
+        if(document.title == "Saumya Khimsaria")
         window.open('index.html','_self');
+        else
+        window.open('../index.html','_self');
     }
     else if (msg == "cat 1")
     {
         blogLoader(1);
+    }
+    else if (msg == "sort(date)")
+    {
+        dateSort();
     }
 };

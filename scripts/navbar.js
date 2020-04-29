@@ -185,4 +185,32 @@ function btn_clicked(){
     {
         blogLoader(2);
     }
+    else if (msg == "cat 3")
+    {
+        blogLoader(3);
+    }
+    else if (msg == "cat 4")
+    {
+        blogLoader(4);
+    }
+    else if (msg == "cat 5")
+    {
+        blogLoader(5);
+    }
+    else if (msg == "cat 6")
+    {
+        blogLoader(6);
+    }
+    else if (msg == "cat 7")
+    {
+        blogLoader(7);
+    }
+    else if (msg == "cat 8")
+    {
+        blogLoader(8);
+    }
+    else if (msg=="instagram")
+    {
+        window.open('https://www.instagram.com/thesaumyakhimsaria/','_blank');
+    }
 };

@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="A list of all the blogs on the website">
+	<meta name="author" content="Saumya Khimsaria">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/aboutme.css">
+    <link rel="stylesheet" href="../css/navbar-updates.css">
+    <link href="https://fonts.googleapis.com/css?family=Anonymous+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Notable&display=swap" rel="stylesheet">
+    <link rel="icon" href="../favicon.ico" type="image/x-icon" >
+    <script src="../scripts/jquery-3.5.0.min.js"></script>
+    <script src="../scripts/jquery.suggest.js"></script>
+<title>About Me</title>
+
+</head>
+<body onload="themeLoader()">
+    <nav>
+        <div class="logo"><h4><a data-content="Saumya Khimsaria" class="text-link" href="../index.html">Saumya Khimsaria</a></h4></div>
+        <ul class="nav-links">
+            <li>
+                <a data-content="Home" class="text-link" href="../index.html">Home</a>
+            </li>
+            <li>
+                <a data-content="About Me" class="text-link" href="#">About Me</a>
+            </li>
+            <li>
+                <a data-content="Blogs" class="text-link" href="blogs.html">Blogs</a>
+            </li>
+            <li>
+                <a data-content="Projects" class="text-link" href="#">Projects</a>
+            </li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+        <div class="cmd_box">
+            <input type="text" value="" class="command" name="command" placeholder="Harry Potter Spells / Linux Commands / Help" id="cmd_id" onkeypress="checkEnterClick(event)" onfocus="clear_content()">
+        </div>
+        <div class="execute">
+            <button class="button" onclick="btn_clicked();" id="btn_id" ><img id="wand" src="../images/wand.png" alt=""></button>
+        </div>
+    </nav>
+    <script src="../scripts/navbar.js"></script>
+    <!--  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ EVERY PAGE MUST HAVE THE ABOVE CODE ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ -->
+    <div class="mainpage">
+        <img src="../images/profile.png">
+        <br>
+        <p class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates natus nihil ex voluptatibus consequatur magnam perferendis, inventore totam possimus enim voluptate fugiat suscipit sunt quos quod deserunt rem earum facilis quaerat veritatis aspernatur esse dolorem architecto. Illum, et corrupti. Excepturi?Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim natus asperiores voluptatem corrupti tempora illum? Laudantium quisquam error ipsam, sit sapiente ut temporibus! Tempora aperiam eos sint odit necessitatibus ad asperiores incidunt! Dolores nam fugiat molestias vero eaque doloribus inventore sequi. Nihil, esse aspernatur reiciendis mollitia id consectetur hic recusandae.</p>
+        <br>
+        <button>Résumé</button>
+        <br>
+        <ul>
+            <li>mail</li>
+            <li>insta</li>
+            <li>linkedin</li>
+            <li>github</li>
+        </ul>
+        <br>
+        <div class="scroll_down"><a href="#"> &#9660; Scroll down for more details&#9660;</a></div>
+</div>

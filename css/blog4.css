@@ -100,6 +100,7 @@ nav
     padding: 0 30vh 5vh 30vh;
     background-color:var(--bg-color);
     scroll-snap-align: start;
+    z-index: 9999;
 }
 
 .article p

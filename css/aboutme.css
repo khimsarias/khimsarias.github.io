@@ -26,6 +26,25 @@ body
     overflow-x: hidden;
 }
 
+.title
+{
+	display: flex;
+	padding: 2% 0%;
+	margin: auto;
+	width: 100%;
+	justify-self: center;
+	align-self: center;
+	text-justify: center;
+}
+
+.title span
+{
+	color: var(--text-color);
+	font-size: 12vh;
+	text-align: center;
+	margin: auto;
+}
+
 .mainpage
 {
     display: flex;
@@ -48,7 +67,8 @@ body
 .mainpage button
 {
     border-radius: 18px;
-    width: 10%;
+    width: 30%;
+    text-align: center;
     border: 0;
     margin: auto;
 }
@@ -56,8 +76,19 @@ body
 .mainpage ul
 {
     display: flex;
-    justify-content: space-around;
+    /* justify-content: space-around;? */
     list-style: none;
+    margin: auto;
+}
+.mainpage ul li
+{
+    padding: 0 2vw;
+}
+
+.mainpage ul li a
+{
+    text-decoration: none;
+    color: var(--text-color);
 }
 
 .scroll_down

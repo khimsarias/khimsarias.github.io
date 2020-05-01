@@ -175,52 +175,64 @@ function btn_clicked(){
     {
         window.history.back();
     }
-    else if (msg == "cd home")
+    else if (msg == "cd home" || msg == "accio home")
     {
         if(document.title == "Saumya Khimsaria")
         window.open('index.html','_self');
         else
         window.open('../index.html','_self');
     }
-    else if (msg == "cat 1")
+    else if (msg == "cat 1" || msg == "accio 1")
     {
         blogLoader(1);
     }
-    else if (msg == "cat 2")
+    else if (msg == "cat 2" || msg == "accio 2")
     {
         blogLoader(2);
     }
-    else if (msg == "cat 3")
+    else if (msg == "cat 3" || msg == "accio 3")
     {
         blogLoader(3);
     }
-    else if (msg == "cat 4")
+    else if (msg == "cat 4" || msg == "accio 4")
     {
         blogLoader(4);
     }
-    else if (msg == "cat 5")
+    else if (msg == "cat 5" || msg == "accio 5")
     {
         blogLoader(5);
     }
-    else if (msg == "cat 6")
+    else if (msg == "cat 6"  || msg == "accio 6")
     {
         blogLoader(6);
     }
-    else if (msg == "cat 7")
+    else if (msg == "cat 7" || msg == "accio 7")
     {
         blogLoader(7);
     }
-    else if (msg == "cat 8")
+    else if (msg == "cat 8" || msg == "accio 8")
     {
         blogLoader(8);
     }
-    else if (msg=="instagram")
+    else if (msg=="instagram" || msg == "accio instagram")
     {
-        window.open('https://www.instagram.com/thesaumyakhimsaria/','_blank');
+        socialfunction('instagram')
     }
-    else if (msg=="mail" || msg=="email" || msg=="e-mail")
+    else if (msg=="mail" || msg=="email" || msg=="e-mail" || msg=="accio mail" || msg=="accio email" || msg=="accio e-mail")
     {
-        mailfunction();
+        socialfunction('mail');
+    }
+    else if (msg=="twitter" || msg == "accio twitter")
+    {
+        socialfunction('twitter')
+    }
+    else if (msg=="linkedin" || msg == "accio linkedin")
+    {
+        socialfunction('linkedin')
+    }
+    else if (msg=="github" || msg == "accio github")
+    {
+        socialfunction('github')
     }
 };
 

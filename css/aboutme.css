@@ -161,6 +161,11 @@ nav
 {
     width: 50%;
 }
+.mainpage img
+{
+    
+    height: auto;
+}
 }
 
 @keyframes bounce

@@ -75,7 +75,6 @@ function themeLoader()
     if(localStorage.getItem("mode") == "light")
     {
         document.documentElement.setAttribute('data-theme', 'light');
-        document.getElementById("wand").setAttribute("style", "filter:invert(0)");
         try
         {
 			container.removeAttribute("class", "flip");
@@ -138,6 +137,7 @@ function btn_clicked(){
         localStorage.setItem("mode", document.documentElement.getAttribute("data-theme"));
         
         document.getElementById("wand").setAttribute("style", "filter:invert(1)");
+        document.getElementsByClassName("social")[0].setAttribute("style", "filter:invert(1)");
         try{container.setAttribute("class","flip");}catch{}
     }
     else if (msg == "lumos")
@@ -149,6 +149,7 @@ function btn_clicked(){
         document.documentElement.setAttribute('data-theme', 'light');
         localStorage.setItem("mode", document.documentElement.getAttribute("data-theme"));
         document.getElementById("wand").setAttribute("style", "filter:invert(0)");
+        document.getElementsByClassName("social")[0].setAttribute("style", "filter:invert(0)");
             try{container.removeAttribute("class", "flip");}catch{}
     }    
     else if (msg == "help")

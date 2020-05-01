@@ -6,7 +6,7 @@ html
 	--shadow-up:#8a8888;
     --shadow-down:#ffffff;
     scroll-behavior: smooth;
-    scroll-snap-type: y mandatory;
+    /* scroll-snap-type: y mandatory; */
 }
 
 html[data-theme="dark"]

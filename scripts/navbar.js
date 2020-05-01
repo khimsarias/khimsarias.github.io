@@ -213,4 +213,13 @@ function btn_clicked(){
     {
         window.open('https://www.instagram.com/thesaumyakhimsaria/','_blank');
     }
+    else if (msg=="mail" || msg=="email" || msg=="e-mail")
+    {
+        mailfunction();
+    }
 };
+
+function scrollto(x)
+{
+	document.getElementById(x).scrollIntoView(true);
+}

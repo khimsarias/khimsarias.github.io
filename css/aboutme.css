@@ -94,12 +94,10 @@ nav
     padding: 0 2vw;
 }
 
-.mainpage ul li a
+.mainpage ul li span
 {
-    text-decoration: none;
-    color: var(--text-color);
+    cursor: pointer;
 }
-
 .scroll_down
 {
     position: relative;
@@ -124,7 +122,7 @@ nav
 .experience
 {
     display: flex;
-    background-color: red;
+    /* background-color: red; */
     width: 100vw;
     height: 100vh;
     scroll-snap-align: start;
@@ -132,8 +130,8 @@ nav
 
 .education
 {
+    /* background-color: purple; */
     display: flex;
-    background-color: purple;
     width: 100vw;
     height: 100vh;
     scroll-snap-align: start;
@@ -142,7 +140,7 @@ nav
 .skills
 {
     display: flex;
-    background-color: turquoise;
+    /* background-color: turquoise; */
     width: 100vw;
     height: 100vh;
     scroll-snap-align: start;

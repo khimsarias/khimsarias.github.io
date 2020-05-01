@@ -25,8 +25,3 @@ function numbering_blogs()
 		document.getElementsByClassName("number")[i].innerHTML = i+1 + '. ';
 	}
 }	
-
-function scrollto(x)
-{
-	document.getElementById(x).scrollIntoView(true);
-}

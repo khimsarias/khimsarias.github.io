@@ -12,6 +12,7 @@
     <link rel="icon" href="../favicon.ico" type="image/x-icon" >
     <script src="../scripts/jquery-3.5.0.min.js"></script>
     <script src="../scripts/jquery.suggest.js"></script>
+    <script src="../scripts/aboutme.js"></script>
 <title>About Me</title>
 
 </head>
@@ -55,16 +56,24 @@
         <button>Résumé</button>
         <br>
         <ul>
-            <li><a href="#">mail</a></li>
-            <li><a href="#">insta</a></li>
-            <li><a href="#">linkedin</a></li>
-            <li><a href="#">github</a></li>
+            <li><span onclick="mailfunction()">mail</span></li>
+            <div class="modal" id="modal"></div>
+            <li><span>insta</span></li>
+            <li><span>linkedin</span></li>
+            <li><span>github</span></li>
+            <li><span>twitter</span></li>
         </ul>
         <br><br>
-        <div class="scroll_down"><span onclick="scrollto('anchor');">&#9660; Scroll down for more details &#9660;</span></div>
+        <div class="scroll_down"><span onclick="scrollto('experience');">&#9660; Scroll down for more details &#9660;</span></div>
 </div>
-<div class="experience"></div>
-<div class="education"></div>
-<div class="skills"></div>
+<div class="experience" id="experience">
+    <div class="title"><span>Work Experience</span></div>
+</div>
+<div class="education">
+    <div class="title"><span>Education</span></div>
+</div>
+<div class="skills">
+    <div class="title"><span>Skills</span></div>
+</div>
 </body>
 </html>

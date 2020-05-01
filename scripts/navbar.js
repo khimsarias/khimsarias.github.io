@@ -85,6 +85,7 @@ function themeLoader()
     {
         document.documentElement.setAttribute('data-theme', 'dark');
         document.getElementById("wand").setAttribute("style", "filter:invert(1)");
+        document.getElementsByClassName("social")[0].setAttribute("style", "filter:invert(1)");
         try{
         container.setAttribute("class","flip");
         }

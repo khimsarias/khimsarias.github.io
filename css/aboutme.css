@@ -26,6 +26,11 @@ body
     overflow-x: hidden;
 }
 
+nav
+{
+    scroll-snap-align: start;
+}
+
 .title
 {
 	display: flex;
@@ -49,6 +54,8 @@ body
 {
     display: flex;
     flex-direction: column;
+    width: 100vw;
+    height: 92vh;
 }
 .mainpage img
 {
@@ -108,10 +115,52 @@ body
 
 .scroll_down span
 {
-    background-color: var(--bg-color);
-    color: var(--text-color);
+    background-color: var(--text-color);
+    color: var(--bg-color);
     text-decoration: none;
     cursor: pointer;
+}
+
+.experience
+{
+    display: flex;
+    background-color: red;
+    width: 100vw;
+    height: 100vh;
+    scroll-snap-align: start;
+}
+
+.education
+{
+    display: flex;
+    background-color: purple;
+    width: 100vw;
+    height: 100vh;
+    scroll-snap-align: start;
+}
+
+.skills
+{
+    display: flex;
+    background-color: turquoise;
+    width: 100vw;
+    height: 100vh;
+    scroll-snap-align: start;
+}
+
+@media screen and (max-width:780px){
+.title span
+{
+    font-size: 60px;
+}
+.mainpage p
+{
+    width: 80%;
+}
+.mainpage button
+{
+    width: 50%;
+}
 }
 
 @keyframes bounce

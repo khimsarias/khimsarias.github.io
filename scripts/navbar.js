@@ -159,6 +159,10 @@ function btn_clicked(){
     {
         window.open('pages/blogs.html','_self');
     }
+    else if (msg == "cd about" || msg == "cd about me" || msg=="cd aboutme")
+    {
+        window.open('pages/aboutme.html','_self');
+    }
     else if (msg == "cd /" || msg == "cd ~" || msg == "cd")
     {
         if(document.title == "Saumya Khimsaria")

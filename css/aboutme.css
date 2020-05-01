@@ -71,6 +71,8 @@ body
     text-align: center;
     border: 0;
     margin: auto;
+    background-color: var(--text-color);
+    color: var(--bg-color);
 }
 
 .mainpage ul
@@ -104,11 +106,12 @@ body
     animation: bounce 1.5s infinite;
 }
 
-.scroll_down a
+.scroll_down span
 {
     background-color: var(--bg-color);
     color: var(--text-color);
     text-decoration: none;
+    cursor: pointer;
 }
 
 @keyframes bounce

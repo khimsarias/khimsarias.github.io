@@ -26,3 +26,7 @@ function numbering_blogs()
 	}
 }	
 
+function scrollto(x)
+{
+	document.getElementById(x).scrollIntoView(true);
+}

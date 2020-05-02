@@ -80,6 +80,7 @@ function themeLoader()
 			container.removeAttribute("class", "flip");
         }
         catch{}
+        document.getElementsByClassName("social")[0].setAttribute("style", "filter:invert(0)");
     }
     if (localStorage.getItem("mode") == "dark")
     {
@@ -138,8 +139,8 @@ function btn_clicked(){
         localStorage.setItem("mode", document.documentElement.getAttribute("data-theme"));
         
         document.getElementById("wand").setAttribute("style", "filter:invert(1)");
-        document.getElementsByClassName("social")[0].setAttribute("style", "filter:invert(1)");
         try{container.setAttribute("class","flip");}catch{}
+        document.getElementsByClassName("social")[0].setAttribute("style", "filter:invert(1)");
     }
     else if (msg == "lumos")
     {
@@ -150,18 +151,18 @@ function btn_clicked(){
         document.documentElement.setAttribute('data-theme', 'light');
         localStorage.setItem("mode", document.documentElement.getAttribute("data-theme"));
         document.getElementById("wand").setAttribute("style", "filter:invert(0)");
-        document.getElementsByClassName("social")[0].setAttribute("style", "filter:invert(0)");
             try{container.removeAttribute("class", "flip");}catch{}
+            document.getElementsByClassName("social")[0].setAttribute("style", "filter:invert(0)");
     }    
     else if (msg == "help")
     {
         window.open('commands.txt','_blank');
     }
-    else if (msg == "cd blogs" || msg == "cd blog")
+    else if (msg == "cd blogs" || msg == "cd blog" || msg == "accio blogs" || msg == "accio blog")
     {
         window.open('pages/blogs.html','_self');
     }
-    else if (msg == "cd about" || msg == "cd about me" || msg=="cd aboutme")
+    else if (msg == "cd about" || msg == "cd about me" || msg=="cd aboutme" || msg == "accio about" || msg == "accio about me" || msg=="accio aboutme")
     {
         window.open('pages/aboutme.html','_self');
     }

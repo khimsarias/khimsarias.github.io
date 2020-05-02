@@ -130,6 +130,10 @@ nav
     width: 100vw;
     height: 100vh;
     scroll-snap-align: start;
+    background: #00b09b;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #96c93d, #00b09b);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #96c93d, #00b09b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 .education
@@ -138,6 +142,11 @@ nav
     width: 100vw;
     height: 100vh;
     scroll-snap-align: start;
+    background: #06beb6;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #48b1bf, #06beb6);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #48b1bf, #06beb6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+
 }
 
 .skills
@@ -146,6 +155,10 @@ nav
     width: 100vw;
     height: 100vh;
     scroll-snap-align: start;
+    background: #0cebeb;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #29ffc6, #20e3b2, #0cebeb);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #29ffc6, #20e3b2, #0cebeb); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 @media screen and (max-width:780px){

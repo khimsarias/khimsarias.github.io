@@ -77,10 +77,15 @@ function themeLoader()
         document.documentElement.setAttribute('data-theme', 'light');
         try
         {
-			container.removeAttribute("class", "flip");
+            container.removeAttribute("class", "flip");
         }
         catch{}
+        for (let i=0; i < document.getElementsByClassName("audiocontrol").length;i++)
+        {
+            document.getElementsByClassName("audiocontrol")[i].setAttribute("style","filter:invert(0)");
+        }
         document.getElementsByClassName("social")[0].setAttribute("style", "filter:invert(0)");
+
     }
     if (localStorage.getItem("mode") == "dark")
     {
@@ -90,7 +95,14 @@ function themeLoader()
         container.setAttribute("class","flip");
         }
         catch{}
+        for (let i=0; i < document.getElementsByClassName("audiocontrol").length;i++)
+        {
+            document.getElementsByClassName("audiocontrol")[i].setAttribute("style","filter:invert(1)");
+        }
         document.getElementsByClassName("social")[0].setAttribute("style", "filter:invert(1)");
+
+        
+
     }
 }
 $(document).keyup(function (e)
@@ -139,8 +151,15 @@ function btn_clicked(){
         localStorage.setItem("mode", document.documentElement.getAttribute("data-theme"));
         
         document.getElementById("wand").setAttribute("style", "filter:invert(1)");
-        try{container.setAttribute("class","flip");}catch{}
-        document.getElementsByClassName("social")[0].setAttribute("style", "filter:invert(1)");
+        try{
+            container.setAttribute("class","flip");
+            }
+            catch{}
+            for (let i=0; i < document.getElementsByClassName("audiocontrol").length;i++)
+            {
+                document.getElementsByClassName("audiocontrol")[i].setAttribute("style","filter:invert(1)");
+            }
+            document.getElementsByClassName("social")[0].setAttribute("style", "filter:invert(1)");
     }
     else if (msg == "lumos")
     {
@@ -151,8 +170,16 @@ function btn_clicked(){
         document.documentElement.setAttribute('data-theme', 'light');
         localStorage.setItem("mode", document.documentElement.getAttribute("data-theme"));
         document.getElementById("wand").setAttribute("style", "filter:invert(0)");
-            try{container.removeAttribute("class", "flip");}catch{}
-            document.getElementsByClassName("social")[0].setAttribute("style", "filter:invert(0)");
+        try
+        {
+            container.removeAttribute("class", "flip");
+        }
+        catch{}
+        for (let i=0; i < document.getElementsByClassName("audiocontrol").length;i++)
+        {
+            document.getElementsByClassName("audiocontrol")[i].setAttribute("style","filter:invert(0)");
+        }
+        document.getElementsByClassName("social")[0].setAttribute("style", "filter:invert(0)");
     }    
     else if (msg == "help")
     {

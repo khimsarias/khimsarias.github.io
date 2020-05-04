@@ -124,7 +124,8 @@ nav
     width: 70vw;
     display: flex;
     flex-direction: column;
-    margin: 15px 0;
+    margin: auto;
+    
 }
 
 .audiobox audio
@@ -144,12 +145,14 @@ nav
     max-width: 30vw;
     max-height: auto;
     margin: auto;
+    
 }
 
 .audiobox span
 {
     opacity: 0.6;
     margin: auto;
+    text-align: center;
 }
 
 /* ------------------------ */
@@ -189,6 +192,14 @@ nav
 {
     max-height: 45vh;
     max-width: auto;
+}
+.audiobox img
+{
+    max-width: 70vw;
+}
+.audiobox audio
+{
+    width: 70vw;
 }
 }
 /* --------------------------- */
@@ -230,6 +241,14 @@ nav
 {
     max-height: 45vh;
     max-width: auto;
+}
+.audiobox audio
+{
+    width: 80vw;
+}
+.audiobox img
+{
+    max-width: 80vw;
 }
 }
 @media screen and (max-width:375px){

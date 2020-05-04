@@ -1,7 +1,3 @@
-function mailfunction()
-{
-
-}
 function socialfunction(x)
 {
     switch (x)

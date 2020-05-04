@@ -48,7 +48,7 @@ nav
     flex-direction: column;
     width: 70vw;
     height: 92vh;
-    background-image: linear-gradient(to right, var(--bg-color),transparent);
+    background-image: linear-gradient(to right, var(--bg-color),var(--bg-color),transparent);
 }
 
 .big-title
@@ -60,7 +60,7 @@ nav
 .info
 {
     font-family: 'Notable', sans-serif;
-    width: 80vw;
+    width: 60vw;
     font-size: 60px;
 }
 .date
@@ -117,6 +117,41 @@ nav
     scroll-snap-align: start;
     scroll-snap-stop: always;
 }
+
+
+.audiobox
+{
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0;
+}
+
+.audiobox audio
+{
+    width: 30vw;
+    margin: auto;
+    background-color: #f1f3f4;
+}
+
+.audiobox audio:focus
+{
+    outline: none;
+}
+.audiobox img
+{
+    /* border-radius: 18px; */
+    max-width: 30vw;
+    max-height: auto;
+    margin: auto;
+}
+
+.audiobox span
+{
+    opacity: 0.6;
+    margin: auto;
+}
+
 /* ------------------------ */
 @media screen and (max-width:1444px){
 

@@ -48,7 +48,7 @@ nav
     flex-direction: column;
     width: 70vw;
     height: 92vh;
-    background-image: linear-gradient(to right, var(--bg-color),transparent);
+    background-image: linear-gradient(to right, var(--bg-color),var(--bg-color),transparent);
 }
 
 .big-title
@@ -56,20 +56,25 @@ nav
     font-family: 'Notable', sans-serif;
     width: 50vw;
     font-size: 95px;
+	background-image: linear-gradient(to right,var(--bg-color,transparent));
 }
 .info
 {
     font-family: 'Notable', sans-serif;
     width: 70vw;
     font-size: 60px;
+	background-image: linear-gradient(to right,var(--bg-color,transparent));
 }
 .date
 {
     font-size: 25px;
+	background-image: linear-gradient(to right,var(--bg-color,transparent));
 }
 .author
 {
     font-size: 25px;
+	background-image: linear-gradient(to right,var(--bg-color,transparent));
+	background-image: linear-gradient(to right,var(--bg-color,transparent));
 }
 .scroll_down
 {

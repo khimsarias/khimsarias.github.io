@@ -183,15 +183,24 @@ function btn_clicked(){
     }    
     else if (msg == "help")
     {
+        if(document.title == "Saumya Khimsaria")
         window.open('commands.txt','_blank');
+        else
+        window.open('../commands.txt','_blank');
     }
     else if (msg == "cd blogs" || msg == "cd blog" || msg == "accio blogs" || msg == "accio blog")
     {
+        if(document.title == "Saumya Khimsaria")
         window.open('pages/blogs.html','_self');
+        else
+        window.open('blogs.html','_self')
     }
     else if (msg == "cd about" || msg == "cd about me" || msg=="cd aboutme" || msg == "accio about" || msg == "accio about me" || msg=="accio aboutme")
     {
+        if(document.title == "Saumya Khimsaria")
         window.open('pages/aboutme.html','_self');
+        else
+        window.open('aboutme.html','_self');
     }
     else if (msg == "cd /" || msg == "cd ~" || msg == "cd")
     {

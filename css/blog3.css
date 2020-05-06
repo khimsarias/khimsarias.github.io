@@ -56,24 +56,28 @@ nav
     font-family: 'Notable', sans-serif;
     width: 60vw;
     font-size: 95px;
-	background-image: linear-gradient(to right,var(--bg-color,transparent));
+    text-shadow: var(--bg-color) 2px 2px , var(--bg-color) -2px -2px, var(--bg-color) 2px -2px, var(--bg-color) -2px 2px;
+	/* background-image: linear-gradient(to right,var(--bg-color,transparent)); */
 }
 .info
 {
     font-family: 'Notable', sans-serif;
     width: 70vw;
     font-size: 60px;
-	background-image: linear-gradient(to right,var(--bg-color,transparent));
+    text-shadow: var(--bg-color) 2px 2px , var(--bg-color) -2px -2px, var(--bg-color) 2px -2px, var(--bg-color) -2px 2px;
+	/* background-image: linear-gradient(to right,var(--bg-color,transparent)); */
 }
 .date
 {
     font-size: 25px;
-	background-image: linear-gradient(to right,var(--bg-color,transparent));
+    text-shadow: var(--bg-color) 2px 2px , var(--bg-color) -2px -2px, var(--bg-color) 2px -2px, var(--bg-color) -2px 2px;
+	/* background-image: linear-gradient(to right,var(--bg-color,transparent)); */
 }
 .author
 {
     font-size: 25px;
-	background-image: linear-gradient(to right,var(--bg-color,transparent));
+    text-shadow: var(--bg-color) 2px 2px , var(--bg-color) -2px -2px, var(--bg-color) 2px -2px, var(--bg-color) -2px 2px;
+	/* background-image: linear-gradient(to right,var(--bg-color,transparent)); */
 }
 .scroll_down
 {

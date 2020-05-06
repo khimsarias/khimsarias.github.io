@@ -84,7 +84,7 @@ function themeLoader()
         {
             document.getElementsByClassName("audiocontrol")[i].setAttribute("style","filter:invert(0)");
         }
-        document.getElementsByClassName("social")[0].setAttribute("style", "filter:invert(0)");
+        try{document.getElementsByClassName("social")[0].setAttribute("style", "filter:invert(0)");}catch{}
 
     }
     if (localStorage.getItem("mode") == "dark")
@@ -99,7 +99,7 @@ function themeLoader()
         {
             document.getElementsByClassName("audiocontrol")[i].setAttribute("style","filter:invert(1)");
         }
-        document.getElementsByClassName("social")[0].setAttribute("style", "filter:invert(1)");
+       try{ document.getElementsByClassName("social")[0].setAttribute("style", "filter:invert(1)");}catch{}
 
         
 
@@ -159,7 +159,7 @@ function btn_clicked(){
             {
                 document.getElementsByClassName("audiocontrol")[i].setAttribute("style","filter:invert(1)");
             }
-            document.getElementsByClassName("social")[0].setAttribute("style", "filter:invert(1)");
+            try{document.getElementsByClassName("social")[0].setAttribute("style", "filter:invert(1)");}catch{}
     }
     else if (msg == "lumos")
     {
@@ -179,7 +179,7 @@ function btn_clicked(){
         {
             document.getElementsByClassName("audiocontrol")[i].setAttribute("style","filter:invert(0)");
         }
-        document.getElementsByClassName("social")[0].setAttribute("style", "filter:invert(0)");
+        try{document.getElementsByClassName("social")[0].setAttribute("style", "filter:invert(0)");}catch{}
     }    
     else if (msg == "help")
     {

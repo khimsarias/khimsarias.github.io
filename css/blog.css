@@ -21,9 +21,10 @@ body
 	background-color: var(--bg-color);
 	width: 100%;
 	overflow-x: hidden;
+	z-index: -1;
 }
-/* ^^^^^^^^^^^^^^^^^ MUST BE IN ALL CSS FILES ^^^^^^^^^^^^^^^^^^^^^^ */
 
+/* ^^^^^^^^^^^^^^^^^ MUST BE IN ALL CSS FILES ^^^^^^^^^^^^^^^^^^^^^^ */
 a
 {
 	text-decoration: none;
@@ -125,6 +126,7 @@ a
 
 .title
 {
+	z-index: -99;
 	display: flex;
 	padding: 5% 0%;
 	margin: auto;

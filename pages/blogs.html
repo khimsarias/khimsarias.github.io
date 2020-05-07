@@ -15,7 +15,7 @@
 <title>Blogs</title>
 
 </head>
-<body onload="themeLoader(), numbering_blogs()">
+<body onload="themeLoader(), numbering_blogs(), blogsearch()">
     <nav>
         <div class="logo"><h4><a data-content="Saumya Khimsaria" class="text-link" href="../index.html">Saumya Khimsaria</a></h4></div>
         <ul class="nav-links">
@@ -38,8 +38,10 @@
             <div class="line3"></div>
         </div>
         <div class="cmd_box">
-            <input type="text" value="" class="command" name="command" placeholder="Harry Potter Spells / Linux Commands / Help" id="cmd_id" onkeypress="checkEnterClick(event)" onfocus="clear_content()">
+            <input data-list="Ada, Java, JavaScript, Brainfuck, LOLCODE, Node.js, Ruby on Rails" type="text" value="" class="  awesomplete command" name="command" placeholder="Harry Potter Spells / Linux Commands / Help" id="cmd_id" onkeypress="checkEnterClick(event)" onfocus="clear_content()">
         </div>
+        <link rel="stylesheet" href="../css/awesomplete.css">
+        <script src="../scripts/awesomplete.js" async></script>
         <div class="execute">
             <button class="button" onclick="btn_clicked();" id="btn_id" ><img id="wand" src="../images/wand.png" alt=""></button>
         </div>

@@ -69,12 +69,14 @@ nav
 }
 .date
 {
+    font-family: 'Notable', sans-serif;
     font-size: 25px;
     text-shadow: var(--bg-color) 2px 2px , var(--bg-color) -2px -2px, var(--bg-color) 2px -2px, var(--bg-color) -2px 2px;
 	/* background-image: linear-gradient(to right,var(--bg-color,transparent)); */
 }
 .author
 {
+    font-family: 'Notable', sans-serif;
     font-size: 25px;
     text-shadow: var(--bg-color) 2px 2px , var(--bg-color) -2px -2px, var(--bg-color) 2px -2px, var(--bg-color) -2px 2px;
 	/* background-image: linear-gradient(to right,var(--bg-color,transparent)); */

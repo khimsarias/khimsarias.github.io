@@ -11,7 +11,6 @@
     <link rel="icon" href="../favicon.ico" type="image/x-icon" >
     <script src="../scripts/blog.js"></script>
     <script src="../scripts/jquery-3.5.0.min.js"></script>
-    <script src="../scripts/jquery.suggest.js"></script>
 <title>Blogs</title>
 
 </head>
@@ -38,10 +37,8 @@
             <div class="line3"></div>
         </div>
         <div class="cmd_box">
-            <input data-list="Ada, Java, JavaScript, Brainfuck, LOLCODE, Node.js, Ruby on Rails" type="text" value="" class="  awesomplete command" name="command" placeholder="Harry Potter Spells / Linux Commands / Help" id="cmd_id" onkeypress="checkEnterClick(event)" onfocus="clear_content()">
+            <input type="text" value="" class="command" name="command" placeholder="Harry Potter Spells / Linux Commands / Help" id="cmd_id" onkeypress="checkEnterClick(event)" onfocus="clear_content()">
         </div>
-        <link rel="stylesheet" href="../css/awesomplete.css">
-        <script src="../scripts/awesomplete.js" async></script>
         <div class="execute">
             <button class="button" onclick="btn_clicked();" id="btn_id" ><img id="wand" src="../images/wand.png" alt=""></button>
         </div>

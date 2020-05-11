@@ -113,7 +113,6 @@ nav
     padding: 0 30vh 5vh 30vh;
     background-color:var(--bg-color);
     scroll-snap-align: start;
-    z-index: 9999;
 }
 
 .article p
@@ -122,6 +121,64 @@ nav
     font-size: 27px;
 }
 
+.comment-box
+{
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    width: 71vw;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 2vh 0;
+    border-radius: 12px;
+    box-shadow:  6px 6px 12px var(--shadow-up),
+    -6px -6px 12px var(--shadow-down);
+   -moz-box-shadow:  6px 6px 12px var(--shadow-up),
+   -6px -6px 12px var(--shadow-down);
+   -o-box-shadow:  6px 6px 12px var(--shadow-up),
+   -6px -6px 12px var(--shadow-down);
+   -webkit-box-shadow:  6px 6px 12px var(--shadow-up),
+   -6px -6px 12px var(--shadow-down);
+   -webkit-appearance: none;
+}
+
+.comment-box span
+{
+    font-size: 25px;
+    margin: 0 4vw;
+}
+.comment
+{
+    padding: 0;
+    font-size: 25px;
+    height: 12vh;
+    margin: 2vh 4vw;
+    padding: 8px 8px 0 8px;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    border-width: 2px;
+    resize: none;
+    outline: 0;
+}
+.buttons
+{
+    width: inherit;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    justify-content: space-around;
+}
+.comment-box button
+{
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    border-radius: 12px;
+    height: 4vh;
+    width: 10vw;
+    outline: 0;
+    cursor: pointer;
+}
+ 
 .stop_scroll
 {
     width: 100vw;

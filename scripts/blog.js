@@ -49,3 +49,14 @@ function numbering_blogs()
 		document.getElementsByClassName("number")[i].innerHTML = i+1 + '. ';
 	}
 }	
+
+function comment_submit()
+{
+	alert("Feature coming soon");
+}
+
+function comment_cancel()
+{
+	document.getElementsByClassName("comment")[0].value = "";
+
+}

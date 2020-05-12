@@ -55,6 +55,7 @@ nav
 {
     font-family: 'Notable', sans-serif;
     width: 50vw;
+    height: auto;
     font-size: 95px;
     /* background-image: linear-gradient(to right,var(--bg-color,transparent)); */
     text-shadow: var(--bg-color) 2px 2px , var(--bg-color) -2px -2px, var(--bg-color) 2px -2px, var(--bg-color) -2px 2px;
@@ -224,6 +225,22 @@ nav
     max-height: 45vh;
     max-width: auto;
 }
+.comment-box
+{
+    width: 85vw;
+}
+.comment-box span
+{
+    font-size: 22px;
+}
+.comment
+{
+    font-size: 22px;
+}
+.comment-box button
+{
+    font-size: 22px;
+}
 }
 /* --------------------------- */
 
@@ -235,7 +252,7 @@ nav
 
 .big-title
 {
-    height: 70vh;
+    /* height: 70vh; */
     font-size: 44px;
 }
 .info
@@ -267,13 +284,38 @@ nav
 }
 .comment-box
 {
-    font-size: 16px;
+    width: 85vw;
+}
+.comment-box span
+{
+    font-size: 19px;
+}
+.comment
+{
+    font-size: 19px;
+}
+.comment-box button
+{
+    font-size: 19px;
 }
 }
 @media screen and (max-width:375px){
     .big-title
     {
         font-size: 38px;
+    }
+    .comment-box span
+    {
+        font-size: 16px;
+    }
+    .comment
+    {
+        font-size: 16px;
+    }
+    .comment-box button
+    {
+        width: 15vw;
+        font-size: 16px;
     }
 }
 

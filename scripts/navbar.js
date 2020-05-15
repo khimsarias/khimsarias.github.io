@@ -275,6 +275,7 @@ function btn_clicked(){
     else
     {
         document.getElementById("invalid").play();
+        document.getElementById("cmd_id").value = ` `;
         setTimeout(() => {
             document.getElementById("cmd_id").value = `Are`;
         }, 50);
@@ -333,6 +334,7 @@ function btn_clicked(){
 
         setTimeout(() => {
             document.getElementById("cmd_id").value = ``;
+            document.getElementById("invalid").stop();
         }, 5000);
     }
 };

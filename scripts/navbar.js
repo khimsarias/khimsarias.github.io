@@ -278,7 +278,7 @@ function btn_clicked(){
         document.getElementById("cmd_id").value = ` `;
         setTimeout(() => {
             document.getElementById("cmd_id").value = `Are`;
-        }, 50);
+        }, 100);
 
         setTimeout(() => {
             document.getElementById("cmd_id").value = `Are you`;

@@ -272,6 +272,69 @@ function btn_clicked(){
     {
         socialfunction('github')
     }
+    else
+    {
+        document.getElementById("invalid").play();
+        setTimeout(() => {
+            document.getElementById("cmd_id").value = `Are`;
+        }, 50);
+
+        setTimeout(() => {
+            document.getElementById("cmd_id").value = `Are you`;
+        }, 250);
+
+        setTimeout(() => {
+            document.getElementById("cmd_id").value = `Are you sure`;
+        }, 450);
+
+        setTimeout(() => {
+            document.getElementById("cmd_id").value = `Are you sure thats`;
+        }, 600);
+
+        setTimeout(() => {
+            document.getElementById("cmd_id").value = `Are you sure thats a`;
+        }, 800);
+
+        setTimeout(() => {
+            document.getElementById("cmd_id").value = `Are you sure thats a real`;
+        }, 960);
+
+        setTimeout(() => {
+            document.getElementById("cmd_id").value = `Are you sure thats a real spell?`;
+        }, 1300);
+
+        setTimeout(() => {
+            document.getElementById("cmd_id").value = `Are you sure thats a real spell? Well,`;
+        }, 3200);
+
+        setTimeout(() => {
+            document.getElementById("cmd_id").value = `Are you sure thats a real spell? Well, it's`;
+        }, 3400);
+
+        setTimeout(() => {
+            document.getElementById("cmd_id").value = `Are you sure thats a real spell? Well, it's not`;
+        }, 3600);
+
+        setTimeout(() => {
+            document.getElementById("cmd_id").value = `Are you sure thats a real spell? Well, it's not very`;
+        }, 3800);
+
+        setTimeout(() => {
+            document.getElementById("cmd_id").value = `Are you sure thats a real spell? Well, it's not very good,`;
+        }, 4000);
+
+        setTimeout(() => {
+            document.getElementById("cmd_id").value = `Are you sure thats a real spell? Well, it's not very good, is`;
+        }, 4250);
+
+        setTimeout(() => {
+            document.getElementById("cmd_id").value = `Are you sure thats a real spell? Well, it's not very good, is it?`;
+        }, 4500);
+
+        setTimeout(() => {
+            document.getElementById("cmd_id").value = ``;
+        }, 5000);
+    }
 };
 
 function scrollto(x)

@@ -10,11 +10,16 @@
     <link href="https://fonts.googleapis.com/css?family=Anonymous+Pro&display=swap" rel="stylesheet">
     <link rel="icon" href="favicon.ico" type="image/x-icon" >
     <script src="scripts/jquery-3.5.0.min.js"></script>
-    <script src="scripts/jquery.suggest.js"></script>
+    <audio id="invalid" src="audio/invalid.m4a" ></audio>
 <title>Saumya Khimsaria</title>
 
 </head>
 <body onload="themeLoader()">
+    <script>
+        window.onload = function() {
+        document.getElementById("title").play();
+    }
+    </script>
     <nav>
         <div class="logo"><h4><a data-content="Saumya Khimsaria" class="text-link" href="index.html">Saumya Khimsaria</a></h4></div>
         <ul class="nav-links">

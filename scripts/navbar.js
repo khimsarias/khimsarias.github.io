@@ -334,7 +334,7 @@ function btn_clicked(){
 
         setTimeout(() => {
             document.getElementById("cmd_id").value = ``;
-            document.getElementById("invalid").stop();
+            document.getElementById("invalid").pause();
         }, 5000);
     }
 };
@@ -342,4 +342,37 @@ function btn_clicked(){
 function scrollto(x)
 {
 	document.getElementById(x).scrollIntoView(true);
+}
+
+function socialfunction(x)
+{
+    switch (x)
+    {   
+        case "mail" : 
+        {
+            navigator.clipboard.writeText('saumya27khimsaria@gmail.com');
+            alert('Email Copied');
+            break;
+        }
+        case "instagram" :
+        {
+            window.open('https://www.instagram.com/thesaumyakhimsaria/','_blank');
+            break;
+        }
+        case "linkedin" :
+        {
+            alert("link is coming soon");
+            break;
+        }
+        case "github" :
+        {
+            window.open('https://github.com/khimsarias','_blank')
+            break;
+        }
+        case "twitter" :
+        {
+            alert("link is coming soon")
+            break;
+        }
+    }
 }

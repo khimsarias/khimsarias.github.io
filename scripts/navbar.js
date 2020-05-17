@@ -335,7 +335,7 @@ function btn_clicked(){
         setTimeout(() => {
             document.getElementById("cmd_id").value = ``;
             // document.getElementById("invalid").pause();
-        }, 5000);
+        }, 6100);
     }
 };
 

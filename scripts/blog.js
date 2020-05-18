@@ -25,6 +25,7 @@ function info_generator()
 {
 	for(let i = 0; i < document.getElementsByClassName("blog").length; i++)
 	{
+		document.getElementsByClassName("blog")[i].classList.add("fade_anim");
 		blogs_names[i+1] = document.getElementsByClassName("name")[i].innerText.toString();
 		blogs_picture[i+1] = "url(" + document.getElementsByTagName("IMG")[i+1].src.toString() + ")";
 		blogs_infos[i+1] = document.getElementsByClassName("blog_info")[i].innerText.toString();
@@ -38,7 +39,9 @@ function info_generator()
 
 function featured_blog()
 {
+	console.log("Feature Called");
 	let article = document.getElementsByClassName('featured_article')[0];
+	article.classList.add("fade_anim");
 	let random = Math.floor((Math.random() * document.getElementsByClassName("blog").length) + 1);
 
 	article.getElementsByTagName("SPAN")[1].innerHTML = blogs_names[random];
@@ -48,6 +51,10 @@ function featured_blog()
 	article.addEventListener('click', function (){
 		blogLoader(random);
 	});
+	setTimeout(() => {
+		article.classList.remove("fade_anim");
+	}, 2000);
+	// article.classList.remove("fade_anim");
 }
 
 

@@ -67,6 +67,7 @@ $(document).ready( function()
 
 function themeLoader()
 {
+    document.body.classList.add("fade_anim");
 	if (localStorage.getItem("mode") == null)
 	{
 		localStorage.setItem("mode","light");
@@ -174,7 +175,15 @@ function btn_clicked(){
             document.getElementsByClassName("audiocontrol")[i].setAttribute("style","filter:invert(0)");
         }
         try{document.getElementsByClassName("social")[0].setAttribute("style", "filter:invert(0)");}catch{}
-    }    
+    }
+    else if (msg == "rtd")    
+    {
+        try
+        {
+            featured_blog();
+        }
+        catch{}
+    }
     else if (msg == "help")
     {
         if(document.title == "Saumya Khimsaria")

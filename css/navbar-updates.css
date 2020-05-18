@@ -32,6 +32,11 @@ html[data-theme="dark"]
     -ms-filter: blur(2px);
     filter : blur(2px);
 }
+.fade_anim
+{
+	animation: test 1.5s;
+	/* animation-fill-mode: forwards; */
+}
 nav{
 flex-wrap: wrap;
     overflow-y: hidden;
@@ -221,6 +226,7 @@ flex-wrap: wrap;
         animation: test 0.5s;
         animation-fill-mode: forwards;
     }
+
 @keyframes test
 {
    from

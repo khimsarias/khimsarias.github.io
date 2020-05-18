@@ -39,6 +39,7 @@ a
 	display: grid;
 	width: 100vw;
 	height: auto;
+	padding-top: 2vh;
 	padding-bottom: 2vh;
 	grid-gap: 4vh 5vw;
 	grid-template-columns: 40vw 40vw;
@@ -128,7 +129,7 @@ a
 {
 	z-index: -99;
 	display: flex;
-	padding: 5% 0%;
+	padding: 1% 0%;
 	margin: auto;
 	width: 100%;
 	justify-self: center;
@@ -142,6 +143,17 @@ a
 	font-size: 12vh;
 	text-align: center;
 	margin: auto;
+}
+
+.featured_article
+{
+	cursor: pointer;
+	display: flex;
+	flex-direction: column;
+	margin: auto;
+	height: 50vh;
+	color: var(--text-color);
+	width: 85vw;
 }
 
 @media screen and (max-width:1020px){

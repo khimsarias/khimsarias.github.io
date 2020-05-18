@@ -15,7 +15,7 @@
 <title>Blogs</title>
 
 </head>
-<body onload="themeLoader(), numbering_blogs(), blogsearch()">
+<body onload="themeLoader(), info_generator(), numbering_blogs(), featured_blog()">
     <nav>
         <div class="logo"><h4><a data-content="Saumya Khimsaria" class="text-link" href="../index.html">Saumya Khimsaria</a></h4></div>
         <ul class="nav-links">
@@ -47,6 +47,12 @@
     <script src="../scripts/navbar.js"></script>
     <!--  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ EVERY PAGE MUST HAVE THE ABOVE CODE ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ -->
     <div class="title"><span>Blogs</span></div>
+    <div class="featured_article">
+        <div class="featured_heading"><span>FEATURED ARTICLE</span></div>
+        <span class="featured_name">NAME</span>
+        <span class="featured_info">INFO</span>
+        <span class="featured_date">DATE</span>
+    </div>
         <div class="grid-container" id="start_div">
         <div class="blog" onclick="blogLoader(1)">
             <div class="name"><snap class="number"></snap>Questions that plague the human mind.</div>

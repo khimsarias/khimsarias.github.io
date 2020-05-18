@@ -1,3 +1,7 @@
+let blogs_names = ["ignore"];
+let blogs_picture = ["ignore"];
+let blogs_infos = ["ignore"];
+let blogs_dates = ["ignore"];
 function blogLoader(x)
 {
 	switch (x)
@@ -17,30 +21,36 @@ function blogLoader(x)
 	}
 }
 
-function blogsearch()
+function info_generator()
 {
-	let blogtitles = [];
-	let bigstring = '';
-	for(let i = 0; i < document.getElementsByClassName("blog").length;i++)
+	for(let i = 0; i < document.getElementsByClassName("blog").length; i++)
 	{
-		blogtitles.push('cat ' + document.getElementsByClassName("name")[i].innerText.toLowerCase());
-		blogtitles.push('accio ' + document.getElementsByClassName("name")[i].innerText.toLowerCase());
-		blogtitles.push(document.getElementsByClassName("name")[i].innerText.toLowerCase());
+		blogs_names[i+1] = document.getElementsByClassName("name")[i].innerText.toString();
+		blogs_picture[i+1] = "url(" + document.getElementsByTagName("IMG")[i+1].src.toString() + ")";
+		blogs_infos[i+1] = document.getElementsByClassName("blog_info")[i].innerText.toString();
+		blogs_dates[i+1] = document.getElementsByClassName("date_time")[i].innerText.toString();
 	}
-	bigstring = blogtitles.toString();
-	document.getElementById("cmd_id").setAttribute("data-list",bigstring);
-	// console.log(document.getElementById("cmd_id").getAttribute("data-list"));
-	// console.log(bigstring)
-	document.getElementById("cmd_id").addEventListener('keyup', (e)=>{
-	const searchString = e.target.value;
-	// console.log(searchString);
-	const filteredCharacters = blogtitles.filter(blogtitles =>
-		{
-			return blogtitles.includes(searchString);
-		})
-	// console.log(filteredCharacters);
-});
+	console.log(blogs_names)
+	console.log(blogs_picture)
+	console.log(blogs_infos)
+	console.log(blogs_dates)
 }
+
+function featured_blog()
+{
+	let article = document.getElementsByClassName('featured_article')[0];
+	let random = Math.floor((Math.random() * document.getElementsByClassName("blog").length) + 1);
+
+	article.getElementsByTagName("SPAN")[1].innerHTML = blogs_names[random];
+	article.getElementsByTagName("SPAN")[2].innerHTML = blogs_infos[random];
+	article.getElementsByTagName("SPAN")[3].innerHTML = blogs_dates[random];
+	article.style.backgroundImage = blogs_picture[random];
+	article.addEventListener('click', function (){
+		blogLoader(random);
+	});
+}
+
+
 
 function numbering_blogs()
 {

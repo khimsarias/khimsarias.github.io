@@ -144,11 +144,7 @@ a
 	text-align: center;
 	margin: auto;
 }
-.fade_anim
-{
-	animation: test 1.5s;
-	/* animation-fill-mode: forwards; */
-}
+
 .featured_article
 {
 	cursor: pointer;

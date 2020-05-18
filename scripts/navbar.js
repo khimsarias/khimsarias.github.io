@@ -109,7 +109,8 @@ $(document).keyup(function (e)
 {
     if(e.keyCode == 13)
     {
-        checkEnterClick(e);
+        document.getElementById('btn_id').click();
+        document.getElementById('cmd_id').blur();
     }
     if (e.shiftKey && e.keyCode === 67)
     {
@@ -121,20 +122,14 @@ $(document).keyup(function (e)
         document.getElementById("cmd_id").blur();
     }
 })
-function checkEnterClick(e){
-    if(e.keyCode == 13){
-    document.getElementById('btn_id').click();
-    document.getElementById('cmd_id').blur();
-    }
 
- }
  function clear_content()
  {
     document.getElementById("cmd_id").value = "";
  }
 
 function btn_clicked(){
-    
+    console.log("button_clicked() was called")
     msg = document.getElementById('cmd_id').value;
     msg = msg.toLowerCase();
     msg = msg.trim();
@@ -142,24 +137,23 @@ function btn_clicked(){
     document.getElementById('cmd_id').value = '';
     if (msg == "nox")
     {
-
-        document.documentElement.classList.add('transition');
-    window.setTimeout(() => {
-        document.documentElement.classList.remove('transition')
-    }, 1000)
-        document.documentElement.setAttribute('data-theme', 'dark');
-        localStorage.setItem("mode", document.documentElement.getAttribute("data-theme"));
-        
-        document.getElementById("wand").setAttribute("style", "filter:invert(1)");
-        try{
-            container.setAttribute("class","flip");
-            }
-            catch{}
-            for (let i=0; i < document.getElementsByClassName("audiocontrol").length;i++)
-            {
-                document.getElementsByClassName("audiocontrol")[i].setAttribute("style","filter:invert(1)");
-            }
-            try{document.getElementsByClassName("social")[0].setAttribute("style", "filter:invert(1)");}catch{}
+            document.documentElement.classList.add('transition');
+            window.setTimeout(() => {
+            document.documentElement.classList.remove('transition')
+        }, 1000)
+            document.documentElement.setAttribute('data-theme', 'dark');
+            localStorage.setItem("mode", document.documentElement.getAttribute("data-theme"));
+            
+            document.getElementById("wand").setAttribute("style", "filter:invert(1)");
+            try{
+                container.setAttribute("class","flip");
+                }
+                catch{}
+                for (let i=0; i < document.getElementsByClassName("audiocontrol").length;i++)
+                {
+                    document.getElementsByClassName("audiocontrol")[i].setAttribute("style","filter:invert(1)");
+                }
+                try{document.getElementsByClassName("social")[0].setAttribute("style", "filter:invert(1)");}catch{}
     }
     else if (msg == "lumos")
     {
@@ -274,6 +268,8 @@ function btn_clicked(){
     }
     else
     {
+        if (msg !== ""){
+        console.log("incorrect commmand");
         document.getElementById("invalid").play();
         document.getElementById("cmd_id").value = ` `;
         setTimeout(() => {
@@ -336,6 +332,7 @@ function btn_clicked(){
             document.getElementById("cmd_id").value = ``;
             // document.getElementById("invalid").pause();
         }, 6100);
+        }
     }
 };
 

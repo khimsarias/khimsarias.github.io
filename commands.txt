@@ -9,9 +9,9 @@ All commands and spells :-
 'help' :- bring up help page
 'lumos' :- light mode
 'nox' :- dark mode
-'accio *' :- Replace * with name of a page or blog number
+'accio *' :- Replace * with name of a page or blog number (0/featured for featured blog)
 'cd *' :- Replace * with name of a page
-'cat *' :- Replace * with blog number
+'cat *' :- Replace * with blog number (0/featured for featured blog)
 'cd' or 'cd ~' or 'cd /' :- Go back to home page (Equivalent to pressing home on the navbar)
 'cd -' or 'cd ..' :- Go back one page (equivalent to pressing the back button in the browser)
 'instagram' , 'twitter', 'linkedin', 'mail', 'github' :- bring us corresponding social porfiles

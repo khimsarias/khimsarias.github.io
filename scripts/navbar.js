@@ -255,6 +255,10 @@ function btn_clicked(){
     {
         blogLoader(8);
     }
+    else if (msg == "cat featured" || msg == "accio featured" || msg == "cat 0" || msg == "accio 0")
+    {
+        document.getElementsByClassName('featured_article')[0].click();
+    }
     else if (msg=="instagram" || msg == "accio instagram")
     {
         socialfunction('instagram')

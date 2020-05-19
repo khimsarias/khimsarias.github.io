@@ -281,6 +281,26 @@ a
 	height: 100.5px;
 	width: 100.5px;
 }
+
+.featured_heading
+{
+	font-size: 23px;
+}
+
+.featured_name
+{
+	font-size: 19px;
+}
+
+.featured_info
+{
+	font-size: 18px;
+}
+
+.featured_date
+{
+	font-size: 15px;
+}
 }
 @media screen and (max-width:645px){
 

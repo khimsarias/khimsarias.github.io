@@ -356,7 +356,7 @@ function scrollto(x)
 
 function email_client()
 {
-    window.open(`mailto:saumya27khimsaria@gmail.com?subject=Don't forget to add a subject.&body=Channel your inner writer!`);
+    window.open(`mailto:saumya27khimsaria@gmail.com`);
 }
 
 function close_popup()

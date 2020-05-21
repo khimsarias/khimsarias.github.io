@@ -354,6 +354,25 @@ function scrollto(x)
 	document.getElementById(x).scrollIntoView(true);
 }
 
+function email_client()
+{
+    window.open(`mailto:saumya27khimsaria@gmail.com?subject=Don't forget to add a subject.&body=Channel your inner writer!`);
+}
+
+function close_popup()
+{
+    try{
+        document.getElementsByClassName("email_popup")[0].classList.remove("popup_class");
+        document.getElementsByClassName("email_popup")[0].classList.add("popup_close");
+        for (let i = 5; i < document.getElementsByTagName("DIV").length; i++)
+            {
+                if(!document.getElementsByTagName("DIV")[i].classList.contains("email_popup")){
+                document.getElementsByTagName("DIV")[i].classList.remove("blurall");}
+            } 
+    }
+    catch{}
+}
+
 function socialfunction(x)
 {
     switch (x)
@@ -361,9 +380,23 @@ function socialfunction(x)
         case "mail" : 
         {
             navigator.clipboard.writeText('saumya27khimsaria@gmail.com');
-            alert('Email Copied');
+            
+            try{
+                document.getElementsByClassName("email_popup")[0].classList.add("popup_class");
+                document.getElementsByClassName("email_popup")[0].classList.remove("popup_close");
+            }
+            catch{}
+        if (document.getElementsByClassName("email_popup")[0].classList.contains("popup_class"))
+        {
+            for (let i = 5; i < document.getElementsByTagName("DIV").length; i++)
+            {
+                if(!document.getElementsByTagName("DIV")[i].classList.contains("email_popup")){
+                document.getElementsByTagName("DIV")[i].classList.add("blurall");}
+            } 
+            // alert('Email Copied');
             break;
         }
+    }
         case "instagram" :
         {
             window.open('https://www.instagram.com/thesaumyakhimsaria/','_blank');

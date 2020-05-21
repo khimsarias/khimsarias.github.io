@@ -161,6 +161,83 @@ nav
 
 }
 
+.email_popup
+{
+    color: var(--text-color);
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 2% 2%;
+    position: absolute;
+    background-color:var(--bg-color);
+    height: 30vh;
+    width: 30vw;
+    border-radius: 12px;
+    transform: translate(110%,-210%);
+    z-index: -100;
+    opacity: 0;
+    justify-content: center;
+    align-content: center;
+    box-shadow:  4px 4px 12px var(--shadow-up),
+    -4px -4px 12px var(--shadow-down);
+    -moz-box-shadow:  4px 4px 12px var(--shadow-up),
+    -4px -4px 12px var(--shadow-down);
+    -o-box-shadow:  4px 4px 12px var(--shadow-up),
+    -4px -4px 12px var(--shadow-down);
+    -webkit-box-shadow:  4px 4px 12px var(--shadow-up),
+    -4px -4px 12px var(--shadow-down);
+    -webkit-appearance: none;
+    text-align: center;
+}
+
+.email_popup button
+{
+   align-self: center;
+   width: 60%;
+    padding: 1% 0%;
+    cursor: pointer;
+}
+
+.popup_class
+{
+    animation: popup 0.5s;
+    animation-fill-mode: forwards;
+}
+
+.popup_close
+{
+    animation: popup-close 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes popup-close
+{
+    from{
+        opacity: 1;
+        /* display: none; */
+        z-index: 100;
+    }
+    to{
+        opacity: 0;
+        /* display: block; */
+        z-index: -100;
+    }
+}
+
+@keyframes popup
+{
+    from{
+        opacity: 0;
+        /* display: none; */
+        z-index: -100;
+    }
+    to{
+        opacity: 1;
+        /* display: block; */
+        z-index: 100;
+    }
+}
+
 @media screen and (max-width:780px){
 .title span
 {

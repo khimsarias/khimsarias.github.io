@@ -256,6 +256,12 @@ nav
 
     height: auto;
 }
+.email_popup
+{
+    height: 30vh;
+    width: 80vw;
+    transform: translate(10%,-210%);
+}
 }
 
 @keyframes bounce

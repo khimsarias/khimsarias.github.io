@@ -248,7 +248,7 @@ nav
 @media screen and (max-width:780px){
 .title span
 {
-    font-size: 60px;
+    font-size: 50px;
 }
 .mainpage p
 {
@@ -256,7 +256,7 @@ nav
 }
 .mainpage button
 {
-    width: 50%;
+    width: 45%;
 }
 .mainpage img
 {

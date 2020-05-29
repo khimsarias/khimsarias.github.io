@@ -63,6 +63,13 @@ nav
     max-height: 40vh;
     margin: auto;
     border-radius: 50%;
+
+
+}
+.profile_img
+{
+    border-style: solid;
+    border-color: var(--text-color);
 }
 
 .mainpage p

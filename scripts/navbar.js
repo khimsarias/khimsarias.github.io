@@ -314,31 +314,31 @@ function btn_clicked(){
         }, 1300);
 
         setTimeout(() => {
-            document.getElementById("cmd_id").value = `Are you sure thats a real spell? Well,`;
+            document.getElementById("cmd_id").value = `Well,`;
         }, 3200);
 
         setTimeout(() => {
-            document.getElementById("cmd_id").value = `Are you sure thats a real spell? Well, it's`;
+            document.getElementById("cmd_id").value = `Well, it's`;
         }, 3400);
 
         setTimeout(() => {
-            document.getElementById("cmd_id").value = `Are you sure thats a real spell? Well, it's not`;
+            document.getElementById("cmd_id").value = `Well, it's not`;
         }, 3600);
 
         setTimeout(() => {
-            document.getElementById("cmd_id").value = `Are you sure thats a real spell? Well, it's not very`;
+            document.getElementById("cmd_id").value = `Well, it's not very`;
         }, 3800);
 
         setTimeout(() => {
-            document.getElementById("cmd_id").value = `Are you sure thats a real spell? Well, it's not very good,`;
+            document.getElementById("cmd_id").value = `Well, it's not very good,`;
         }, 4000);
 
         setTimeout(() => {
-            document.getElementById("cmd_id").value = `Are you sure thats a real spell? Well, it's not very good, is`;
+            document.getElementById("cmd_id").value = `Well, it's not very good, is`;
         }, 4250);
 
         setTimeout(() => {
-            document.getElementById("cmd_id").value = `Are you sure thats a real spell? Well, it's not very good, is it?`;
+            document.getElementById("cmd_id").value =  `Well, it's not very good, is it?`;
         }, 4500);
 
         setTimeout(() => {

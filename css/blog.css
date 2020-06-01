@@ -154,11 +154,11 @@ a
 	cursor: pointer;
 	display: flex;
 	flex-direction: column;
-	margin: auto;
-	padding: auto;
+	/* margin: 0 5vw; */
+	margin-left: 7.3vw;
 	height: 30vh;
 	color: var(--text-color);
-	width: 85.3vw;
+	width: 85vw;
 	justify-self: center;
 	text-align: center;
 	background-repeat: no-repeat;
@@ -291,22 +291,22 @@ a
 
 .featured_heading
 {
-	font-size: 23px;
+	font-size: 20px;
 }
 
 .featured_name
 {
-	font-size: 19px;
+	font-size: 16px;
 }
 
 .featured_info
 {
-	font-size: 18px;
+	font-size: 15px;
 }
 
 .featured_date
 {
-	font-size: 15px;
+	font-size: 12px;
 }
 }
 @media screen and (max-width:645px){

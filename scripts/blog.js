@@ -35,6 +35,7 @@ function info_generator()
 	console.log(blogs_picture)
 	console.log(blogs_infos)
 	console.log(blogs_dates)
+
 }
 
 function featured_blog()
@@ -56,8 +57,6 @@ function featured_blog()
 	}, 2000);
 	// article.classList.remove("fade_anim");
 }
-
-
 
 function numbering_blogs()
 {

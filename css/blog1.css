@@ -132,6 +132,10 @@ nav
     margin: auto;
     padding: 2vh 0;
     border-radius: 12px;
+    border-radius: 12px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: var(--text-color);
     box-shadow:  6px 6px 12px var(--shadow-up),
     -6px -6px 12px var(--shadow-down);
    -moz-box-shadow:  6px 6px 12px var(--shadow-up),

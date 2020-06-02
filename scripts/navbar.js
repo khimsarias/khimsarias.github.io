@@ -279,6 +279,10 @@ function btn_clicked(){
     {
         socialfunction('github')
     }
+    else if (msg=="steam" || msg == "accio steam")
+    {
+        socialfunction('steam')
+    }
     else
     {
         if (msg !== ""){
@@ -409,12 +413,17 @@ function socialfunction(x)
         }
         case "github" :
         {
-            window.open('https://github.com/khimsarias','_blank')
+            window.open('https://github.com/khimsarias','_blank');
             break;
         }
         case "twitter" :
         {
-            alert("link is coming soon")
+            window.open(`https://twitter.com/KhimsariaSaumya`,`_blank`);
+            break;
+        }
+        case "steam" :
+        {
+            window.open(`https://steamcommunity.com/id/Saumya27/`, `_blank`);
             break;
         }
     }

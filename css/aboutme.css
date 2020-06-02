@@ -263,6 +263,10 @@ nav
 
     height: auto;
 }
+.scroll_down span
+{
+    font-size: 12px;
+}
 .email_popup
 {
     height: 30vh;

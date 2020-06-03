@@ -23,6 +23,19 @@ html[data-theme="dark"]
 
 }
 
+.scrolltotop
+{
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 5vw;
+    height: 9vh;
+    background-color: palevioletred;
+    /* cursor: pointer; */
+    /* opacity: 0; */
+}
+
 .blurall
 {
     
@@ -36,7 +49,12 @@ html[data-theme="dark"]
 .fade_anim
 {
 	animation: test 1.5s;
-	/* animation-fill-mode: forwards; */
+	animation-fill-mode: forwards;
+}
+.fade_anim_back
+{
+    animation: test_back 1.5s;
+    animation-fill-mode: forwards;
 }
 nav{
 flex-wrap: wrap;
@@ -237,6 +255,17 @@ flex-wrap: wrap;
     to
     {
         opacity: 1;
+    }
+}
+@keyframes test_back
+{
+   from
+    {
+        opacity: 1;
+    }
+    to
+    {
+        opacity: 0;
     }
 }
 /*li flying in effect*/

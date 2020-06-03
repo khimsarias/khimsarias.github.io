@@ -31,7 +31,10 @@ html[data-theme="dark"]
     right: 20px;
     width: 5vw;
     height: 9vh;
-    background-color: palevioletred;
+    /* background-color: palevioletred; */
+    font-size: 8vh;
+    text-align: center;
+    font-weight: bold;
     /* cursor: pointer; */
     /* opacity: 0; */
 }
@@ -76,6 +79,8 @@ flex-wrap: wrap;
     margin: 0;
     padding-bottom: 2vh;
     width: 90vw;
+    
+    
 }
 
 .flip
@@ -194,6 +199,17 @@ flex-wrap: wrap;
     }
 }
 @media screen and (max-width:780px){
+    .scrolltotop
+{
+    bottom: 10px;
+    right: 5px;
+    width: 8vw;
+    height: 7vh;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    background-color:rgba(122,122,122,0.3);
+}
     .button
     {
         height: 2vh;
@@ -378,4 +394,19 @@ html.transition *:before,
 html.transition *:after {
   transition: all 350ms !important;
   transition-delay: 0 !important;
+}
+
+@keyframes bounce
+{
+    0%{
+        transform: translateY(0);
+    }
+    50%
+    {
+        transform: translateY(-15px);
+    }
+    100%
+    {
+        transform: translateY(0px);
+    }
 }

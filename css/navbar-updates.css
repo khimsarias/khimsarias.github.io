@@ -31,12 +31,9 @@ html[data-theme="dark"]
     right: 20px;
     width: 5vw;
     height: 9vh;
-    /* background-color: palevioletred; */
     font-size: 8vh;
     text-align: center;
     font-weight: bold;
-    /* cursor: pointer; */
-    /* opacity: 0; */
 }
 
 .blurall
@@ -208,7 +205,7 @@ flex-wrap: wrap;
     margin: 0;
     border: 0;
     padding: 0;
-    background-color:rgba(122,122,122,0.3);
+    font-size: 5vh;
 }
     .button
     {

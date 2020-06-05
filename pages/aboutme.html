@@ -12,12 +12,15 @@
     <link rel="icon" href="../favicon.ico" type="image/x-icon" >
     <script src="../scripts/jquery-3.5.0.min.js"></script>
     <audio id="invalid" src="../audio/invalid.m4a" ></audio>
-<title>About Me</title>
-
+    <title>About Me</title>
 </head>
 <body onload="themeLoader()">
     <nav>
-        <div class="logo"><h4><a data-content="Saumya Khimsaria" class="text-link" href="../index.html">Saumya Khimsaria</a></h4></div>
+        <div class="logo">
+            <h4>
+                <a data-content="Saumya Khimsaria" class="text-link" href="../index.html">Saumya Khimsaria</a>
+            </h4>
+        </div>
         <ul class="nav-links">
             <li>
                 <a data-content="Home" class="text-link" href="../index.html">Home</a>
@@ -61,23 +64,26 @@
             <li><img src="../images/steam.png" onclick="socialfunction('steam')"></li>
         </ul>
         <div class="scroll_down"><span onclick="scrollto('experience');">&#9660; Scroll down for more details &#9660;</span></div>
-</div>
-<div class="email_popup">
+    </div>
+    <div class="email_popup">
         <span> Email has been copied to the clipboard. Do you want to open your default email client?</span><br>
         <button onclick="email_client(), close_popup()">YES</button><br>
         <button onclick="close_popup()">NO</button>
     </div>
+    <div class="experience" id="experience">
+        <div class="title">
+            <span>Work Experience</span>
+        </div>
     </div>
-</div>
-<div class="experience" id="experience">
-    <div class="title"><span>Work Experience</span></div>
-</div>
-<div class="education">
-    <div class="title"><span>Education</span></div>
-</div>
-<div class="skills">
-    <div class="title"><span>Skills</span></div>
-</div>
-
+    <div class="education">
+        <div class="title">
+            <span>Education</span>
+        </div>
+    </div>
+    <div class="skills">
+        <div class="title">
+            <span>Skills</span>
+        </div>
+    </div>
 </body>
 </html>

@@ -79,7 +79,42 @@ flex-wrap: wrap;
     
     
 }
+.msg
+{
+    width: 90vw;
+    display: none;
+    text-align: center;
+    position: absolute;
+    z-index: 100;
+    background-color: var(--nav-bg-color);
+    color: var(--text-color);
+    /* background-color: palegreen; */
+    border-radius: 0 0 12px 12px;
+    opacity: 0;
+    /* border-style: solid;
+    border-width: 0px 2px 2px 2px;
+    border-color: #00ffff; */
+    box-shadow: inset 6px 4px 12px var(--shadow-up),
+    inset -6px -6px 12px var(--shadow-down);
+    -moz-box-shadow: inset 6px 4px 12px var(--shadow-up),
+    inset -6px -6px 12px var(--shadow-down);
+    -o-box-shadow: inset 6px 4px 12px var(--shadow-up),
+    inset -6px -6px 12px var(--shadow-down);
+    -webkit-box-shadow: inset 6px 4px 12px var(--shadow-up),
+    inset -6px -6px 12px var(--shadow-down);
+}
 
+/* input:not(:placeholder-shown) + .msg
+{
+    display: block;
+} */
+
+input:focus + .msg
+{
+    animation: test 0.5s;
+    display: block;
+    opacity: 1;
+}
 .flip
 {
     filter: invert(1);
@@ -111,7 +146,8 @@ flex-wrap: wrap;
 {
     border:0;
     outline: 0;
-    box-shadow: inset 6px 4px 12px var(--shadow-up),
+    border-radius: 12px 12px 0 0;
+     box-shadow: inset 6px 4px 12px var(--shadow-up),
     inset -6px -6px 12px var(--shadow-down);
     -moz-box-shadow: inset 6px 4px 12px var(--shadow-up),
     inset -6px -6px 12px var(--shadow-down);
@@ -119,7 +155,7 @@ flex-wrap: wrap;
     inset -6px -6px 12px var(--shadow-down);
     -webkit-box-shadow: inset 6px 4px 12px var(--shadow-up),
     inset -6px -6px 12px var(--shadow-down);
-}
+} 
 .button
 {
     width: 8vw;
@@ -206,6 +242,11 @@ flex-wrap: wrap;
     border: 0;
     padding: 0;
     font-size: 5vh;
+}
+
+.msg
+{
+    padding: 2%;
 }
     .button
     {

@@ -49,11 +49,15 @@ const navSlide= ()=> {
         }   
     }
   
+    
 
     });
 
 }
 navSlide();
+
+
+
 
 
 $(document).ready( function()
@@ -127,6 +131,18 @@ $(document).keyup(function (e)
  function clear_content()
  {
     document.getElementById("cmd_id").value = "";
+    for (let i = 7; i < document.getElementsByTagName("DIV").length; i++)
+    {
+        document.getElementsByTagName("DIV")[i].classList.add("blurall");
+    }          
+ }
+
+ function remove_blur()
+ {
+    for (let i = 7; i < document.getElementsByTagName("DIV").length; i++)
+    {
+        document.getElementsByTagName("DIV")[i].classList.remove("blurall");
+    }
  }
 
 function btn_clicked(){
@@ -354,6 +370,7 @@ function btn_clicked(){
 };
 
 $(function () {
+
     var $win = $(window);
     let mid = window.innerHeight*1.3;
     console.log(window.innerHeight)

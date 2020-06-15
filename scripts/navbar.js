@@ -196,6 +196,12 @@ function btn_clicked(){
     {
         try
         {
+            featured_project();
+        }
+        catch{}
+
+        try
+        {
             featured_blog();
         }
         catch{}
@@ -369,32 +375,30 @@ function btn_clicked(){
     }
 };
 
-$(function () {
+// $(function () {
 
-    var $win = $(window);
-    let mid = window.innerHeight*1.3;
-    console.log(window.innerHeight)
-    console.log(mid)
-    $win.scroll(function () {
-        if ($win.scrollTop() > mid){
-            document.getElementsByClassName(`scrolltotop`)[0].style.display = "block";
-            document.getElementsByClassName(`scrolltotop`)[0].classList.add("fade_anim");
-            document.getElementsByClassName(`scrolltotop`)[0].classList.remove("fade_anim_back");
-            // document.getElementsByClassName(`scrolltotop`)[0].addAttribute(`onclick`);
-            document.getElementsByClassName(`scrolltotop`)[0].setAttribute(`onclick`,`scrollto('anchor')`);
-            document.getElementsByClassName(`scrolltotop`)[0].style.cursor = "pointer";
-            // document.getElementsByClassName(`scrolltotop`)[0].style.animation=`bounce 1.5s infinite`;
-        }
-        else if ($win.scrollTop() < mid){
-            document.getElementsByClassName(`scrolltotop`)[0].classList.add("fade_anim_back");
-            document.getElementsByClassName(`scrolltotop`)[0].classList.remove("fade_anim");
-            document.getElementsByClassName(`scrolltotop`)[0].setAttribute(`onclick`,``);
-            document.getElementsByClassName(`scrolltotop`)[0].style.cursor = "default";
-            // document.getElementsByClassName(`scrolltotop`)[0].style.animation=`bounce 0s infinite`;
-        }
-        }
-    );
-});
+//     var $win = $(window);
+//     let mid = window.innerHeight*1.3;
+//     $win.scroll(function () {
+//         if ($win.scrollTop() > mid){
+//             document.getElementsByClassName(`scrolltotop`)[0].style.display = "block";
+//             document.getElementsByClassName(`scrolltotop`)[0].classList.add("fade_anim");
+//             document.getElementsByClassName(`scrolltotop`)[0].classList.remove("fade_anim_back");
+//             // document.getElementsByClassName(`scrolltotop`)[0].addAttribute(`onclick`);
+//             document.getElementsByClassName(`scrolltotop`)[0].setAttribute(`onclick`,`scrollto('anchor')`);
+//             document.getElementsByClassName(`scrolltotop`)[0].style.cursor = "pointer";
+//             // document.getElementsByClassName(`scrolltotop`)[0].style.animation=`bounce 1.5s infinite`;
+//         }
+//         else if ($win.scrollTop() < mid){
+//             document.getElementsByClassName(`scrolltotop`)[0].classList.add("fade_anim_back");
+//             document.getElementsByClassName(`scrolltotop`)[0].classList.remove("fade_anim");
+//             document.getElementsByClassName(`scrolltotop`)[0].setAttribute(`onclick`,``);
+//             document.getElementsByClassName(`scrolltotop`)[0].style.cursor = "default";
+//             // document.getElementsByClassName(`scrolltotop`)[0].style.animation=`bounce 0s infinite`;
+//         }
+//         }
+//     );
+// });
 
 function scrollto(x)
 {

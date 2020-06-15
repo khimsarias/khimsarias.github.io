@@ -5,17 +5,17 @@
     <meta name="description" content="A list of all the blogs on the website">
 	<meta name="author" content="Saumya Khimsaria">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/blog.css">
+    <link rel="stylesheet" href="../css/projects.css">
     <link rel="stylesheet" href="../css/navbar-updates.css">
     <link href="https://fonts.googleapis.com/css?family=Anonymous+Pro&display=swap" rel="stylesheet">
     <link rel="icon" href="../favicon.ico" type="image/x-icon" >
-    <script src="../scripts/blog.js"></script>
+    <script src="../scripts/projects.js"></script>
     <script src="../scripts/jquery-3.5.0.min.js"></script>
     <audio id="invalid" src="../audio/invalid.m4a" ></audio>
-<title>Blogs</title>
+<title>Projects</title>
 
 </head>
-<body onload="themeLoader(), info_generator(), numbering_blogs(), featured_blog()">
+<body onload="themeLoader(), info_generator(), numbering_projects(), featured_project()">
     <nav>
         <div class="logo"><h4><a data-content="Saumya Khimsaria" class="text-link" href="../index.html">Saumya Khimsaria</a></h4></div>
         <ul class="nav-links">
@@ -29,7 +29,7 @@
                 <a data-content="Blogs" class="text-link" href="blogs.html">Blogs</a>
             </li>
             <li>
-                <a data-content="Projects" class="text-link" href="projects.html">Projects</a>
+                <a data-content="Projects" class="text-link" href="#">Projects</a>
             </li>
         </ul>
         <div class="burger">
@@ -53,68 +53,38 @@
     </nav>
     <script src="../scripts/navbar.js"></script>
     <!--  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ EVERY PAGE MUST HAVE THE ABOVE CODE ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ -->
-    <div class="title"><span>Blogs</span></div>
+    <div class="title"><span>Projects</span></div>
     <div class="featured_article">
-        <div class="featured_heading"><span>FEATURED ARTICLE</span></div><br>
+        <div class="featured_heading"><span>FEATURED PROJECT</span></div><br>
         <span class="featured_name">NAME</span><br>
         <span class="featured_info">INFO</span><br>
         <span class="featured_date">DATE</span>
     </div><br>
         <div class="grid-container" id="start_div">
-        <div class="blog" onclick="blogLoader(1)">
-            <div class="name"><snap class="number"></snap>Questions that plague the human mind.</div>
+        <div class="blog" onclick="projectLoader(1)">
+            <div class="name"><snap class="number"></snap>Personal Website</div>
             <div class="picture"><img src="../images/blog-1.jpg" alt=""></div>
             <div class="blog_info">Curious minds tend to find answers to the questions that no one asked.</div>
-            <div class="date_time"><span>Friday, March 1, 2020</span></div>
+            <div class="date_time"><span>HTML, CSS, Javascript</span></div>
         
         </div>
-        <div class="blog" onclick="blogLoader(2);">
-            <div class="name"><snap class="number"></snap>Stuff I wish I knew earlier in life.</div>
+        <div class="blog" onclick="projectLoader(2);">
+            <div class="name"><snap class="number"></snap>Project 2</div>
             <div class="picture"><img src="../images/blog-2.jpg" alt=""></div>
             <div class="blog_info">Life would have been so much easier had I known a few things sooner.</div>
-            <div class="date_time"><span>Friday, March 2, 2020</span></div>
+            <div class="date_time"><span>C++</span></div>
         </div> 
-        <div class="blog" onclick="blogLoader(3);">
-            <div class="name"><snap class="number"></snap>Harry Potter from different perspectives.</div>
+        <div class="blog" onclick="projectLoader(3);">
+            <div class="name"><snap class="number"></snap>Project 3</div>
             <div class="picture"><img src="../images/blog-3.jpg" alt=""></div>
             <div class="blog_info">No two characters live the same story. No two persons read the same book.</div>
-            <div class="date_time"><span>Friday, April 24, 2020</span></div>
+            <div class="date_time"><span>Java</span></div>
         </div> 
-        <div class="blog" onclick="blogLoader(4);">
-            <div class="name"><snap class="number"></snap>Epic theme songs.</div>
+        <div class="blog" onclick="projectLoader(4);">
+            <div class="name"><snap class="number"></snap>Project 4</div>
             <div class="picture"><img src="../images/blog-4.jpg" alt=""></div>
             <div class="blog_info">From Harry Potter to James Bond to Halo, every epic theme song has its place in people's memories.</div>
-            <div class="date_time"><span>Friday, March 23, 2020</span></div>
-        </div> 
-        <div class="blog">
-            <div class="name"><snap class="number"></snap>Some quotes you remember, some quotes you live by.</div>
-            <div class="picture"><img src="../images/blog-1.jpg" alt=""></div>
-            <div class="blog_info">You may not follow every piece of advice, but the ones you do change the way you live.</div>
-            <div class="date_time"><span>Friday, March 27, 2020</span></div>
-        </div> 
-        <div class="blog">
-            <div class="name"><snap class="number"></snap>Website Design Log</div>
-            <div class="picture"><img src="../images/blog-2.jpg" alt=""></div>
-            <div class="blog_info">Why this website is the way it is.</div>
-            <div class="date_time"><span>Friday, March 7, 2020</span></div>
-        </div> 
-        <div class="blog">
-            <div class="name"><snap class="number"></snap>Website feature log.</div>
-            <div class="picture"><img src="../images/blog-4.jpg" alt=""></div>
-            <div class="blog_info">All the things the website does now and what I want it to do in the future.</div>
-            <div class="date_time"><span>Friday, March 21, 2020</span></div>
-        </div> 
-        <div class="blog">
-            <div class="name"><snap class="number"></snap>My experiments with sleep.</div>
-            <div class="picture"><img src="../images/blog-1.jpg" alt=""></div>
-            <div class="blog_info">My attempts to understand and master the unknown that is sleep.</div>
-            <div class="date_time"><span>Friday, March 17, 2020</span></div>
-        </div> 
-        <div class="blog">
-            <div class="name"><snap class="number"></snap>My experiments with sleep.</div>
-            <div class="picture"><img src="../images/blog-1.jpg" alt=""></div>
-            <div class="blog_info">My attempts to understand and master the unknown that is sleep.</div>
-            <div class="date_time"><span>Friday, March 17, 2020</span></div>
+            <div class="date_time"><span>C#</span></div>
         </div> 
     </div>
     <!--  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ EVERY PAGE MUST HAVE THE BELOW CODE ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ -->

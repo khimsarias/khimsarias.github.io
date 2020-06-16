@@ -146,7 +146,6 @@ $(document).keyup(function (e)
  }
 
 function btn_clicked(){
-    console.log("button_clicked() was called")
     msg = document.getElementById('cmd_id').value;
     msg = msg.toLowerCase();
     msg = msg.trim();
@@ -226,6 +225,13 @@ function btn_clicked(){
         window.open('pages/aboutme.html','_self');
         else
         window.open('aboutme.html','_self');
+    }
+    else if (msg == "cd project" || msg == "cd projects" || msg == "accio projects" || msg == "accio project")
+    {
+        if(document.title == "Saumya Khimsaria")
+        window.open('pages/projects.html','_self');
+        else
+        window.open('projects.html','_self')
     }
     else if (msg == "cd /" || msg == "cd ~" || msg == "cd")
     {

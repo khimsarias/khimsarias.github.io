@@ -31,11 +31,6 @@ function info_generator()
 		blogs_infos[i+1] = document.getElementsByClassName("blog_info")[i].innerText.toString();
 		blogs_dates[i+1] = document.getElementsByClassName("date_time")[i].innerText.toString();
 	}
-	console.log(blogs_names)
-	console.log(blogs_picture)
-	console.log(blogs_infos)
-	console.log(blogs_dates)
-
 }
 $(function () {
 

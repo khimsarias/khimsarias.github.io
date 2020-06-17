@@ -74,7 +74,7 @@ flex-wrap: wrap;
 
     z-index: 2;
     margin: 0;
-    padding-bottom: 2vh;
+    /* padding-bottom: 2vh; */
     width: 90vw;
     
     
@@ -103,7 +103,40 @@ flex-wrap: wrap;
     -webkit-box-shadow: inset 6px 4px 12px var(--shadow-up),
     inset -6px -6px 12px var(--shadow-down);
 }
+.ui-widget-content {
+    width: 50%;
+	text-align: center;
+	background: var(--nav-bg-color);
+	color: var(--text-color);
+	border-radius: 0 0 12px 12px;
+	box-shadow: inset 6px 4px 12px var(--shadow-up),
+    inset -6px -6px 12px var(--shadow-down);
+    -moz-box-shadow: inset 6px 4px 12px var(--shadow-up),
+    inset -6px -6px 12px var(--shadow-down);
+    -o-box-shadow: inset 6px 4px 12px var(--shadow-up),
+    inset -6px -6px 12px var(--shadow-down);
+    -webkit-box-shadow: inset 6px 4px 12px var(--shadow-up),
+    inset -6px -6px 12px var(--shadow-down);
+}
 
+.ui-widget-content li
+{
+    list-style: none;
+    cursor: pointer;
+    font-size: 20px;
+}
+.ui-state-active,
+.ui-widget-content .ui-state-active,
+.ui-widget-header .ui-state-active,
+a.ui-button:active,
+.ui-button:active,
+.ui-button.ui-state-active:hover {
+	background: var(--text-color);
+	font-weight: normal;
+    color: var(--nav-bg-color);
+    border-radius: 0 0 12px 12px;
+	
+}
 /* input:not(:placeholder-shown) + .msg
 {
     display: block;

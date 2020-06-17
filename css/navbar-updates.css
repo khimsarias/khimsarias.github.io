@@ -104,6 +104,7 @@ flex-wrap: wrap;
     inset -6px -6px 12px var(--shadow-down);
 }
 .ui-widget-content {
+    font-family: 'Anonymous Pro', monospace;
     z-index: 2;
     padding: 2vh 0; 
     width: 50%;
@@ -123,6 +124,7 @@ flex-wrap: wrap;
 
 .ui-widget-content li
 {
+    padding-bottom: 1%;
     list-style: none;
     cursor: pointer;
     font-size: 20px;

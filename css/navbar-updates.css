@@ -74,7 +74,7 @@ flex-wrap: wrap;
 
     z-index: 2;
     margin: 0;
-    /* padding-bottom: 2vh; */
+    padding-bottom: 2vh;
     width: 90vw;
     
     
@@ -104,6 +104,7 @@ flex-wrap: wrap;
     inset -6px -6px 12px var(--shadow-down);
 }
 .ui-widget-content {
+    padding: 2vh 0; 
     width: 50%;
 	text-align: center;
 	background: var(--nav-bg-color);
@@ -134,7 +135,7 @@ a.ui-button:active,
 	background: var(--text-color);
 	font-weight: normal;
     color: var(--nav-bg-color);
-    border-radius: 0 0 12px 12px;
+    /* border-radius: 0 0 12px 12px; */
 	
 }
 /* input:not(:placeholder-shown) + .msg

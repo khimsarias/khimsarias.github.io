@@ -14,6 +14,30 @@
     <script src="../scripts/blog.js"></script>
     <audio id="invalid" src="../audio/invalid.m4a" ></audio>
     <title>Stuff I wish I knew earlier in life.</title>
+            <!-- Autocomplete -->
+            <br>
+            <script src="../scripts/jquery-ui.min.js"></script>
+            <script>
+            $( function() {
+                var availableTags = [
+                "cd",
+                "cd ..",
+                "help",
+                "lumos",
+                "nox",
+                "share",
+                "cd home","accio home",
+                "cd about me","accio about me",
+                "cd blogs","accio blogs",
+                "cd projects","accio projects",
+                "instagram","twitter","linkedin","email","github","steam",
+                ];
+                $( "#cmd_id" ).autocomplete({
+                source: availableTags
+                });
+            } );
+            </script>
+    </head>
 </head>
 <body onload="themeLoader()">
     <nav>
@@ -45,6 +69,7 @@
             <input type="text" value="" class="command" name="command" placeholder="Harry Potter Spells / Linux Commands / Help" id="cmd_id" onfocus="clear_content()" onblur="remove_blur()">
             <div class="msg">
                 <br><span>Nox (Dark Mode), Lumos (Light Mode), Help (Bring up help page)<br><br>
+                 'share' :- Copies current URL to Clipboard<br><br>
                  'cd *' :- Replace * with name of a page <br><br>
                  'cd' or 'cd ~' or 'cd /' :- Go back to home page (Equivalent to pressing home on the navbar)<br><br>
                  'cd -' or 'cd ..' :- Go back one page (equivalent to pressing the back button in the browser)</span><br><br>

@@ -9,6 +9,7 @@ All commands and spells :-
 'help' :- bring up help page
 'lumos' :- light mode
 'nox' :- dark mode
+'share' :- Copies current URL to Clipboard
 'accio *' :- Replace * with name of a page or blog number (0/featured for featured blog)
 'cd *' :- Replace * with name of a page
 'cat *' :- Replace * with blog number (0/featured for featured blog)

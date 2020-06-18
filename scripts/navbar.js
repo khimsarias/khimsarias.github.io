@@ -312,6 +312,11 @@ function btn_clicked(){
     {
         socialfunction('steam')
     }
+    else if (msg == "share")
+    {
+        navigator.clipboard.writeText(window.location.href);
+        alert("Page URL copied.");
+    }
     else
     {
         if (msg !== ""){

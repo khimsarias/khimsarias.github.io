@@ -13,6 +13,30 @@
     <script src="../scripts/jquery-3.5.0.min.js"></script>
     <audio id="invalid" src="../audio/invalid.m4a" ></audio>
 <title>Blogs</title>
+    <!-- Autocomplete -->
+    <br>
+    <script src="../scripts/jquery-ui.min.js"></script>
+    <script>
+    $( function() {
+        var availableTags = [
+        "cd",
+        "cd ..",
+        "help",
+        "lumos",
+        "nox",
+        "share",
+        "cd home","accio home",
+        "cd about me","accio about me",
+        "cd blogs","accio blogs",
+        "cd projects","accio projects",
+        "instagram","twitter","linkedin","email","github","steam",
+        "cat"
+        ];
+        $( "#cmd_id" ).autocomplete({
+        source: availableTags
+        });
+    } );
+    </script>
 
 </head>
 <body onload="themeLoader(), info_generator(), numbering_blogs(), featured_blog()">
@@ -44,6 +68,7 @@
                  'cd *' :- Replace * with name of a page <br><br>
                  'cd' or 'cd ~' or 'cd /' :- Go back to home page (Equivalent to pressing home on the navbar)<br><br>
                  'cd -' or 'cd ..' :- Go back one page (equivalent to pressing the back button in the browser)<br><br>
+                 'cat *' :- Replace * with blog number (0/featured for featured blog)<br><br>
                  'rtd' : New Random Featured Article/Project (Throwback to Roll The Dice from CS 1.6)</span><br><br>
              </div>
         </div>

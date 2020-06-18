@@ -134,7 +134,8 @@ $(document).keyup(function (e)
     for (let i = 7; i < document.getElementsByTagName("DIV").length; i++)
     {
         document.getElementsByTagName("DIV")[i].classList.add("blurall");
-    }          
+    }        
+    $( ".selector" ).autocomplete( "enable" );
  }
 
  function remove_blur()

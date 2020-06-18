@@ -104,6 +104,7 @@ flex-wrap: wrap;
     inset -6px -6px 12px var(--shadow-down);
 }
 .ui-widget-content {
+    animation: test 0.5s;
     font-family: 'Anonymous Pro', monospace;
     z-index: 2;
     padding: 2vh 0; 
@@ -141,16 +142,18 @@ a.ui-button:active,
     /* border-radius: 0 0 12px 12px; */
 	
 }
-/* input:not(:placeholder-shown) + .msg
-{
-    display: block;
-} */
 
 input:focus + .msg
 {
     animation: test 0.5s;
     display: block;
     opacity: 1;
+}
+
+input:not(:placeholder-shown) + .msg
+{
+    opacity: 0;
+   display: none;
 }
 .flip
 {

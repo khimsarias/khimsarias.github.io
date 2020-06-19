@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="A list of all the blogs on the website">
+	<meta name="author" content="Saumya Khimsaria">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/project1.css">
+    <link rel="stylesheet" href="../css/navbar-updates.css">
+    <link rel="stylesheet" href="../css/prism.css">
+    <link href="https://fonts.googleapis.com/css?family=Anonymous+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Notable&display=swap" rel="stylesheet">
+    <link rel="icon" href="../favicon.ico" type="image/x-icon" >
+    <script src="../scripts/jquery-3.5.0.min.js"></script>
+    <script src="../scripts/clipboard.js"></script>
+    <script src="../scripts/project.js"></script>
+    <audio id="invalid" src="../audio/invalid.m4a" ></audio>
+    <title>Project 1</title>
+            <!-- Autocomplete -->
+            <br>
+            <script src="../scripts/jquery-ui.min.js"></script>
+            <script>
+            $( function() {
+                var availableTags = [
+                "cd",
+                "cd ..",
+                "help",
+                "lumos",
+                "nox",
+                "share",
+                "cd home","accio home",
+                "cd about me","accio about me",
+                "cd blogs","accio blogs",
+                "cd projects","accio projects",
+                "instagram","twitter","linkedin","email","github","steam",
+                ];
+                $( "#cmd_id" ).autocomplete({
+                source: availableTags
+                });
+            } );
+            </script>
+    </head>
+</head>
+<body onload="themeLoader()">
+    <nav>
+        <div class="logo">
+            <h4>
+                <a data-content="Saumya Khimsaria" class="text-link" href="../index.html">Saumya Khimsaria</a>
+            </h4>
+        </div>
+        <ul class="nav-links">
+            <li>
+                <a data-content="Home" class="text-link" href="../index.html">Home</a>
+            </li>
+            <li>
+                <a data-content="About Me" class="text-link" href="aboutme.html">About Me</a>
+            </li>
+            <li>
+                <a data-content="Blogs" class="text-link" href="blogs.html">Blogs</a>
+            </li>
+            <li>
+                <a data-content="Projects" class="text-link" href="projects.html">Projects</a>
+            </li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+        <div class="cmd_box">
+            <input type="text" value="" class="command" name="command" placeholder="Harry Potter Spells / Linux Commands / Help" id="cmd_id" onfocus="clear_content()" onblur="remove_blur()">
+            <div class="msg">
+                <br><span>Nox (Dark Mode), Lumos (Light Mode), Help (Bring up help page)<br><br>
+                 'share' :- Copies current URL to Clipboard<br><br>
+                 'cd *' :- Replace * with name of a page <br><br>
+                 'cd' or 'cd ~' or 'cd /' :- Go back to home page (Equivalent to pressing home on the navbar)<br><br>
+                 'cd -' or 'cd ..' :- Go back one page (equivalent to pressing the back button in the browser)</span><br><br>
+             </div>
+        </div>
+        <div class="execute">
+            <button class="button" onclick="btn_clicked();" id="btn_id" ><img id="wand" src="../images/wand.png" alt=""></button>
+        </div>
+    </nav>
+    <script src="../scripts/navbar.js"></script>
+    <!--  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ EVERY PAGE MUST HAVE THE ABOVE CODE ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ -->
+    <div class="project_heading">Project Heading</div>
+    <div class="project_language">HTML, CSS, JavaScript</div>
+    <br><br>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt earum aperiam molestiae amet tenetur voluptates ipsum beatae facere ducimus error, recusandae minus omnis possimus corrupti laborum sunt illum ullam dolores voluptate perferendis! Asperiores explicabo eum, aliquam distinctio perspiciatis tempore quos.</p>
+    <br>
+    <pre><code class="language-c">
+        #include &lt;stdio.h&gt;
+
+        int main()
+        {
+            int digits[100] = {};
+            int rem,i,sum = 0, temp,secret;
+            printf("MATH TRICK #1\nLET ME READ YOUR MIND!\n");
+            printf("You will need a paper and a caclulator.\n");
+            printf("Keep track of your numbers on the paper. Use your caculator as you please.\n");
+            printf("Choose 3 consecutive whole numbers (Eg. 19,20,21).\n");
+            printf("Press enter to continue!\n"); getchar();
+            printf("Now multiply these 3 together (Eg. 19*20*21 = 7980).\n");
+            printf("Press enter to continue!\n"); getchar();
+            printf("Choose another 3 consecutive whole numbers and multiply them together, just like you did before (Eg. 12*13*14 = 2184).\n");
+            printf("Press enter to continue!\n"); getchar();
+            printf("Now multiply both these numbers together (Eg. 7980 * 2184 = 17428320).\n");
+            printf("Press enter to continue!\n"); getchar();
+            printf("Now select one random digit from this answer as your secret digit and then write the other digits down in a random order of your choice (Eg. 4 is our secret digit. now we rearrange other digits in a random order : 2287013).\n");
+            printf("Press enter to continue!\n"); getchar();
+            printf("Now add up all the individual digits of the new rearranged number (Eg. 2+2+8+7+0+1+3 = 23).");
+            printf("At this point, I will have you enter all the remaining digits!\n");
+            printf("How many digits are remaining?  ");
+            scanf("%d",&rem);
+            for (i = 0; i &lt; rem; i++)
+            {
+                printf("Enter digit no. %d : ",i+1);
+                scanf("%d",&digits[i]);
+              //  printf("\n Digit no. %d is %d",i+1,digits[i]);
+            }
+            for (i = 0; i &lt; (sizeof(digits)/sizeof(digits[0])); i++)
+            {
+                sum = sum + digits[i];
+            }
+            if (sum%9 == 0)
+            {
+                printf("The number you are thinkig of is either 9 or 0!\n");
+            }
+            else
+            {
+                temp = sum/9;
+                temp = (temp+1)*9;
+                secret = temp - sum;
+                printf("\nThe secret number you chose was %d!",secret);
+            }
+            
+            return 0;
+        }
+        }
+    </code></pre>
+    <br>
+    <br>
+        <script src="../scripts/prism.js"></script>
+        
+</body>
+</html>

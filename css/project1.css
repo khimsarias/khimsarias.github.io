@@ -1,0 +1,80 @@
+html
+{
+	/* Light Mode */
+	--bg-color: white;
+	--text-color: black;
+	--shadow-up:#8a8888;
+    --shadow-down:#ffffff;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+}
+
+html[data-theme="dark"]
+{
+	/* Dark Mode */
+	--bg-color: #292929;
+	--text-color: #ccc;
+	--shadow-up:#1c1c1c;
+	--shadow-down:#363636;
+}
+
+body
+{
+    background-color: var(--bg-color);
+    color: var(--text-color);
+	width: 100%;
+    overflow-x: hidden;
+}
+
+.project_heading
+{
+    font-size: 90px;
+    width: 100%;
+    text-align: center;
+}
+
+.project_language
+{
+    font-size: 30px;
+    width: 100%;
+    text-align: center;
+    opacity: 0.5;
+}
+
+p
+{
+    display: flex;
+    width: 100vw;
+    height: auto;
+    padding: 0 30vh 5vh 30vh;
+    font-size: 27px;
+}
+
+
+@media screen and (max-width:768px){
+    .project_heading
+    {
+        font-size: 44px;
+    }
+    .project_language
+    {
+        font-size: 20px;
+    }
+    p
+    {
+        width: auto;
+        padding: 0 4em 0 4em;
+        font-size: 18px;
+        line-height: 1.3em;
+    }
+
+code[class*="language-"],
+pre[class*="language-"]
+{
+    font-size: 0.1em;
+}
+    :not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+    height: 60vh;
+}
+}

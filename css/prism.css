@@ -13,7 +13,7 @@ https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+cli
 	 --shadow-up:#adadad;
 	 --shadow-down:#ffffff;
  }
- 
+
  html[data-theme="dark"]
  {
 	 /* Dark Mode */
@@ -85,7 +85,7 @@ pre[class*="language-"] {
 .token.doctype,
 .token.cdata {
 	color: #999;
-	
+
 }
 
 .token.punctuation {

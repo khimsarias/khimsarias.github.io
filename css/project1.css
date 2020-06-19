@@ -68,13 +68,4 @@ p
         line-height: 1.3em;
     }
 
-code[class*="language-"],
-pre[class*="language-"]
-{
-    font-size: 0.1em;
-}
-    :not(pre) > code[class*="language-"],
-pre[class*="language-"] {
-    height: 60vh;
-}
 }

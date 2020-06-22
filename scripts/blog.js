@@ -94,3 +94,9 @@ function comment_cancel()
 	document.getElementsByClassName("comment")[0].value = "";
 
 }
+
+function share_link()
+{
+	navigator.clipboard.writeText(window.location.href);
+        alert("Page URL copied.");
+}

@@ -13,6 +13,30 @@
     <script src="../scripts/jquery-3.5.0.min.js"></script>
     <audio id="invalid" src="../audio/invalid.m4a" ></audio>
     <title>About Me</title>
+        <!-- Autocomplete -->
+    <!-- <link rel="stylesheet" href="css/jquery-ui.min.css"> -->
+    <br>
+    <script src="../scripts/jquery-ui.min.js"></script>
+    <script>
+    $( function() {
+        var availableTags = [
+        "cd",
+        "cd ..",
+        "help",
+        "lumos",
+        "nox",
+        "share",
+        "cd home","accio home",
+        "cd about me","accio about me",
+        "cd blogs","accio blogs",
+        "cd projects","accio projects",
+        "instagram","twitter","linkedin","email","github","steam"
+        ];
+        $( "#cmd_id" ).autocomplete({
+        source: availableTags
+        });
+    } );
+    </script>
 </head>
 <body onload="themeLoader()">
     <nav>

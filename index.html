@@ -12,6 +12,8 @@
     <link rel="icon" href="favicon.ico" type="image/x-icon" >
     <script src="scripts/jquery-3.5.0.min.js"></script>
     <audio id="invalid" src="audio/invalid.m4a" ></audio>
+    <script language="JavaScript" src="http://www.geoplugin.net/javascript.gp" type="text/javascript"></script>
+    <link rel="stylesheet" href="css/aboutme.css">
     <title>Saumya Khimsaria</title>
     <!-- Autocomplete -->
     <!-- <link rel="stylesheet" href="css/jquery-ui.min.css"> -->
@@ -26,6 +28,7 @@
         "lumos",
         "nox",
         "share",
+        "voldemort",
         "cd home","accio home",
         "cd about me","accio about me",
         "cd blogs","accio blogs",
@@ -46,6 +49,7 @@
     <meta property="og:type" content="blog" />
 </head>
 <body onload="themeLoader()">
+    
     <nav>
         <div class="logo">
             <h4>
@@ -91,7 +95,10 @@
 	    <span>This website is my pensieve.</span>
     </div>
     <script type="text/javascript" src="scripts/3jsbeads.js"> </script>
-
+    <div class="email_popup" style="background-image: url(voldemort.gif); background-repeat: no-repeat; background-size: cover;">
+        <span id="message" style="background-color: var(--bg-color);"></span><br>
+        <button onclick="close_popup()">PANIC!!</button>
+    </div>
     <!--  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ EVERY PAGE MUST HAVE THE BELOW CODE ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ -->
 </body>
 </html>

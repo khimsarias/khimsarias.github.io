@@ -18,6 +18,9 @@ function blogLoader(x)
 		case 4:
 			window.open('blog4.html','_self');	
 			break;
+		default:
+			window.open('../3D-CSS-Solar-System-master/index.html','_blank');	
+			break;
 	}
 }
 

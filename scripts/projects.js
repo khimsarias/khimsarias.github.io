@@ -9,18 +9,9 @@ function projectLoader(x)
 		case 1: 
 			window.open('project1.html','_self');	
 			break;
-		case 2: 
-			// window.open('project2.html', '_self');
-			window.open('comingsoon.html', '_self');
-			break;
-		case 3: 
-			// window.open('project3.html', '_self');
-			window.open('comingsoon.html', '_self');
-			break;			
-		case 4:
-			// window.open('project4.html','_self');	
-			window.open('comingsoon.html', '_self');
-			break;
+		default:
+				window.open('../3D-CSS-Solar-System-master/index.html','_blank');	
+				break;
 	}
 }
 

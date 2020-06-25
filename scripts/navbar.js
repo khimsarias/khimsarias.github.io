@@ -319,7 +319,7 @@ function btn_clicked(){
     }
     else if (msg == "voldemort")
     {
-        $.getJSON('http://gd.geobytes.com/GetCityDetails?callback=?', function(data) {
+        $.getJSON('https://gd.geobytes.com/GetCityDetails?callback=?', function(data) {
             document.getElementById("message").innerHTML = "Lord Voldemort now knows that you are at<br>" + data.geobytesfqcn;  
             console.log(data.geobytesfqcn);
           });

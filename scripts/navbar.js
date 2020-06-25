@@ -319,10 +319,7 @@ function btn_clicked(){
     }
     else if (msg == "voldemort")
     {
-        $.getJSON('https://gd.geobytes.com/GetCityDetails?callback=?', function(data) {
-            document.getElementById("message").innerHTML = "Lord Voldemort now knows that you are at<br>" + data.geobytesfqcn;  
-            console.log(data.geobytesfqcn);
-          });
+            document.getElementById("message").innerHTML = "Lord Voldemort now knows your location!";
           
         try{
             document.getElementsByClassName("email_popup")[0].classList.add("popup_class");

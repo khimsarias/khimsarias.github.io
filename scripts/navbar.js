@@ -319,7 +319,11 @@ function btn_clicked(){
     }
     else if (msg == "voldemort")
     {
-        document.getElementById("message").innerHTML = "Lord Voldemort now knows that you are at<br>" + geoplugin_city() + ", " + geoplugin_region() + ", " + geoplugin_countryName() + ", " + geoplugin_continentCode() + "<br>at " + geoplugin_latitude() + ", " + geoplugin_longitude();
+        $.getJSON('http://gd.geobytes.com/GetCityDetails?callback=?', function(data) {
+            document.getElementById("message").innerHTML = "Lord Voldemort now knows that you are at<br>" + data.geobytesfqcn;  
+            console.log(data.geobytesfqcn);
+          });
+          
         try{
             document.getElementsByClassName("email_popup")[0].classList.add("popup_class");
             document.getElementsByClassName("email_popup")[0].classList.remove("popup_close");

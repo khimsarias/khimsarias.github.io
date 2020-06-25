@@ -320,6 +320,7 @@ function btn_clicked(){
     else if (msg == "voldemort")
     {
             document.getElementById("message").innerHTML = "Lord Voldemort now knows your location!";
+            console.log(document.getElementById("message").innerHTML);
           
         try{
             document.getElementsByClassName("email_popup")[0].classList.add("popup_class");

@@ -9,15 +9,6 @@ function blogLoader(x)
 		case 1: 
 			window.open('blog1.html','_self');	
 			break;
-		case 2: 
-			window.open('blog2.html', '_self');
-			break;
-		case 3: 
-			window.open('blog3.html', '_self');
-			break;			
-		case 4:
-			window.open('blog4.html','_self');	
-			break;
 		default:
 			window.open('../3D-CSS-Solar-System-master/index.html','_blank');	
 			break;
@@ -35,6 +26,7 @@ function info_generator()
 		blogs_dates[i+1] = document.getElementsByClassName("date_time")[i].innerText.toString();
 	}
 }
+
 $(function () {
 
     var $win = $(window);

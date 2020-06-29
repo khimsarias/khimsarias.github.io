@@ -30,7 +30,7 @@
         "cd about me","accio about me",
         "cd blogs","accio blogs",
         "cd projects","accio projects",
-        "instagram","twitter","linkedin","email","github","steam"
+        "instagram","twitter","linkedin","email","github","steam","resume"
         ];
         $( "#cmd_id" ).autocomplete({
         source: availableTags
@@ -84,7 +84,7 @@
         <img class="profile_img" src="../images/profile.png">
         <br>
         <p class="info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium officiis tempore enim obcaecati architecto temporibus, deserunt reprehenderit repellendus maxime ducimus.</p>
-        <button>Résumé</button>
+        <button onclick="socialfunction(`resume`);">Résumé</button>
         <ul class="social" style="filter: invert(0);">
             <li><img src="../images/mail.png" onclick="socialfunction('mail')"></li>
             <li><img src="../images/instagram.png" onclick="socialfunction('instagram')"></li>

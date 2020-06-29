@@ -312,6 +312,10 @@ function btn_clicked(){
     {
         socialfunction('steam')
     }
+    else if (msg == `resume`)
+    {
+        socialfunction(`resume`);
+    }
     else if (msg == "share")
     {
         navigator.clipboard.writeText(window.location.href);
@@ -502,6 +506,14 @@ function socialfunction(x)
         case "steam" :
         {
             window.open(`https://steamcommunity.com/id/Saumya27/`, `_blank`);
+            break;
+        }
+        case "resume" :
+        {
+            if(document.title == "Saumya Khimsaria")
+            window.open(`images/test.jpg`,'_blank');
+            else
+            window.open(`../images/test.jpg`,'_blank');
             break;
         }
     }

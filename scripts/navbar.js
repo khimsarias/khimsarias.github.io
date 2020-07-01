@@ -321,25 +321,6 @@ function btn_clicked(){
         navigator.clipboard.writeText(window.location.href);
         alert("Page URL copied.");
     }
-    else if (msg == "voldemort")
-    {
-            document.getElementById("message").innerHTML = "Lord Voldemort now knows your location!";
-            console.log(document.getElementById("message").innerHTML);
-          
-        try{
-            document.getElementsByClassName("email_popup")[0].classList.add("popup_class");
-            document.getElementsByClassName("email_popup")[0].classList.remove("popup_close");
-        }
-        catch{}
-    if (document.getElementsByClassName("email_popup")[0].classList.contains("popup_class"))
-    {
-        for (let i = 5; i < document.getElementsByTagName("DIV").length; i++)
-        {
-            if(!document.getElementsByTagName("DIV")[i].classList.contains("email_popup")){
-            document.getElementsByTagName("DIV")[i].classList.add("blurall");}
-        } 
-    }
-    }
     else
     {
         if (msg !== ""){

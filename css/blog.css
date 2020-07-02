@@ -41,7 +41,7 @@ nav
     justify-content: space-between;
     /* justify-content: center; */
     /* justify-self: center; */
-    padding-bottom: 15%;
+    padding: 5% 0;
     align-items: center;
     text-align: center;
     width: 100vw;
@@ -117,6 +117,16 @@ nav
     width: 50%;
     align-content: center;
     margin: auto;
+    border-radius: 12px;
+    box-shadow:  6px 6px 12px var(--shadow-up),
+    -6px -6px 12px var(--shadow-down);
+   -moz-box-shadow:  6px 6px 12px var(--shadow-up),
+   -6px -6px 12px var(--shadow-down);
+   -o-box-shadow:  6px 6px 12px var(--shadow-up),
+   -6px -6px 12px var(--shadow-down);
+   -webkit-box-shadow:  6px 6px 12px var(--shadow-up),
+   -6px -6px 12px var(--shadow-down);
+   -webkit-appearance: none;
 }
 .stop_scroll
 {
@@ -167,27 +177,6 @@ nav
 {
     max-width: auto;
     width: 90%;
-}
-
-.comment-box
-{
-    width: 90vw;
-    /* padding: 0; */
-    
-    margin: 0 6vh 2vh 2vh;
-}
-.comment-box span
-{
-    font-size: 19px;
-}
-.comment
-{
-    font-size: 19px;
-}
-.comment-box button
-{
-    font-size: 19px;
-    width: 20vw;
 }
 
 }

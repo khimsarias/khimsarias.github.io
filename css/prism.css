@@ -57,8 +57,9 @@ pre[class*="language-"] {
 :not(pre) > code[class*="language-"],
 pre[class*="language-"] {
 	display: flex;
-	margin: 0;
-	width: 80vw;
+	margin: auto;
+	/* width: 80vw; */
+	width: 50%;
 	/* height: 80vh; */
 	border-radius: 12px;
 	background: var(--nav-bg-color);
@@ -255,7 +256,10 @@ pre[class*="language-"].line-numbers > code {
 			padding-right: 0.8em;
 			text-align: right;
 		}
-
+		.toolbar
+		{
+			/* padding: 0 30vh 0vh 30vh; */
+		}
 div.code-toolbar {
 	display: flex;
 	margin: auto;
@@ -266,7 +270,9 @@ div.code-toolbar {
 div.code-toolbar > .toolbar {
 	position: absolute;
 	top: .3em;
-	right: .2em;
+	/* right: .2em; */
+	right: 26%;
+	/* width: 50%; */
 	transition: opacity 0.3s ease-in-out;
 	opacity: 0;
 }
@@ -354,10 +360,25 @@ div.code-toolbar > .toolbar span:focus {
 	opacity: 1;
 }
 
+@media screen and (max-width:1025px){
+    :not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	width: 90%;
+	height: 60vh;
+}
+div.code-toolbar > .toolbar {
+	right: 7%;
+}
+}
+
 
 @media screen and (max-width:768px){
     :not(pre) > code[class*="language-"],
 pre[class*="language-"] {
-    height: 60vh;
+	width: 90%;
+	height: 60vh;
+}
+div.code-toolbar > .toolbar {
+	right: 7%;
 }
 }

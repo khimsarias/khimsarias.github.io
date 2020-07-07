@@ -43,7 +43,7 @@ a
 	padding-bottom: 2vh;
 	grid-gap: 4vh 5vw;
 	grid-template-columns: 40vw 40vw;
-	grid-template-rows: repeat(5, 23vh);
+	grid-template-rows: repeat(4, 23vh);
 	align-content: center;
 	justify-content: center;
 	
@@ -157,6 +157,7 @@ a
 	cursor: pointer;
 	display: flex;
 	flex-direction: column;
+	padding-top: 0.1%;
 	/* margin: 0 5vw; */
 	margin-left: 7.3vw;
 	height: 30vh;

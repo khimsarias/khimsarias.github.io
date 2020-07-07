@@ -45,7 +45,7 @@ $(function () {
             document.getElementsByClassName(`scrolltotop`)[0].classList.add("fade_anim_back");
             document.getElementsByClassName(`scrolltotop`)[0].classList.remove("fade_anim");
             document.getElementsByClassName(`scrolltotop`)[0].setAttribute(`onclick`,``);
-            document.getElementsByClassName(`scrolltotop`)[0].style.cursor = "default";
+			document.getElementsByClassName(`scrolltotop`)[0].style.cursor = "default";
             // document.getElementsByClassName(`scrolltotop`)[0].style.animation=`bounce 0s infinite`;
         }
         }

@@ -310,8 +310,8 @@ input:not(:placeholder-shown) + .msg
         .nav-links{
             position: absolute;
             right:0vw;
-            height:95vh;
-            top:5vh;
+            height:92vh;
+            top:8vh;
             background-color: var(--nav-bg-color);
             display: flex;
             flex-direction: column;

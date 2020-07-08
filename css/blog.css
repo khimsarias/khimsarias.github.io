@@ -145,6 +145,11 @@ nav
    -webkit-appearance: none;
 }
 
+.scrolltotop:hover
+{
+    animation: bounce 1.5s infinite;
+}
+
 .stop_scroll
 {
     width: 100vw;

@@ -39,14 +39,13 @@ $(function () {
             // document.getElementsByClassName(`scrolltotop`)[0].addAttribute(`onclick`);
             document.getElementsByClassName(`scrolltotop`)[0].setAttribute(`onclick`,`scrollto('anchor')`);
             document.getElementsByClassName(`scrolltotop`)[0].style.cursor = "pointer";
-            // document.getElementsByClassName(`scrolltotop`)[0].style.animation=`bounce 1.5s infinite`;
         }
         else if ($win.scrollTop() < mid){
+			document.getElementsByClassName(`scrolltotop`)[0].style.display = "none";
             document.getElementsByClassName(`scrolltotop`)[0].classList.add("fade_anim_back");
             document.getElementsByClassName(`scrolltotop`)[0].classList.remove("fade_anim");
             document.getElementsByClassName(`scrolltotop`)[0].setAttribute(`onclick`,``);
 			document.getElementsByClassName(`scrolltotop`)[0].style.cursor = "default";
-            // document.getElementsByClassName(`scrolltotop`)[0].style.animation=`bounce 0s infinite`;
         }
         }
     );

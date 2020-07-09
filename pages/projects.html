@@ -86,31 +86,57 @@
         <span class="featured_info">INFO</span><br>
         <span class="featured_date">DATE</span>
     </div><br>
+    <div class="filter">
+        <ul>
+            <li onclick="projectFilter(0);">
+                All
+            </li>
+            <li onclick="projectFilter(1);">
+                HTML/CSS/JS
+            </li>
+            <li onclick="projectFilter(2);">
+                C
+            </li>
+            <li onclick="projectFilter(3);">
+                C++
+            </li>
+            <li onclick="projectFilter(4);">
+                Python
+            </li>
+            <li onclick="projectFilter(5);">
+                Java
+            </li>
+            <li onclick="projectFilter(6);">
+                Assembly
+            </li>
+        </ul>
+    </div>
+    <br>
         <div class="grid-container" id="start_div">
-        <div class="blog" onclick="projectLoader(1)">
+        <div class="blog" onclick="projectLoader(1)" data-genre="html">
             <div class="name"><snap class="number"></snap>Personal Website</div>
             <div class="picture"><img src="../images/blog-1.jpg" alt=""></div>
             <div class="blog_info">Curious minds tend to find answers to the questions that no one asked.</div>
             <div class="date_time"><span>HTML, CSS, Javascript</span></div>
         
         </div>
-        <div class="blog" onclick="projectLoader(2);">
+        <div class="blog" onclick="projectLoader(2);" data-genre="Cpp">
             <div class="name"><snap class="number"></snap>Project 2</div>
             <div class="picture"><img src="../images/blog-2.jpg" alt=""></div>
             <div class="blog_info">Life would have been so much easier had I known a few things sooner.</div>
             <div class="date_time"><span>C++</span></div>
         </div> 
-        <div class="blog" onclick="projectLoader(3);">
+        <div class="blog" onclick="projectLoader(3);" data-genre="java">
             <div class="name"><snap class="number"></snap>Project 3</div>
             <div class="picture"><img src="../images/blog-3.jpg" alt=""></div>
             <div class="blog_info">No two characters live the same story. No two persons read the same book.</div>
             <div class="date_time"><span>Java</span></div>
         </div> 
-        <div class="blog" onclick="projectLoader(4);">
+        <div class="blog" onclick="projectLoader(4);" data-genre="arm">
             <div class="name"><snap class="number"></snap>Project 4</div>
             <div class="picture"><img src="../images/blog-4.jpg" alt=""></div>
             <div class="blog_info">From Harry Potter to James Bond to Halo, every epic theme song has its place in people's memories.</div>
-            <div class="date_time"><span>C#</span></div>
+            <div class="date_time"><span>Assembly - ARM7</span></div>
         </div> 
     </div>
     <!--  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ EVERY PAGE MUST HAVE THE BELOW CODE ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ -->

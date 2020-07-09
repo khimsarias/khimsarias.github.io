@@ -209,6 +209,55 @@ a
 	font-size: 25px;
 }
 
+.filter
+{
+	background-color: var(--bg-color);
+	color: var(--text-color);
+	display: flex;
+	flex-direction: row;
+	/* justify-content: center; */
+	list-style: none;
+	margin: auto;
+	width: 85vw;
+	padding: 2vh 0;
+}
+
+.filter ul
+{
+	display: flex;
+	flex-direction: row;
+    list-style: none;
+	margin: auto;
+	flex-wrap: wrap;
+}
+
+.filter ul li
+{
+	padding: 0.3vh 2vw;
+    margin: 1.2vh 1.5vw;
+    cursor: pointer;
+	border-radius: 12px;
+	box-shadow:  6px 6px 12px var(--shadow-up),
+	 -6px -6px 12px var(--shadow-down);
+	-moz-box-shadow:  6px 6px 12px var(--shadow-up),
+	-6px -6px 12px var(--shadow-down);
+	-o-box-shadow:  6px 6px 12px var(--shadow-up),
+	-6px -6px 12px var(--shadow-down);
+	-webkit-box-shadow:  6px 6px 12px var(--shadow-up),
+	-6px -6px 12px var(--shadow-down);
+}
+
+.filter ul li:active
+{
+	box-shadow: inset 6px 4px 12px var(--shadow-up),
+    inset -6px -6px 12px var(--shadow-down);
+    -moz-box-shadow: inset 6px 4px 12px var(--shadow-up),
+    inset -6px -6px 12px var(--shadow-down);
+    -o-box-shadow: inset 6px 4px 12px var(--shadow-up),
+    inset -6px -6px 12px var(--shadow-down);
+    -webkit-box-shadow: inset 6px 4px 12px var(--shadow-up),
+    inset -6px -6px 12px var(--shadow-down);
+}
 @media screen and (max-width:1020px){
 	.blog_info
 	{

@@ -15,6 +15,65 @@ function blogLoader(x)
 	}
 }
 
+function blogFilter(x) // Potential Update - Change Grid Values to eliminate extra space and numbering
+{
+	switch (x)
+	{
+		case 1: // Just for fun - jff
+			for(let i = 0; i < document.getElementsByClassName("blog").length; i++)
+			{
+				document.getElementsByClassName("blog")[i].style.display = "none";
+			
+				setTimeout(() => {
+					// if(document.getElementsByClassName("blog")[i].getAttribute("data-genre") == "jff")
+					if(document.getElementsByClassName("blog")[i].getAttribute("data-genre").includes("jff"))
+				{
+					document.getElementsByClassName("blog")[i].style.display = "grid";
+				}
+				}, 150);
+			}	
+			break;
+		case 2: // Lifestyle - life
+			for(let i = 0; i < document.getElementsByClassName("blog").length; i++)
+			{
+				document.getElementsByClassName("blog")[i].style.display = "none";
+			
+				setTimeout(() => {
+					if(document.getElementsByClassName("blog")[i].getAttribute("data-genre").includes("life"))
+				{
+					document.getElementsByClassName("blog")[i].style.display = "grid";
+				}
+				}, 150);
+			}	
+			break;
+		case 3: // Academic - academic
+			for(let i = 0; i < document.getElementsByClassName("blog").length; i++)
+			{
+				document.getElementsByClassName("blog")[i].style.display = "none";
+			
+				setTimeout(() => {
+					if(document.getElementsByClassName("blog")[i].getAttribute("data-genre").includes("academic"))
+				{
+					document.getElementsByClassName("blog")[i].style.display = "grid";
+				}
+				}, 150);
+			}	
+			break;
+		default:
+			for(let i = 0; i < document.getElementsByClassName("blog").length; i++)
+			{
+				document.getElementsByClassName("blog")[i].style.display = "none";
+			
+				setTimeout(() => {
+				
+					document.getElementsByClassName("blog")[i].style.display = "grid";
+				
+				}, 150);
+			}		
+			break;
+	}
+}
+
 function info_generator()
 {
 	for(let i = 0; i < document.getElementsByClassName("blog").length; i++)
@@ -74,9 +133,10 @@ function numbering_blogs()
 {
 	for(let i = 0; i < document.getElementsByClassName("number").length; i++)
 	{
-		document.getElementsByClassName("number")[i].innerHTML = i+1 + '. ';
+			document.getElementsByClassName("number")[i].innerHTML = i+1 + '. ';
 	}
 }	
+	
 
 function comment_submit()
 {

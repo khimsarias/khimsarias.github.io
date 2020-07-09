@@ -15,6 +15,105 @@ function projectLoader(x)
 	}
 }
 
+function projectFilter(x)
+{
+	switch (x)
+	{
+		case 1: // HTML/CSS/JS - html
+			for(let i = 0; i < document.getElementsByClassName("blog").length; i++)
+			{
+				document.getElementsByClassName("blog")[i].style.display = "none";
+			
+				setTimeout(() => {
+					
+					if(document.getElementsByClassName("blog")[i].getAttribute("data-genre").includes("html"))
+				{
+					document.getElementsByClassName("blog")[i].style.display = "grid";
+				}
+				}, 150);
+			}	
+			break;
+		case 2: // C - c
+			for(let i = 0; i < document.getElementsByClassName("blog").length; i++)
+			{
+				document.getElementsByClassName("blog")[i].style.display = "none";
+			
+				setTimeout(() => {
+					if(document.getElementsByClassName("blog")[i].getAttribute("data-genre").includes("c"))	
+				{
+					document.getElementsByClassName("blog")[i].style.display = "grid";
+				}
+				}, 150);
+			}	
+			break;
+		case 3: // C++ - Cpp (Capital C to resolve conflict with c)
+			for(let i = 0; i < document.getElementsByClassName("blog").length; i++)
+			{
+				document.getElementsByClassName("blog")[i].style.display = "none";
+			
+				setTimeout(() => {
+					if(document.getElementsByClassName("blog")[i].getAttribute("data-genre").includes("Cpp"))
+				{
+					document.getElementsByClassName("blog")[i].style.display = "grid";
+				}
+				}, 150);
+			}	
+			break;
+		case 4: // Python - py
+			for(let i = 0; i < document.getElementsByClassName("blog").length; i++)
+			{
+				document.getElementsByClassName("blog")[i].style.display = "none";
+			
+				setTimeout(() => {
+					if(document.getElementsByClassName("blog")[i].getAttribute("data-genre").includes("py"))
+				{
+					document.getElementsByClassName("blog")[i].style.display = "grid";
+				}
+				}, 150);
+			}	
+			break;
+		case 5: // Java - java
+			for(let i = 0; i < document.getElementsByClassName("blog").length; i++)
+			{
+				document.getElementsByClassName("blog")[i].style.display = "none";
+			
+				setTimeout(() => {
+					if(document.getElementsByClassName("blog")[i].getAttribute("data-genre").includes("java"))
+				{
+					document.getElementsByClassName("blog")[i].style.display = "grid";
+				}
+				}, 150);
+			}	
+			break;
+		case 6: // Assembly - arm
+			for(let i = 0; i < document.getElementsByClassName("blog").length; i++)
+			{
+				document.getElementsByClassName("blog")[i].style.display = "none";
+			
+				setTimeout(() => {
+					if(document.getElementsByClassName("blog")[i].getAttribute("data-genre").includes("arm"))
+				{
+					document.getElementsByClassName("blog")[i].style.display = "grid";
+				}
+				}, 150);
+			}	
+			break;
+		default:
+			for(let i = 0; i < document.getElementsByClassName("blog").length; i++)
+			{
+				document.getElementsByClassName("blog")[i].style.display = "none";
+			
+				setTimeout(() => {
+				
+					document.getElementsByClassName("blog")[i].style.display = "grid";
+				
+				}, 150);
+			}		
+			break;
+	}
+}
+
+
 function info_generator()
 {
 	for(let i = 0; i < document.getElementsByClassName("blog").length; i++)

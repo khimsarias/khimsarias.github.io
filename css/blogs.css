@@ -226,6 +226,7 @@ a
 {
 	display: flex;
 	flex-direction: row;
+	justify-content: space-around;
     list-style: none;
 	margin: auto;
 	flex-wrap: wrap;

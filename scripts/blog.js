@@ -10,7 +10,7 @@ function blogLoader(x)
 			window.open('blog1.html','_self');	
 			break;
 		default:
-			window.open('../3D-CSS-Solar-System-master/index.html','_blank');	
+			window.open('comingsoon.html','_blank');	
 			break;
 	}
 }

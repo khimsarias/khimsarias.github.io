@@ -153,16 +153,6 @@ function numbering_projects()
 	}
 }	
 
-function comment_submit()
-{
-	alert("Feature coming soon");
-}
-
-function comment_cancel()
-{
-	document.getElementsByClassName("comment")[0].value = "";
-
-}
 
 $(function () {
 

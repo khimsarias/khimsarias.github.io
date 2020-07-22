@@ -43,7 +43,7 @@ var Fireworks = function(){
 		self.hueVariance = 30;
 		self.flickerDensity = 20;
 		self.showShockwave = false;
-		self.showTarget = true;
+		self.showTarget = false;
 		self.clearAlpha = 25;
 
 		self.canvasContainer.append(self.canvas);
@@ -251,6 +251,7 @@ var Fireworks = function(){
 	};
 	
 	Firework.prototype.draw = function(){
+		
 		self.ctx.lineWidth = this.lineWidth;
 			
 		var coordRand = (rand(1,3)-1);					
@@ -383,8 +384,16 @@ var Fireworks = function(){
 	};
 	
 	self.init();
-  
-  var initialLaunchCount = 10;
+ setInterval(()=>{
+	var initialLaunchCount = 20;
+	while(initialLaunchCount--){
+	  setTimeout(function(){
+		   self.fireworks.push(new Firework(self.cw/2, self.ch, rand(50, self.cw-50), rand(50, self.ch/2)-50));
+	  }, initialLaunchCount*200);
+	}
+
+ },10000)
+  var initialLaunchCount = 20;
   while(initialLaunchCount--){
     setTimeout(function(){
  		self.fireworks.push(new Firework(self.cw/2, self.ch, rand(50, self.cw-50), rand(50, self.ch/2)-50));
@@ -404,7 +413,7 @@ var guiPresets = {
               "fworkSpeed": 2,
               "fworkAccel": 4,
               "showShockwave": false,
-              "showTarget": true,
+              "showTarget": false,
               "partCount": 30,
               "partSpeed": 5,
               "partSpeedVariance": 10,

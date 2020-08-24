@@ -24,6 +24,7 @@ body
     color: var(--text-color);
 	width: 100%;
     overflow-x: hidden;
+    overflow-y: auto;
 
 }
 
@@ -51,25 +52,51 @@ body
     display: flex;
     flex-direction: column;
     width: 85vw;
-    /* justify-self: center;
-    text-align: center; */
-    padding-top: 0.1%;
+    justify-self: center;
+    text-align: center;
+    padding: 4vh 0;
     margin-left: 7.3vw;
-
 }
 .photos
 {
-    /* background-color: aqua; */
-
     display: grid;
     grid-gap: 1vw 1vw;
-	grid-template-columns: auto auto auto auto auto;
+	grid-template-columns: auto auto auto;
 	grid-template-rows: repeat(25, auto);
 	align-content: center;
-    justify-content: center;
-    margin: 80vh 7.3vw 0 7.3vw;
+    justify-content: center;;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    grid-auto-flow: dense;
+    
 }
 img
-{    max-width: 40vw;
+{   
+     max-width: 20vw;
+     border-radius: 12px
+}
 
+.story button
+{
+    border-radius: 12px;
+    width: 40%;
+    padding: 0.15% 2%;
+    text-align: center;
+    border: 0.5px;
+    border-color: var(--text-color);
+    border-style: solid;
+    margin: auto;
+    background-color: var(--text-color);
+    color: var(--bg-color);
+    font-family: 'Anonymous Pro', monospace;
+    margin-top: 1vh;
+}
+.story button:hover
+{
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    border-width: 0.5px;
+    border-color: var(--text-color);
+    border-style: solid;
+    cursor: pointer;
 }

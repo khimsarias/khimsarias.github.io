@@ -59,8 +59,6 @@ body
     max-height: 40vh;
     margin: auto;
     border-radius: 50%;
-
-
 }
 .profile_img
 {
@@ -177,6 +175,7 @@ body
 .info
 {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
 }
 
 .experience

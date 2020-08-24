@@ -321,6 +321,13 @@ function btn_clicked(){
         navigator.clipboard.writeText(window.location.href);
         alert("Page URL copied.");
     }
+    else if (msg == "test")
+    {
+        if(document.title == "Saumya Khimsaria")
+        window.open('pages/test.html','_self');
+        else
+        window.open('test.html','_self');
+    }
     else
     {
         if (msg !== ""){

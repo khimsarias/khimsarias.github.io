@@ -60,20 +60,22 @@ body
 .photos
 {
     display: grid;
-    grid-gap: 1vw 1vw;
+    /* grid-gap: 1vw 1vw; */
 	grid-template-columns: auto auto auto;
-	grid-template-rows: repeat(25, auto);
-	align-content: center;
-    justify-content: center;;
+	grid-template-rows: repeat(10, auto);
+	/* align-content: center; */
+    justify-content: center;
     overflow-x: hidden;
     overflow-y: hidden;
-    grid-auto-flow: dense;
+    margin: 2vh 0;
+    /* grid-auto-flow: dense; */
     
 }
 img
 {   
      max-width: 20vw;
-     border-radius: 12px
+     /* max-height: 60vh; */
+     /* border-radius: 12px */
 }
 
 .story button

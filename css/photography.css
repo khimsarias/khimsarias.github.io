@@ -24,6 +24,7 @@ body
     color: var(--text-color);
 	width: 100%;
     overflow-x: hidden;
+
 }
 
 .title
@@ -54,26 +55,21 @@ body
     text-align: center; */
     padding-top: 0.1%;
     margin-left: 7.3vw;
+
 }
 .photos
 {
-    width: 85vw;
-    margin: 0 7.3vw;
-}
-.img
-{
-    max-width: 5vw;
-    width: 5vw;
-    height: 5vh;
-}
-.grid
-{
-    display: flex;
-    flex-flow: row;
-}
+    /* background-color: aqua; */
 
-.grid-col
-{
-    flex: 1;
-    padding: 0 0.1em;
+    display: grid;
+    grid-gap: 1vw 1vw;
+	grid-template-columns: auto auto auto auto auto;
+	grid-template-rows: repeat(25, auto);
+	align-content: center;
+    justify-content: center;
+    margin: 80vh 7.3vw 0 7.3vw;
+}
+img
+{    max-width: 40vw;
+
 }

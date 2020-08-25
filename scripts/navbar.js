@@ -328,6 +328,13 @@ function btn_clicked(){
         else
         window.open('test.html','_self');
     }
+    else if (msg == "photos" || msg== "photo")
+    {
+        if(document.title == "Saumya Khimsaria")
+        window.open('pages/photography.html','_self');
+        else
+        window.open('photography.html','_self')
+    }
     else
     {
         if (msg !== ""){

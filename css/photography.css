@@ -27,7 +27,12 @@ body
     overflow-y: auto;
 
 }
-
+.mainpage
+{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+}
 .title
 {
 	display: flex;
@@ -79,8 +84,17 @@ body
 
 
 @media screen and (max-width:780px){
+    .title span
+{
+    font-size: 50px;
+}
+.photos
+{
+    /* background-color: blueviolet; */
+    /* border-radius: 20px; */
+}
     .photos img
     {   
-         max-width: 40vw;
+         max-width: 32.5vw;
     }    
 }

@@ -36,7 +36,7 @@ body
 	width: 100%;
 	justify-self: center;
 	align-self: center;
-	text-justify: center;
+    text-justify: center;
 }
 
 .title span
@@ -55,7 +55,8 @@ body
     justify-self: center;
     text-align: center;
     padding: 4vh 0;
-    margin-left: 7.3vw;
+    /* margin-left: 7.3vw; */
+    margin: auto;
 }
 .photos
 {
@@ -71,34 +72,15 @@ body
     /* grid-auto-flow: dense; */
     
 }
-img
+.photos img
 {   
      max-width: 20vw;
-     /* max-height: 60vh; */
-     /* border-radius: 12px */
 }
 
-.story button
-{
-    border-radius: 12px;
-    width: 40%;
-    padding: 0.15% 2%;
-    text-align: center;
-    border: 0.5px;
-    border-color: var(--text-color);
-    border-style: solid;
-    margin: auto;
-    background-color: var(--text-color);
-    color: var(--bg-color);
-    font-family: 'Anonymous Pro', monospace;
-    margin-top: 1vh;
-}
-.story button:hover
-{
-    background-color: var(--bg-color);
-    color: var(--text-color);
-    border-width: 0.5px;
-    border-color: var(--text-color);
-    border-style: solid;
-    cursor: pointer;
+
+@media screen and (max-width:780px){
+    .photos img
+    {   
+         max-width: 40vw;
+    }    
 }

@@ -37,6 +37,7 @@
         });
     } );
     </script>
+    <link rel="stylesheet" href="../Gallery-master/css/blueimp-gallery.css">
 </head>
 <body onload="themeLoader()">
     <nav>
@@ -85,5 +86,67 @@
     <div class="expectation"><span>It should do:<br>
         Replace Hash after URL - Moon Emoji</span></div><br>
     <button class="event" onclick="stop_func();">STOP</button>
+
+    <div
+  id="blueimp-gallery"
+  class="blueimp-gallery blueimp-gallery-controls"
+  aria-label="image gallery"
+  aria-modal="true"
+  role="dialog"
+>
+  <div class="slides" aria-live="polite"></div>
+  <h3 class="title"></h3>
+  <a
+    class="prev"
+    aria-controls="blueimp-gallery"
+    aria-label="previous slide"
+    aria-keyshortcuts="ArrowLeft"
+  ></a>
+  <a
+    class="next"
+    aria-controls="blueimp-gallery"
+    aria-label="next slide"
+    aria-keyshortcuts="ArrowRight"
+  ></a>
+  <a
+    class="close"
+    aria-controls="blueimp-gallery"
+    aria-label="close"
+    aria-keyshortcuts="Escape"
+  ></a>
+  <a
+    class="play-pause"
+    aria-controls="blueimp-gallery"
+    aria-label="play slideshow"
+    aria-keyshortcuts="Space"
+    aria-pressed="false"
+    role="button"
+  ></a>
+  <ol class="indicator"></ol>
+</div>
+
+<div id="links">
+    <a href="../photos/photo1.jpg" title="Banana">
+      <img src="../photo-thumbnail/EDITED-1/photo1.jpg" alt="Banana" />
+    </a>
+    <a href="../photos/photo2.jpg" title="Apple">
+      <img src="../photo-thumbnail/EDITED-1/photo2.jpg" alt="Apple" />
+    </a>
+    <a href="../photos/photo3.jpg" title="Orange">
+      <img src="../photo-thumbnail/EDITED-1/photo3.jpg" alt="Orange" />
+  </div>
+  
+<script src="../Gallery-master/js/blueimp-gallery.js"></script>
+
+<script>
+    document.getElementById('links').onclick = function (event) {
+      event = event || window.event
+      var target = event.target || event.srcElement
+      var link = target.src ? target.parentNode : target
+      var options = { index: link, event: event }
+      var links = this.getElementsByTagName('a')
+      blueimp.Gallery(links, options)
+    }
+  </script>
 </body>
 </html>

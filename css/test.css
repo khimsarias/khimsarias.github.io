@@ -90,3 +90,10 @@ body
     border-style: solid;
     cursor: pointer;
 }
+
+#links
+{
+	padding-top: 2%;
+	width: 80vw;
+	margin: auto;
+}

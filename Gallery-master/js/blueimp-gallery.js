@@ -162,7 +162,7 @@
       // Start with the automatic slideshow:
       startSlideshow: false,
       // Delay in milliseconds between slides for the automatic slideshow:
-      slideshowInterval: 5000,
+      slideshowInterval: 2500,
       // The direction the slides are moving: ltr=LeftToRight or rtl=RightToLeft
       slideshowDirection: 'ltr',
       // The starting index as integer.

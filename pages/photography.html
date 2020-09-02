@@ -38,6 +38,7 @@
         });
     } );
     </script>
+    <link rel="stylesheet" href="../Gallery-master/css/blueimp-gallery.css">
 </head>
 <body onload="themeLoader()">
     <nav>
@@ -86,58 +87,205 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quidem veniam amet nostrum, rem sunt similique, dignissimos nam doloribus quaerat aut, ullam atque laborum inventore.</p>
             <!-- <button onclick="scrollto(`photos`);">Click to view photos!</button> -->
         </div>
-    <div class="photos">
-        <img src="../photos/photo1.jpg">
-        <img src="../photos/photo2.jpg">
-        <img src="../photos/photo3.jpg">
-        <img src="../photos/photo4.jpg">
-        <img src="../photos/photo5.jpg">
-        <img src="../photos/photo6.jpg">
-        <img src="../photos/photo7.jpg">
-        <img src="../photos/photo8.jpg">
-        <img src="../photos/photo9.jpg">
-        <img src="../photos/photo10.jpg">
-        <img src="../photos/photo11.jpg">
-        <img src="../photos/photo12.jpg">
-        <img src="../photos/photo13.jpg">
-        <img src="../photos/photo14.jpg">
-        <img src="../photos/photo15.jpg">
-        <img src="../photos/photo16.jpg">
-        <img src="../photos/photo17.jpg">
-        <img src="../photos/photo18.jpg">
-        <img src="../photos/photo19.jpg">
-        <img src="../photos/photo20.jpg">
-        <img src="../photos/photo21.jpg">
-        <img src="../photos/photo22.jpg">
-        <img src="../photos/photo23.jpg">
-        <img src="../photos/photo24.jpg">
-        <img src="../photos/photo25.jpg">
-        <img src="../photos/photo26.jpg">
-        <img src="../photos/photo27.jpg">
-        <img src="../photos/photo28.jpg">
-        <img src="../photos/photo29.jpg">
-        <img src="../photos/photo30.jpg">
-        <!-- <img src="../photos/photo31.jpg">
-        <img src="../photos/photo32.jpg">
-        <img src="../photos/photo33.jpg">
-        <img src="../photos/photo34.jpg">
-        <img src="../photos/photo35.jpg">
-        <img src="../photos/photo36.jpg">
-        <img src="../photos/photo37.jpg">
-        <img src="../photos/photo38.jpg">
-        <img src="../photos/photo39.jpg">
-        <img src="../photos/photo40.jpg">
-        <img src="../photos/photo41.jpg">
-        <img src="../photos/photo42.jpg">
-        <img src="../photos/photo43.jpg">
-        <img src="../photos/photo44.jpg">
-        <img src="../photos/photo45.jpg">
-        <img src="../photos/photo46.jpg">
-        <img src="../photos/photo47.jpg">
-        <img src="../photos/photo48.jpg">
-        <img src="../photos/photo49.jpg">
-        <img src="../photos/photo50.jpg"> -->
-    </div>
+        <div
+        id="blueimp-gallery"
+        class="blueimp-gallery blueimp-gallery-controls"
+        aria-label="image gallery"
+        aria-modal="true"
+        role="dialog"
+      >
+        <div class="slides" aria-live="polite"></div>
+        <h3 class="title"></h3>
+        <a
+          class="prev"
+          aria-controls="blueimp-gallery"
+          aria-label="previous slide"
+          aria-keyshortcuts="ArrowLeft"
+        ></a>
+        <a
+          class="next"
+          aria-controls="blueimp-gallery"
+          aria-label="next slide"
+          aria-keyshortcuts="ArrowRight"
+        ></a>
+        <a
+          class="close"
+          aria-controls="blueimp-gallery"
+          aria-label="close"
+          aria-keyshortcuts="Escape"
+        ></a>
+        <a
+          class="play-pause"
+          aria-controls="blueimp-gallery"
+          aria-label="play slideshow"
+          aria-keyshortcuts="Space"
+          aria-pressed="false"
+          role="button"
+        ></a>
+        <ol class="indicator"></ol>
+      </div>
+      
+      <div id="links">
+          <a href="../photos/photo1.jpg" title="University of Texas at Arlington">
+            <img src="../photo-thumbnail/photo1.jpg" alt="University of Texas at Arlington" />
+          </a>
+          <a href="../photos/photo2.jpg" title="University of Texas at Arlington">
+              <img src="../photo-thumbnail/photo2.jpg" alt="University of Texas at Arlington" />
+            </a>
+            <a href="../photos/photo3.jpg" title="University of Texas at Arlington">
+              <img src="../photo-thumbnail/photo3.jpg" alt="University of Texas at Arlington" />
+            </a>
+            <a href="../photos/photo4.jpg" title="University of Texas at Arlington">
+              <img src="../photo-thumbnail/photo4.jpg" alt="University of Texas at Arlington" />
+            </a>
+            <a href="../photos/photo5.jpg" title="University of Texas at Arlington">
+              <img src="../photo-thumbnail/photo5.jpg" alt="University of Texas at Arlington" />
+            </a>
+            <a href="../photos/photo6.jpg" title="University of Texas at Arlington">
+              <img src="../photo-thumbnail/photo6.jpg" alt="University of Texas at Arlington" />
+            </a>
+            <a href="../photos/photo7.jpg" title="University of Texas at Arlington">
+              <img src="../photo-thumbnail/photo7.jpg" alt="University of Texas at Arlington" />
+            </a>
+            <a href="../photos/photo8.jpg" title="University of Texas at Arlington">
+              <img src="../photo-thumbnail/photo8.jpg" alt="University of Texas at Arlington" />
+            </a>
+            <a href="../photos/photo9.jpg" title="University of Texas at Arlington">
+              <img src="../photo-thumbnail/photo9.jpg" alt="University of Texas at Arlington" />
+            </a>
+            <a href="../photos/photo10.jpg" title="University of Texas at Arlington">
+              <img src="../photo-thumbnail/photo10.jpg" alt="University of Texas at Arlington" />
+            </a>
+      
+            <a href="../photos/photo11.jpg" title="University of Texas at Arlington">
+              <img src="../photo-thumbnail/photo11.jpg" alt="University of Texas at Arlington" />
+            </a>
+            <a href="../photos/photo12.jpg" title="University of Texas at Arlington">
+                <img src="../photo-thumbnail/photo12.jpg" alt="University of Texas at Arlington" />
+              </a>
+              <a href="../photos/photo13.jpg" title="University of Texas at Arlington">
+                <img src="../photo-thumbnail/photo13.jpg" alt="University of Texas at Arlington" />
+              </a>
+              <a href="../photos/photo14.jpg" title="University of Texas at Arlington">
+                <img src="../photo-thumbnail/photo14.jpg" alt="University of Texas at Arlington" />
+              </a>
+              <a href="../photos/photo15.jpg" title="University of Texas at Arlington">
+                <img src="../photo-thumbnail/photo15.jpg" alt="University of Texas at Arlington" />
+              </a>
+              <a href="../photos/photo16.jpg" title="University of Texas at Arlington">
+                <img src="../photo-thumbnail/photo16.jpg" alt="University of Texas at Arlington" />
+              </a>
+              <a href="../photos/photo17.jpg" title="University of Texas at Arlington">
+                <img src="../photo-thumbnail/photo17.jpg" alt="University of Texas at Arlington" />
+              </a>
+              <a href="../photos/photo18.jpg" title="University of Texas at Arlington">
+                <img src="../photo-thumbnail/photo18.jpg" alt="University of Texas at Arlington" />
+              </a>
+              <a href="../photos/photo19.jpg" title="University of Texas at Arlington">
+                <img src="../photo-thumbnail/photo19.jpg" alt="University of Texas at Arlington" />
+              </a>
+              <a href="../photos/photo20.jpg" title="University of Texas at Arlington">
+                <img src="../photo-thumbnail/photo20.jpg" alt="University of Texas at Arlington" />
+              </a>
+      
+              <a href="../photos/photo21.jpg" title="University of Texas at Arlington">
+                  <img src="../photo-thumbnail/photo21.jpg" alt="University of Texas at Arlington" />
+                </a>
+                <a href="../photos/photo22.jpg" title="University of Texas at Arlington">
+                    <img src="../photo-thumbnail/photo22.jpg" alt="University of Texas at Arlington" />
+                  </a>
+                  <a href="../photos/photo23.jpg" title="University of Texas at Arlington">
+                    <img src="../photo-thumbnail/photo23.jpg" alt="University of Texas at Arlington" />
+                  </a>
+                  <a href="../photos/photo24.jpg" title="University of Texas at Arlington">
+                    <img src="../photo-thumbnail/photo24.jpg" alt="University of Texas at Arlington" />
+                  </a>
+                  <a href="../photos/photo25.jpg" title="University of Texas at Arlington">
+                    <img src="../photo-thumbnail/photo25.jpg" alt="University of Texas at Arlington" />
+                  </a>
+                  <a href="../photos/photo26.jpg" title="University of Texas at Arlington">
+                    <img src="../photo-thumbnail/photo26.jpg" alt="University of Texas at Arlington" />
+                  </a>
+                  <a href="../photos/photo27.jpg" title="University of Texas at Arlington">
+                    <img src="../photo-thumbnail/photo27.jpg" alt="University of Texas at Arlington" />
+                  </a>
+                  <a href="../photos/photo28.jpg" title="University of Texas at Arlington">
+                    <img src="../photo-thumbnail/photo28.jpg" alt="University of Texas at Arlington" />
+                  </a>
+                  <a href="../photos/photo29.jpg" title="University of Texas at Arlington">
+                    <img src="../photo-thumbnail/photo29.jpg" alt="University of Texas at Arlington" />
+                  </a>
+                  <a href="../photos/photo30.jpg" title="University of Texas at Arlington">
+                    <img src="../photo-thumbnail/photo30.jpg" alt="University of Texas at Arlington" />
+                  </a>
+            
+                  <a href="../photos/photo31.jpg" title="University of Texas at Arlington">
+                    <img src="../photo-thumbnail/photo31.jpg" alt="University of Texas at Arlington" />
+                  </a>
+                  <a href="../photos/photo32.jpg" title="University of Texas at Arlington">
+                      <img src="../photo-thumbnail/photo12.jpg" alt="University of Texas at Arlington" />
+                    </a>
+                    <a href="../photos/photo33.jpg" title="University of Texas at Arlington">
+                      <img src="../photo-thumbnail/photo33.jpg" alt="University of Texas at Arlington" />
+                    </a>
+                    <a href="../photos/photo34.jpg" title="University of Texas at Arlington">
+                      <img src="../photo-thumbnail/photo34.jpg" alt="University of Texas at Arlington" />
+                    </a>
+                    <a href="../photos/photo35.jpg" title="University of Texas at Arlington">
+                      <img src="../photo-thumbnail/photo35.jpg" alt="University of Texas at Arlington" />
+                    </a>
+                    <a href="../photos/photo36.jpg" title="University of Texas at Arlington">
+                      <img src="../photo-thumbnail/photo36.jpg" alt="University of Texas at Arlington" />
+                    </a>
+                    <a href="../photos/photo37.jpg" title="University of Texas at Arlington">
+                      <img src="../photo-thumbnail/photo37.jpg" alt="University of Texas at Arlington" />
+                    </a>
+                    <a href="../photos/photo38.jpg" title="University of Texas at Arlington">
+                      <img src="../photo-thumbnail/photo38.jpg" alt="University of Texas at Arlington" />
+                    </a>
+                    <a href="../photos/photo39.jpg" title="University of Texas at Arlington">
+                      <img src="../photo-thumbnail/photo39.jpg" alt="University of Texas at Arlington" />
+                    </a>
+                    <a href="../photos/photo40.jpg" title="University of Texas at Arlington">
+                      <img src="../photo-thumbnail/photo40.jpg" alt="University of Texas at Arlington" />
+      
+                       <a href="../photos/photo31.jpg" title="University of Texas at Arlington">
+                    <img src="../photo-thumbnail/photo31.jpg" alt="University of Texas at Arlington" />
+                  </a>
+                  <a href="../photos/photo32.jpg" title="University of Texas at Arlington">
+                      <img src="../photo-thumbnail/photo12.jpg" alt="University of Texas at Arlington" />
+                    </a>
+                    <a href="../photos/photo33.jpg" title="University of Texas at Arlington">
+                      <img src="../photo-thumbnail/photo33.jpg" alt="University of Texas at Arlington" />
+                    </a>
+                    <a href="../photos/photo34.jpg" title="University of Texas at Arlington">
+                      <img src="../photo-thumbnail/photo34.jpg" alt="University of Texas at Arlington" />
+                    </a>
+                    <a href="../photos/photo41.jpg" title="University of Texas at Arlington">
+                      <img src="../photo-thumbnail/photo41.jpg" alt="University of Texas at Arlington" />
+                    </a>
+                    <a href="../photos/photo42.jpg" title="University of Texas at Arlington">
+                        <img src="../photo-thumbnail/photo42.jpg" alt="University of Texas at Arlington" />
+                      </a>
+                      <a href="../photos/photo43.jpg" title="University of Texas at Arlington">
+                        <img src="../photo-thumbnail/photo43.jpg" alt="University of Texas at Arlington" />
+                      </a>
+                      <a href="../photos/photo44.jpg" title="University of Texas at Arlington">
+                        <img src="../photo-thumbnail/photo44.jpg" alt="University of Texas at Arlington" />
+        </div>
+        
+      <script src="../Gallery-master/js/blueimp-gallery.js"></script>
+      
+      <script>
+          document.getElementById('links').onclick = function (event) {
+            event = event || window.event
+            var target = event.target || event.srcElement
+            var link = target.src ? target.parentNode : target
+            var options = { index: link, event: event }
+            var links = this.getElementsByTagName('a')
+            blueimp.Gallery(links, options)
+          }
+        </script>
         <!-- <script src="../scripts/colcade.js"></script> -->
         <script src="../scripts//photography.js"></script>
     </body>

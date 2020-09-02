@@ -82,6 +82,12 @@ body
      max-width: 20vw;
 }
 
+#links
+{
+	padding-top: 2%;
+	width: 80vw;
+	margin: auto;
+}
 
 @media screen and (max-width:780px){
     .title span

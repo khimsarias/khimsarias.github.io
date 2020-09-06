@@ -71,6 +71,11 @@ $(document).ready( function()
 
 function themeLoader()
 {
+    let winheight = window.innerHeight;
+    let winwidth = window.innerWidth;
+    console.log(winheight);
+    console.log(winwidth)
+    
     document.body.classList.add("fade_anim");
 	if (localStorage.getItem("mode") == null)
 	{

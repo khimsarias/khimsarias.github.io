@@ -93,7 +93,7 @@ Medical research has recognized that single studies and even double-blinded rand
 ### d.	Integrating the critical appraisal with software engineering expertise
 In the medical field, the practitioner decides what evidence and technology to use based on the specific patient. Although there are opportunities for individual software engineers and managers to adopt EBSE principles, the decision to adopt a technology is often an organizational issue that is influenced by factors such as the organizational culture, the experience and skill of the individual software developers, the requirements of clients, project constraints, and the extent of training required [1]. There is a need to adopt Evidence-Based Software Engineering in organizations that have a strong commitment to process improvement. However, this is currently not happening owing to research results being not in wide-spread use in the industry or having no perceived value to stakeholders.
 
-e.	Evaluation of process
+### e.	Evaluation of process
 For Evidence-Based Software Engineering, evaluation consists of propagating successful technologies and discouraging/preventing the spread of unsuccessful technologies. There are a few issues here that need to be noted:
 
 1.	In a competitive industry like software engineering, there is little to no incentive to help your competitors. This discourages the use of evidence and making it public.

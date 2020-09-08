@@ -114,11 +114,11 @@ nav
 
 .article p
 {
-    padding: 3vh 0;
+    padding: 1.5vh 0;
     font-size: 27px;
     margin: 0 25%;
 }
-.article ul
+.article ul , .article ol
 {
     font-size: 27px;
     margin: 0 25%
@@ -198,7 +198,7 @@ nav
     {
         margin: 0 3%;
     }
-    .article ul
+    .article ul, .article ol
 {
     font-size: 27px;
     margin: 0 3%
@@ -261,7 +261,7 @@ nav
     width: 90%;
 }
 
-.article ul
+.article ul, .article ol
 {
     font-size: 18px;
     margin: 0 5%

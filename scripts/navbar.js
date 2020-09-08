@@ -490,7 +490,7 @@ function socialfunction(x)
         }
         case "linkedin" :
         {
-            alert("link is coming soon");
+            window.open(`https://www.linkedin.com/in/saumya-khimsaria-8905661b5/`,`_blank`);
             break;
         }
         case "github" :
@@ -511,9 +511,9 @@ function socialfunction(x)
         case "resume" :
         {
             if(document.title == "Saumya Khimsaria")
-            window.open(`images/test.jpg`,'_blank');
+            window.open(`pages/resume.pdf`,'_blank');
             else
-            window.open(`../images/test.jpg`,'_blank');
+            window.open(`resume.pdf`,'_blank');
             break;
         }
     }

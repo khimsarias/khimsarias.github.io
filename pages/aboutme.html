@@ -5,18 +5,18 @@
     <meta name="description" content="About Me">
 	<meta name="author" content="Saumya Khimsaria">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="../css/aboutme.css">
     <link rel="stylesheet" href="../css/navbar-updates.css">
     <link rel="stylesheet" href="../css/jquery-ui.min.css">
+    
     <link href="https://fonts.googleapis.com/css?family=Anonymous+Pro&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Notable&display=swap" rel="stylesheet">
+
     <link rel="icon" href="../favicon.ico" type="image/x-icon" >
     <script src="../scripts/jquery-3.5.0.min.js"></script>
-    <audio id="invalid" src="../audio/invalid.m4a" ></audio>
+    
     <title>About Me</title>
-        <!-- Autocomplete -->
-    <!-- <link rel="stylesheet" href="css/jquery-ui.min.css"> -->
-    <br>
     <script src="../scripts/jquery-ui.min.js"></script>
     <script>
     $( function() {
@@ -31,13 +31,20 @@
         "cd about me","accio about me",
         "cd blogs","accio blogs",
         "cd projects","accio projects",
-        "instagram","twitter","linkedin","email","github","steam","resume"
+        "instagram","twitter","linkedin","email","github","steam","resume","photo"
         ];
         $( "#cmd_id" ).autocomplete({
         source: availableTags
         });
     } );
     </script>
+    <!-- Link Preview -->
+    <meta property="og:site_name" content="Saumya Khimsaria" />
+    <meta property="og:title" content="Saumya Khimsaria" />
+    <meta property="og:description" content="This website is my pensieve." />
+    <meta property="og:image" content="../favicon.ico">
+    <meta property="og:url" content="https://khimsarias.github.io/images/trial.jpg">
+    <meta property="og:type" content="blog" />
 </head>
 <body onload="themeLoader()">
     <nav>

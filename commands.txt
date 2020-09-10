@@ -15,5 +15,6 @@ All commands and spells :-
 'cat *' :- Replace * with blog number (0/featured for featured blog)
 'cd' or 'cd ~' or 'cd /' :- Go back to home page (Equivalent to pressing home on the navbar)
 'cd -' or 'cd ..' :- Go back one page (equivalent to pressing the back button in the browser)
-'instagram' , 'twitter', 'linkedin', 'mail', 'github' :- bring us corresponding social porfiles
+'instagram' , 'twitter', 'linkedin', 'mail', 'github' :- bring up corresponding social porfiles
 'rtd' : New Random Featured Article/Project (Throwback to Roll The Dice from CS 1.6)
+`photo` : bring up the photo lightbox

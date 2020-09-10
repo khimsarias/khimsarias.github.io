@@ -344,68 +344,8 @@ function btn_clicked(){
     {
         if (msg !== ""){
         console.log("incorrect commmand");
-        document.getElementById("invalid").play();
-        document.getElementById("cmd_id").value = ` `;
-        setTimeout(() => {
-            document.getElementById("cmd_id").value = `Are`;
-        }, 100);
-
-        setTimeout(() => {
-            document.getElementById("cmd_id").value = `Are you`;
-        }, 250);
-
-        setTimeout(() => {
-            document.getElementById("cmd_id").value = `Are you sure`;
-        }, 450);
-
-        setTimeout(() => {
-            document.getElementById("cmd_id").value = `Are you sure thats`;
-        }, 600);
-
-        setTimeout(() => {
-            document.getElementById("cmd_id").value = `Are you sure thats a`;
-        }, 800);
-
-        setTimeout(() => {
-            document.getElementById("cmd_id").value = `Are you sure thats a real`;
-        }, 960);
-
-        setTimeout(() => {
-            document.getElementById("cmd_id").value = `Are you sure thats a real spell?`;
-        }, 1300);
-
-        setTimeout(() => {
-            document.getElementById("cmd_id").value = `Well,`;
-        }, 3200);
-
-        setTimeout(() => {
-            document.getElementById("cmd_id").value = `Well, it's`;
-        }, 3400);
-
-        setTimeout(() => {
-            document.getElementById("cmd_id").value = `Well, it's not`;
-        }, 3600);
-
-        setTimeout(() => {
-            document.getElementById("cmd_id").value = `Well, it's not very`;
-        }, 3800);
-
-        setTimeout(() => {
-            document.getElementById("cmd_id").value = `Well, it's not very good,`;
-        }, 4000);
-
-        setTimeout(() => {
-            document.getElementById("cmd_id").value = `Well, it's not very good, is`;
-        }, 4250);
-
-        setTimeout(() => {
-            document.getElementById("cmd_id").value =  `Well, it's not very good, is it?`;
-        }, 4500);
-
-        setTimeout(() => {
-            document.getElementById("cmd_id").value = ``;
-            // document.getElementById("invalid").pause();
-        }, 6100);
+        // document.getElementById("invalid").play();
+        document.getElementById("cmd_id").value = `I'm sorry! That command/spell is either incorrect or not supported yet!`;
         }
     }
 };

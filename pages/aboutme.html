@@ -1,265 +1,261 @@
 <!doctype html>
 <html lang="en" data-theme="light">
-<head>
-    <meta charset="utf-8">
-    <meta name="description" content="About Me">
-	<meta name="author" content="Saumya Khimsaria">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="../css/aboutme.css">
-    <link rel="stylesheet" href="../css/navbar-updates.css">
-    <link rel="stylesheet" href="../css/jquery-ui.min.css">
-    
-    <link href="https://fonts.googleapis.com/css?family=Anonymous+Pro&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Notable&display=swap" rel="stylesheet">
-
-    <link rel="icon" href="../favicon.ico" type="image/x-icon" >
-    <script src="../scripts/jquery-3.5.0.min.js"></script>
-    
-    <title>About Me</title>
-    <script src="../scripts/jquery-ui.min.js"></script>
-    <script>
-    $( function() {
-        var availableTags = [
-        "cd",
-        "cd ..",
-        "help",
-        "lumos",
-        "nox",
-        "share",
-        "cd home","accio home",
-        "cd about me","accio about me",
-        "cd blogs","accio blogs",
-        "cd projects","accio projects",
-        "instagram","twitter","linkedin","email","github","steam","resume","photo"
-        ];
-        $( "#cmd_id" ).autocomplete({
-        source: availableTags
-        });
-    } );
-    </script>
-    <!-- Link Preview -->
-    <meta property="og:site_name" content="Saumya Khimsaria" />
-    <meta property="og:title" content="Saumya Khimsaria" />
-    <meta property="og:description" content="This website is my pensieve." />
-    <meta property="og:image" content="../favicon.ico">
-    <meta property="og:url" content="https://khimsarias.github.io/images/trial.jpg">
-    <meta property="og:type" content="blog" />
-</head>
-<body onload="themeLoader()">
-    <nav>
-        <div class="logo">
-            <h4>
-                <a data-content="Saumya Khimsaria" class="text-link" href="../index.html">Saumya Khimsaria</a>
-            </h4>
-        </div>
-        <ul class="nav-links">
-            <li>
-                <a data-content="Home" class="text-link" href="../index.html">Home</a>
-            </li>
-            <li>
-                <a data-content="About Me" class="text-link" href="#">About Me</a>
-            </li>
-            <li>
-                <a data-content="Blogs" class="text-link" href="blogs.html">Blogs</a>
-            </li>
-            <li>
-                <a data-content="Projects" class="text-link" href="projects.html">Projects</a>
-            </li>
-        </ul>
-        <div class="burger">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
-        </div>
-        <div class="cmd_box">
-            <input type="text" value="" class="command" name="command" placeholder="Harry Potter Spells / Linux Commands / Help" id="cmd_id" onfocus="clear_content()" onblur="remove_blur()">
-            <div class="msg">
-                <br><span>Nox (Dark Mode), Lumos (Light Mode), Help (Bring up help page)<br><br>
-                 'cd *' :- Replace * with name of a page <br><br>
-                 'cd' or 'cd ~' or 'cd /' :- Go back to home page (Equivalent to pressing home on the navbar)<br><br>
-                 'cd -' or 'cd ..' :- Go back one page (equivalent to pressing the back button in the browser)</span><br><br>
-             </div>
-        </div>
-        <div class="execute">
-            <button class="button" onclick="btn_clicked();" id="btn_id" ><img id="wand" src="../images/wand.png" alt=""></button>
-        </div>
-    </nav>
-    <script src="../scripts/navbar.js"></script>
-    <!--  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ EVERY PAGE MUST HAVE THE ABOVE CODE ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ -->
-    <div class="mainpage">
-        <div class="title"><span>About Me</span></div>
-        <img class="profile_img" src="../images/profile.jpg">
-        <p class="info">I'm a university junior based in the DFW metroplex pursuing a degree in Computer Science.</p>
-        <button onclick="socialfunction(`resume`);">Résumé</button>
-        <ul class="social" style="filter: invert(0);">
-            <li><img src="../images/mail.png" onclick="socialfunction('mail')"></li>
-            <li><img src="../images/instagram.png" onclick="socialfunction('instagram')"></li>
-            <li><img src="../images/linkedin.png" onclick="socialfunction('linkedin')"></li>
-            <li><img src="../images/github.png" onclick="socialfunction('github')"></li>
-            <li><img src="../images/twitter.png" onclick="socialfunction('twitter')"></li>
-            <li><img src="../images/steam.png" onclick="socialfunction('steam')"></li>
-        </ul>
-        <div class="scroll_down"><span onclick="scrollto('experience');">&#9660; Scroll down for more details &#9660;</span></div>
-    </div>
-    <div class="email_popup">
-        <span> Email has been copied to the clipboard. Do you want to open your default email client?</span><br>
-        <button onclick="email_client(), close_popup()">YES</button><br>
-        <button onclick="close_popup()">NO</button>
-    </div>
-    <hr><hr><hr>
-    <div class="experience" id="experience">
-        <h1>Experience</h1><br>
-        <div class="place">
-            <span class="name">Office of Information Technology, OIT</span><span class="partition">|</span>
-            <span class="job-title">Student Assistant</span><span class="partition">|</span>
-            <span class="period">2018-Present</span>
-        </div>
-        <br><hr><br>
-        <div class="info">
-            <li>Dell EMC TechDirect certified technician.</li>
-            <li>Co-Managed university wide OS upgrade to Windows 10 w/ data backup, software management, user management, encryption management, etc.</li>
-            <li>Resolved 400+ tickets ranging from basic re-image to user specific errors.</li>
-            <li>Extensive and in-depth testing of new software, OS, etc.</li>
-            <li>Worked on 100+ laptops, desktop towers, etc with hardware troubleshooting.</li>
-            <li>Hands On experience with following industry softwares/OS: Windows 10 Enterprise 1803+, MacOS 10.13+, ADUC, Azure AD, Intune, WinMagic SecureDoc 7.0+, Code42 CrashPlan 6.0+, JAMF, etc </li>
-        </div>
-        <br><br>
-        <div class="place">
-            <span class="name">Freelance Photography</span><span class="partition">|</span>
-            <span class="job-title">Freelancer</span><span class="partition">|</span>
-            <span class="period">2016-Present</span>
-        </div>
-        <br><hr><br>
-        <div class="info">
-            <li>Attended various photography workshops, events, seminars, gatherings, etc.</li>
-            <li>Member of an active local photography club.</li>
-            <li>Coordinated and hosted 1 Wedding Shoot, 15 Personal Photoshoots, 3 Live Events, 6 Photography walks, 4 Graduation Photoshoots etc.</li>
-        </div>
-        <br><br>
-
-        <div class="place">
-            <span class="name">Freelance Writing</span><span class="partition">|</span>
-            <span class="job-title">Freelancer</span><span class="partition">|</span>
-            <span class="period">2015-2018</span>
-        </div>
-        <br><hr><br>
-        <div class="info">
-            <li>Exploring technological advancements and spreading awareness to the masses through various infoemative articles.</li>
-            <li>Wrote a total of 63 articles on a variety of topics such as Technological Events, New Cellphones, Laptops, DSLR Cameras, PC Hardware, PC Games, etc.</li>
-        </div>
-        <br><br>
-
-        <div class="place">
-            <span class="name">All Major Fair Job Volunteer</span><span class="partition">|</span>
-            <span class="job-title">Staff Volunteer</span><span class="partition">|</span>
-            <span class="period">Spring 2020</span>
-        </div>
-        <br><hr><br>
-        <div class="info">
-            <li>Managed Employer and Volunteer Check-In and Check-Out along with their time sheets.</li>
-            <li>In charge of supply and resource distribution and management.</li>
-        </div>
-        <br><br>
-        <div class="place">
-            <span class="name">Engineering Career Fair Volunteer</span><span class="partition">|</span>
-            <span class="job-title">Student Volunteer</span><span class="partition">|</span>
-            <span class="period">Fall 2018</span>
-        </div>
-        <br><hr><br>
-        <div class="info">
-            <li>Managed Student Check-In and Check-Out as well as sorting them based on various criteria.</li>
-        </div>
-    </div>
-    <hr><hr><hr>
- <div class="education">
-    <h1>Education</h1><br>
-    <div class="place">
-        <span class="name">University of Texas at Arlington</span><span class="partition">|</span>
-        <span class="job-title">Bachelors in Computer Science</span><span class="partition">|</span>
-        <span class="period">2018-2022 (Anticipated)</span>
-    </div>
-    <br><hr><br>
-    <div class="info">
-        <h3>Coursework</h3><br>
-        <li>Algorithms and Data Structures (C)</li>
-        <li>Operating Systems (Unix, C)</li>
-        <li>Fundamentals of Software Engineering (C#, Python)</li>
-        <li>Assembly Language (ARM 7) (C, Assembly)</li>
-        <li>Object Oriented Programming (C++, GtKMM)</li>
-        <li>CSE oriented Linear Algebra (Python)</li>
-        <li>Intoductory and Inermediate Programming (Java and C)</li>
-        <li>Calculus 1 and 2</li>
-        <br>
-        <h3>Projects</h3>
-        <li>Personal Website (HTML, CSS, JavaScript) - Website dedicated to my projects, blogs and portfolio.</li>
-        <li>2D Runner Mobile Game (Android, C#) - A 2D platform runner game with multiple levels, obstacles, rewards, etc.</li>
-        <li>Vending Machine Software (C++) - A vending machine controller code that can deploy items, change, w/ refil functions etc. all coded using OOP.</li>
-        <li>Character Guessing Game (C++. GTKMM) - Basic GUI based character guessing game where all elements are rendered using C++ code and GTKMM libraries.</li>
-        <li>Lyrics Guessing Game (C) - Typing based lyrics guessing game with points system, multiple levels, lives, etc.</li>
-        <li>Movie Theater Chain Management Software (C) - A complete solution for ticket sales across multiple locations with multiple movies on multiple screens.</li>
-        <li>Restaurant Order Management Software (C) - A complete solution for a small restaurant for order management and money management.</li>
-        <li>Ascii Drawing Tool (C) - A simple drawing tool that takes in any 3 letters and renders them on a canvas using the users choice of ASCII characters.</li>
-        <li>Automated Notes Maker (C / C++) - A simple program that makes note prepration easy.</li>
-        <li>GPA Calculator (Java) - Basic GPA calculator based on UTA's grading poicies.</li>
-        <li>Data Sort/Filter/Search (Java) - An extensive sort/filter/search program that takes in a text file, arranges it in arrays and outputs it in a text file based on options chosen by the user.</li>
-    </div>
-    </div>
-    <hr><hr><hr>
-    <div class="skills">
-        <h1>Skills</h1><br>
-        <div class="subsection">
-            <div class="section">
-                <h3>Languages/Libraries/FrameWorks</h3>
-                <li>Agile</li>
-                <li>Assembly (ARM 7)</li>
-                <li>Bash</li>
-                <li>C</li>
-                <li>C#</li>
-                <li>C++</li>
-                <li>CSS</li>
-                <li>GTK</li>
-                <li>HTML</li>
-                <li>Java</li>
-                <li>JavaScript</li>
-                <li>jQuery</li>
-                <li>MarkDown</li>
-                <li>NumPy</li>
-                <li>Python</li>
-                <li>Shell</li>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="About Me">
+        <meta name="author" content="Saumya Khimsaria">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/aboutme.css">
+        <link rel="stylesheet" href="../css/navbar-updates.css">
+        <link rel="stylesheet" href="../css/jquery-ui.min.css">   
+        <link href="https://fonts.googleapis.com/css?family=Anonymous+Pro&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Notable&display=swap" rel="stylesheet">
+        <link rel="icon" href="../favicon.ico" type="image/x-icon" >
+        <script src="../scripts/jquery-3.5.0.min.js"></script>   
+        <title>About Me</title>
+        <script src="../scripts/jquery-ui.min.js"></script>
+        <script>
+            $( function() {
+                var availableTags = [
+                "cd",
+                "cd ..",
+                "help",
+                "lumos",
+                "nox",
+                "share",
+                "cd home","accio home",
+                "cd about me","accio about me",
+                "cd blogs","accio blogs",
+                "cd projects","accio projects",
+                "instagram","twitter","linkedin","email","github","steam","resume","photo"
+                ];
+                $( "#cmd_id" ).autocomplete({
+                source: availableTags
+                });
+            } );
+        </script>
+        <!-- Link Preview -->
+        <meta property="og:site_name" content="Saumya Khimsaria" />
+        <meta property="og:title" content="Saumya Khimsaria" />
+        <meta property="og:description" content="This website is my pensieve." />
+        <meta property="og:image" content="../favicon.ico">
+        <meta property="og:url" content="https://khimsarias.github.io/images/trial.jpg">
+        <meta property="og:type" content="blog" />
+    </head>
+    <body onload="themeLoader()">
+        <nav>
+            <div class="logo">
+                <h4>
+                    <a data-content="Saumya Khimsaria" class="text-link" href="../index.html">Saumya Khimsaria</a>
+                </h4>
             </div>
-            <div class="section">
-                <h3>Tools</h3>
-                <li>PowerShell</li>
-                <li>Command Prompt</li>
-                <li>Terminal (MacOS and Linux)</li>
-                <li>NetBeans</li>
-                <li>NotePad ++</li>
-                <li>VS Code</li>
-                <li>Android Studio</li>
-                <li>Unity</li>
-                <li>Git</li>
-                <li>MatLab</li>
-                <li>Arduino</li>
-                <li>RasPi</li>
-                <li>DreamWeaver</li>
+            <ul class="nav-links">
+                <li>
+                    <a data-content="Home" class="text-link" href="../index.html">Home</a>
+                </li>
+                <li>
+                    <a data-content="About Me" class="text-link" href="#">About Me</a>
+                </li>
+                <li>
+                    <a data-content="Blogs" class="text-link" href="blogs.html">Blogs</a>
+                </li>
+                <li>
+                    <a data-content="Projects" class="text-link" href="projects.html">Projects</a>
+                </li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
             </div>
-            <div class="section">
-                <h3>Softwares</h3>
-                <li>Code42 Crashplan</li>
-                <li>Adobe Suite</li>
-                <li>MS Office Suite</li>
-                <li>IBM SPSS</li>
-                <li>Faronics Deepfreeze</li>
-                <li>CryptoErase</li>
-                <li>Microsoft System Center Conifguration Manager (SCCM)</li>
-                <li>Azure Active Directory</li>
-                <li>Active Directory (ADUC)</li>
-                <li>WinMagic SecureDoc</li>
-                <li>JAMF</li>
-                <li>Intune</li>
+            <div class="cmd_box">
+                <input type="text" value="" class="command" name="command" placeholder="Harry Potter Spells / Linux Commands / Help" id="cmd_id" onfocus="clear_content()" onblur="remove_blur()">
+                <div class="msg">
+                    <br><span>Nox (Dark Mode), Lumos (Light Mode), Help (Bring up help page)<br><br>
+                    'cd *' :- Replace * with name of a page <br><br>
+                    'cd' or 'cd ~' or 'cd /' :- Go back to home page (Equivalent to pressing home on the navbar)<br><br>
+                    'cd -' or 'cd ..' :- Go back one page (equivalent to pressing the back button in the browser)</span><br><br>
+                </div>
+            </div>
+            <div class="execute">
+                <button class="button" onclick="btn_clicked();" id="btn_id" ><img id="wand" src="../images/wand.png" alt=""></button>
+            </div>
+        </nav>
+        <script src="../scripts/navbar.js"></script>
+        <!--  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ EVERY PAGE MUST HAVE THE ABOVE CODE ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ -->
+        <div class="mainpage">
+            <div class="title"><span>About Me</span></div>
+            <img class="profile_img" src="../images/profile.jpg">
+            <p class="info">I'm a university junior based in the DFW metroplex pursuing a degree in Computer Science.</p>
+            <button onclick="socialfunction(`resume`);">Résumé</button>
+            <ul class="social" style="filter: invert(0);">
+                <li><img src="../images/mail.png" onclick="socialfunction('mail')"></li>
+                <li><img src="../images/instagram.png" onclick="socialfunction('instagram')"></li>
+                <li><img src="../images/linkedin.png" onclick="socialfunction('linkedin')"></li>
+                <li><img src="../images/github.png" onclick="socialfunction('github')"></li>
+                <li><img src="../images/twitter.png" onclick="socialfunction('twitter')"></li>
+                <li><img src="../images/steam.png" onclick="socialfunction('steam')"></li>
+            </ul>
+            <div class="scroll_down"><span onclick="scrollto('experience');">&#9660; Scroll down for more details &#9660;</span></div>
+        </div>
+        <div class="email_popup">
+            <span> Email has been copied to the clipboard. Do you want to open your default email client?</span><br>
+            <button onclick="email_client(), close_popup()">YES</button><br>
+            <button onclick="close_popup()">NO</button>
+        </div>
+        <hr><hr><hr>
+        <div class="experience" id="experience">
+            <h1>Experience</h1><br>
+            <div class="place">
+                <span class="name">Office of Information Technology, OIT</span><span class="partition">|</span>
+                <span class="job-title">Student Assistant</span><span class="partition">|</span>
+                <span class="period">2018-Present</span>
+            </div>
+            <br><hr><br>
+            <div class="info">
+                <li>Dell EMC TechDirect certified technician.</li>
+                <li>Co-Managed university wide OS upgrade to Windows 10 w/ data backup, software management, user management, encryption management, etc.</li>
+                <li>Resolved 400+ tickets ranging from basic re-image to user specific errors.</li>
+                <li>Extensive and in-depth testing of new software, OS, etc.</li>
+                <li>Worked on 100+ laptops, desktop towers, etc with hardware troubleshooting.</li>
+                <li>Hands On experience with following industry softwares/OS: Windows 10 Enterprise 1803+, MacOS 10.13+, ADUC, Azure AD, Intune, WinMagic SecureDoc 7.0+, Code42 CrashPlan 6.0+, JAMF, etc </li>
+            </div>
+            <br><br>
+            <div class="place">
+                <span class="name">Freelance Photography</span><span class="partition">|</span>
+                <span class="job-title">Freelancer</span><span class="partition">|</span>
+                <span class="period">2016-Present</span>
+            </div>
+            <br><hr><br>
+            <div class="info">
+                <li>Attended various photography workshops, events, seminars, gatherings, etc.</li>
+                <li>Member of an active local photography club.</li>
+                <li>Coordinated and hosted 1 Wedding Shoot, 15 Personal Photoshoots, 3 Live Events, 6 Photography walks, 4 Graduation Photoshoots etc.</li>
+            </div>
+            <br><br>
+
+            <div class="place">
+                <span class="name">Freelance Writing</span><span class="partition">|</span>
+                <span class="job-title">Freelancer</span><span class="partition">|</span>
+                <span class="period">2015-2018</span>
+            </div>
+            <br><hr><br>
+            <div class="info">
+                <li>Exploring technological advancements and spreading awareness to the masses through various infoemative articles.</li>
+                <li>Wrote a total of 63 articles on a variety of topics such as Technological Events, New Cellphones, Laptops, DSLR Cameras, PC Hardware, PC Games, etc.</li>
+            </div>
+            <br><br>
+
+            <div class="place">
+                <span class="name">All Major Fair Job Volunteer</span><span class="partition">|</span>
+                <span class="job-title">Staff Volunteer</span><span class="partition">|</span>
+                <span class="period">Spring 2020</span>
+            </div>
+            <br><hr><br>
+            <div class="info">
+                <li>Managed Employer and Volunteer Check-In and Check-Out along with their time sheets.</li>
+                <li>In charge of supply and resource distribution and management.</li>
+            </div>
+            <br><br>
+            <div class="place">
+                <span class="name">Engineering Career Fair Volunteer</span><span class="partition">|</span>
+                <span class="job-title">Student Volunteer</span><span class="partition">|</span>
+                <span class="period">Fall 2018</span>
+            </div>
+            <br><hr><br>
+            <div class="info">
+                <li>Managed Student Check-In and Check-Out as well as sorting them based on various criteria.</li>
             </div>
         </div>
-    </div>
-</body>
+        <hr><hr><hr>
+    <div class="education">
+        <h1>Education</h1><br>
+        <div class="place">
+            <span class="name">University of Texas at Arlington</span><span class="partition">|</span>
+            <span class="job-title">Bachelors in Computer Science</span><span class="partition">|</span>
+            <span class="period">2018-2022 (Anticipated)</span>
+        </div>
+        <br><hr><br>
+        <div class="info">
+            <h3>Coursework</h3><br>
+            <li>Algorithms and Data Structures (C)</li>
+            <li>Operating Systems (Unix, C)</li>
+            <li>Fundamentals of Software Engineering (C#, Python)</li>
+            <li>Assembly Language (ARM 7) (C, Assembly)</li>
+            <li>Object Oriented Programming (C++, GtKMM)</li>
+            <li>CSE oriented Linear Algebra (Python)</li>
+            <li>Intoductory and Inermediate Programming (Java and C)</li>
+            <li>Calculus 1 and 2</li>
+            <br>
+            <h3>Projects</h3>
+            <li>Personal Website (HTML, CSS, JavaScript) - Website dedicated to my projects, blogs and portfolio.</li>
+            <li>2D Runner Mobile Game (Android, C#) - A 2D platform runner game with multiple levels, obstacles, rewards, etc.</li>
+            <li>Vending Machine Software (C++) - A vending machine controller code that can deploy items, change, w/ refil functions etc. all coded using OOP.</li>
+            <li>Character Guessing Game (C++. GTKMM) - Basic GUI based character guessing game where all elements are rendered using C++ code and GTKMM libraries.</li>
+            <li>Lyrics Guessing Game (C) - Typing based lyrics guessing game with points system, multiple levels, lives, etc.</li>
+            <li>Movie Theater Chain Management Software (C) - A complete solution for ticket sales across multiple locations with multiple movies on multiple screens.</li>
+            <li>Restaurant Order Management Software (C) - A complete solution for a small restaurant for order management and money management.</li>
+            <li>Ascii Drawing Tool (C) - A simple drawing tool that takes in any 3 letters and renders them on a canvas using the users choice of ASCII characters.</li>
+            <li>Automated Notes Maker (C / C++) - A simple program that makes note prepration easy.</li>
+            <li>GPA Calculator (Java) - Basic GPA calculator based on UTA's grading poicies.</li>
+            <li>Data Sort/Filter/Search (Java) - An extensive sort/filter/search program that takes in a text file, arranges it in arrays and outputs it in a text file based on options chosen by the user.</li>
+        </div>
+        </div>
+        <hr><hr><hr>
+        <div class="skills">
+            <h1>Skills</h1><br>
+            <div class="subsection">
+                <div class="section">
+                    <h3>Languages/Libraries/FrameWorks</h3>
+                    <li>Agile</li>
+                    <li>Assembly (ARM 7)</li>
+                    <li>Bash</li>
+                    <li>C</li>
+                    <li>C#</li>
+                    <li>C++</li>
+                    <li>CSS</li>
+                    <li>GTK</li>
+                    <li>HTML</li>
+                    <li>Java</li>
+                    <li>JavaScript</li>
+                    <li>jQuery</li>
+                    <li>MarkDown</li>
+                    <li>NumPy</li>
+                    <li>Python</li>
+                    <li>Shell</li>
+                </div>
+                <div class="section">
+                    <h3>Tools</h3>
+                    <li>PowerShell</li>
+                    <li>Command Prompt</li>
+                    <li>Terminal (MacOS and Linux)</li>
+                    <li>NetBeans</li>
+                    <li>NotePad ++</li>
+                    <li>VS Code</li>
+                    <li>Android Studio</li>
+                    <li>Unity</li>
+                    <li>Git</li>
+                    <li>MatLab</li>
+                    <li>Arduino</li>
+                    <li>RasPi</li>
+                    <li>DreamWeaver</li>
+                </div>
+                <div class="section">
+                    <h3>Softwares</h3>
+                    <li>Code42 Crashplan</li>
+                    <li>Adobe Suite</li>
+                    <li>MS Office Suite</li>
+                    <li>IBM SPSS</li>
+                    <li>Faronics Deepfreeze</li>
+                    <li>CryptoErase</li>
+                    <li>Microsoft System Center Conifguration Manager (SCCM)</li>
+                    <li>Azure Active Directory</li>
+                    <li>Active Directory (ADUC)</li>
+                    <li>WinMagic SecureDoc</li>
+                    <li>JAMF</li>
+                    <li>Intune</li>
+                </div>
+            </div>
+        </div>
+    </body>
 </html>

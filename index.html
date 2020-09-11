@@ -1,96 +1,96 @@
 <!doctype html>
 <html lang="en" data-theme="light">
-<head>
-    <meta charset="utf-8">
-    <meta name="description" content="This website is my pensieve.">
-    <meta name="author" content="Saumya Khimsaria">
-    <meta name="image" content="favicon.ico">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1, maximum-scale=1">
-    
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/navbar-updates.css">
-    <link rel="stylesheet" href="../css/jquery-ui.min.css">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="This website is my pensieve.">
+        <meta name="author" content="Saumya Khimsaria">
+        <meta name="image" content="favicon.ico">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1, maximum-scale=1">
+        
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/navbar-updates.css">
+        <link rel="stylesheet" href="../css/jquery-ui.min.css">
 
-    <link href="https://fonts.googleapis.com/css?family=Anonymous+Pro&display=swap" rel="stylesheet">
-    <link rel="icon" href="favicon.ico" type="image/x-icon" >
-    <script src="scripts/jquery-3.5.0.min.js"></script>
-    <title>Saumya Khimsaria</title>
-    <script src="scripts/jquery-ui.min.js"></script>
-    <script>
-    $( function() {
-        var availableTags = [
-        "cd",
-        "cd ..",
-        "help",
-        "lumos",
-        "nox",
-        "share",
-        "cd home","accio home",
-        "cd about me","accio about me",
-        "cd blogs","accio blogs",
-        "cd projects","accio projects",
-        "instagram","twitter","linkedin","email","github","steam","resume","photo"
-        ];
-        $( "#cmd_id" ).autocomplete({
-        source: availableTags
-        });
-    } );
-    </script>
-<!-- Link Preview -->
-    <meta property="og:site_name" content="Saumya Khimsaria" />
-    <meta property="og:title" content="Saumya Khimsaria" />
-    <meta property="og:description" content="This website is my pensieve." />
-    <meta property="og:image" content="favicon.ico">
-    <meta property="og:url" content="https://khimsarias.github.io/favicon.ico">
-    <meta property="og:type" content="blog" />
-</head>
-<body onload="themeLoader()">
-    
-    <nav>
-        <div class="logo">
-            <h4>
-                <a data-content="Saumya Khimsaria" class="text-link" href="index.html">Saumya Khimsaria</a>
-            </h4>
+        <link href="https://fonts.googleapis.com/css?family=Anonymous+Pro&display=swap" rel="stylesheet">
+        <link rel="icon" href="favicon.ico" type="image/x-icon" >
+        <script src="scripts/jquery-3.5.0.min.js"></script>
+        <title>Saumya Khimsaria</title>
+        <script src="scripts/jquery-ui.min.js"></script>
+        <script>
+        $( function() {
+            var availableTags = [
+            "cd",
+            "cd ..",
+            "help",
+            "lumos",
+            "nox",
+            "share",
+            "cd home","accio home",
+            "cd about me","accio about me",
+            "cd blogs","accio blogs",
+            "cd projects","accio projects",
+            "instagram","twitter","linkedin","email","github","steam","resume","photo"
+            ];
+            $( "#cmd_id" ).autocomplete({
+            source: availableTags
+            });
+        } );
+        </script>
+    <!-- Link Preview -->
+        <meta property="og:site_name" content="Saumya Khimsaria" />
+        <meta property="og:title" content="Saumya Khimsaria" />
+        <meta property="og:description" content="This website is my pensieve." />
+        <meta property="og:image" content="favicon.ico">
+        <meta property="og:url" content="https://khimsarias.github.io/favicon.ico">
+        <meta property="og:type" content="blog" />
+    </head>
+    <body onload="themeLoader()">
+        
+        <nav>
+            <div class="logo">
+                <h4>
+                    <a data-content="Saumya Khimsaria" class="text-link" href="index.html">Saumya Khimsaria</a>
+                </h4>
+            </div>
+            <ul class="nav-links">
+                <li>
+                    <a data-content="Home" class="text-link" href="index.html">Home</a>
+                </li>
+                <li>
+                    <a data-content="About Me" class="text-link" href="pages/aboutme.html">About Me</a>
+                </li>
+                <li>
+                    <a data-content="Blogs" class="text-link" href="pages/blogs.html">Blogs</a>
+                </li>
+                <li>
+                    <a data-content="Projects" class="text-link" href="pages/projects.html">Projects</a>
+                </li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <div class="cmd_box">
+                <input type="text" value="" class="command" name="command" placeholder="Harry Potter Spells / Linux Commands / Help" id="cmd_id" onfocus="clear_content()" onblur="remove_blur()">
+                <div class="msg">
+                    <br><span>Nox (Dark Mode), Lumos (Light Mode), Help (Bring up help page)<br><br>
+                    'cd *' :- Replace * with name of a page <br><br>
+                    'cd' or 'cd ~' or 'cd /' :- Go back to home page (Equivalent to pressing home on the navbar)<br><br>
+                    'cd -' or 'cd ..' :- Go back one page (equivalent to pressing the back button in the browser)<br><br>
+                    </span><br><br>
+                </div>
+            </div>
+            <div class="execute">
+                <button class="button" onclick="btn_clicked();" id="btn_id" ><img id="wand" src="images/wand.png" alt=""></button>
+            </div>
+        </nav>
+        <script src="scripts/navbar.js"></script>
+        <!--  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ EVERY PAGE MUST HAVE THE ABOVE CODE ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ -->
+        <div class="home">
+            <span>This website is my pensieve.</span>
         </div>
-        <ul class="nav-links">
-            <li>
-                <a data-content="Home" class="text-link" href="index.html">Home</a>
-            </li>
-            <li>
-                <a data-content="About Me" class="text-link" href="pages/aboutme.html">About Me</a>
-            </li>
-            <li>
-                <a data-content="Blogs" class="text-link" href="pages/blogs.html">Blogs</a>
-            </li>
-            <li>
-                <a data-content="Projects" class="text-link" href="pages/projects.html">Projects</a>
-            </li>
-        </ul>
-        <div class="burger">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
-        </div>
-        <div class="cmd_box">
-            <input type="text" value="" class="command" name="command" placeholder="Harry Potter Spells / Linux Commands / Help" id="cmd_id" onfocus="clear_content()" onblur="remove_blur()">
-            <div class="msg">
-                <br><span>Nox (Dark Mode), Lumos (Light Mode), Help (Bring up help page)<br><br>
-                 'cd *' :- Replace * with name of a page <br><br>
-                 'cd' or 'cd ~' or 'cd /' :- Go back to home page (Equivalent to pressing home on the navbar)<br><br>
-                 'cd -' or 'cd ..' :- Go back one page (equivalent to pressing the back button in the browser)<br><br>
-                 </span><br><br>
-             </div>
-        </div>
-        <div class="execute">
-            <button class="button" onclick="btn_clicked();" id="btn_id" ><img id="wand" src="images/wand.png" alt=""></button>
-        </div>
-    </nav>
-    <script src="scripts/navbar.js"></script>
-    <!--  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ EVERY PAGE MUST HAVE THE ABOVE CODE ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ -->
-    <div class="home">
-	    <span>This website is my pensieve.</span>
-    </div>
-    <script type="text/javascript" src="scripts/3jsbeads.js"> </script>
-    <!--  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ EVERY PAGE MUST HAVE THE BELOW CODE ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ -->
-</body>
+        <script type="text/javascript" src="scripts/3jsbeads.js"> </script>
+        <!--  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ EVERY PAGE MUST HAVE THE BELOW CODE ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ -->
+    </body>
 </html>

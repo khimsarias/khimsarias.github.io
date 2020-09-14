@@ -110,6 +110,8 @@ nav
 {
     font-size: 30px;
     margin: 0 25%;
+    font-weight: bold;
+    text-decoration: underline;
 }
 
 .article p

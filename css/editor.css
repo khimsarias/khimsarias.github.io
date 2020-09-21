@@ -1,0 +1,67 @@
+html
+{
+	/* Light Mode */
+	--bg-color: white;
+	--text-color: black;
+	--shadow-up:#8a8888;
+    --shadow-down:#ffffff;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+}
+
+html[data-theme="dark"]
+{
+	/* Dark Mode */
+	--bg-color: #292929;
+	--text-color: #ccc;
+	--shadow-up:#1c1c1c;
+	--shadow-down:#363636;
+}
+
+body
+{
+    background-color: var(--bg-color);
+    color: var(--text-color);
+	width: 100%;
+    overflow-x: hidden;
+}
+/* ^^^^^^^^^^^^^^^^^ MUST BE IN ALL CSS FILES ^^^^^^^^^^^^^^^^^^^^^^ */
+nav
+{
+    scroll-snap-align: start;
+}
+
+.title
+{
+	z-index: -99;
+	display: flex;
+	/* padding: 1% 0%; */
+	margin: auto;
+	width: 100%;
+	justify-self: center;
+	align-self: center;
+	text-justify: center;
+}
+
+.title span
+{
+	color: var(--text-color);
+	font-size: 12vh;
+	text-align: center;
+	margin: auto;
+}
+
+.fileselector
+{
+    height: 78vh;
+    /* background-color: #ebdcff; */
+    border: 10px solid #ebdcff;
+    margin: auto;
+}
+
+.editor
+{
+    scroll-snap-align: start;
+    height: 100vh;
+    border: 10px solid #DCFFEB;
+}

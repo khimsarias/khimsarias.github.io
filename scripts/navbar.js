@@ -245,6 +245,13 @@ function btn_clicked(){
     {
         window.history.back();
     }
+    else if(msg== "react")
+    {
+        if(document.title == "Saumya Khimsaria")
+        window.open('../React/notes.html','_self');
+        else
+        window.open('../../React/notes.html','_self');
+    }
     else if (msg == "cd home" || msg == "accio home")
     {
         if(document.title == "Saumya Khimsaria")

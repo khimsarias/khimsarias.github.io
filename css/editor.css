@@ -5,8 +5,7 @@ html
 	--text-color: black;
 	--shadow-up:#8a8888;
     --shadow-down:#ffffff;
-    scroll-behavior: smooth;
-    scroll-snap-type: y mandatory;
+	scroll-behavior: smooth;
 }
 
 html[data-theme="dark"]
@@ -46,22 +45,97 @@ nav
 .title span
 {
 	color: var(--text-color);
-	font-size: 12vh;
+	font-size: 8vh;
 	text-align: center;
 	margin: auto;
 }
-
-.fileselector
-{
-    height: 78vh;
-    /* background-color: #ebdcff; */
-    border: 10px solid #ebdcff;
-    margin: auto;
-}
-
 .editor
 {
     scroll-snap-align: start;
-    height: 100vh;
-    border: 10px solid #DCFFEB;
+    height: 82vh;
+	display: flex;
+	padding: 1% 1%;
+	justify-content: space-between;
 }
+
+.input-area
+{
+	text-size-adjust: none;
+	background-color:  var(--bg-color);
+	font-family: 'Anonymous Pro', monospace;
+	font-size: 18px;
+	color: var(--text-color);
+	padding: 1%;
+	border-radius: 12px;
+	border: 0;
+	width: 48vw;
+	height: 78vh;
+	outline: none;
+	resize: none;
+	box-shadow: inset 6px 4px 12px var(--shadow-up),
+    inset -6px -6px 12px var(--shadow-down);
+    -moz-box-shadow: inset 6px 4px 12px var(--shadow-up),
+    inset -6px -6px 12px var(--shadow-down);
+    -o-box-shadow: inset 6px 4px 12px var(--shadow-up),
+    inset -6px -6px 12px var(--shadow-down);
+    -webkit-box-shadow: inset 6px 4px 12px var(--shadow-up),
+    inset -6px -6px 12px var(--shadow-down);
+}
+
+.output
+{
+	height: 78vh;
+	width: 48vw;
+	padding: 1%;
+	border-radius: 12px;
+	background-color:  var(--bg-color);
+	color: var(--text-color);
+	box-shadow:  6px 6px 12px var(--shadow-up),
+	-6px -6px 12px var(--shadow-down);
+   -moz-box-shadow:  6px 6px 12px var(--shadow-up),
+   -6px -6px 12px var(--shadow-down);
+   -o-box-shadow:  6px 6px 12px var(--shadow-up),
+   -6px -6px 12px var(--shadow-down);
+   -webkit-box-shadow:  6px 6px 12px var(--shadow-up),
+   -6px -6px 12px var(--shadow-down);
+   word-wrap: break-word;
+   overflow-y: scroll;
+}
+
+  .input-area::-webkit-scrollbar {
+	width: 11px;
+  }
+  .input-area {
+	scrollbar-width: thin;
+	scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+  }
+  .input-area::-webkit-scrollbar-track {
+	background: var(--scrollbarBG);
+  }
+  .input-area::-webkit-scrollbar-thumb {
+	background-color: var(--thumbBG) ;
+	border-radius: 6px;
+	border: 3px solid var(--scrollbarBG);
+  }
+  
+  .output::-webkit-scrollbar {
+	width: 11px;
+  }
+  .output {
+	scrollbar-width: thin;
+	scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+  }
+  .output::-webkit-scrollbar-track {
+	background: var(--scrollbarBG);
+  }
+  .output::-webkit-scrollbar-thumb {
+	background-color: var(--thumbBG) ;
+	border-radius: 6px;
+	border: 3px solid var(--scrollbarBG);
+  }
+  
+  div:empty:before {
+	content:attr(data-placeholder);
+	color:var(--text-color)
+  }
+  

@@ -117,11 +117,22 @@ $(document).keyup(function (e)
         document.getElementById('btn_id').click();
         document.getElementById('cmd_id').blur();
     }
-    if (e.shiftKey && e.keyCode === 67)
+    if(document.title != "Article Editor")
     {
-        
-        document.getElementById("cmd_id").focus(); 
+        if (e.shiftKey && e.keyCode === 67)
+        {
+            document.getElementById("cmd_id").focus(); 
+        }
     }
+    else
+    {
+        if(!document.getElementsByClassName('input-area')[0].matches(':focus'))
+        if (e.shiftKey && e.keyCode === 67)
+        {
+            document.getElementById("cmd_id").focus(); 
+        }
+    }
+ 
     if (e.keyCode == 27)
     {
         document.getElementById("cmd_id").blur();

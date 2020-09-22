@@ -12,7 +12,6 @@
         <link href="https://fonts.googleapis.com/css2?family=Notable&display=swap" rel="stylesheet">
         <link rel="icon" href="../favicon.ico" type="image/x-icon" >
         <script src="../scripts/jquery-3.5.0.min.js"></script>
-        <script src="../scripts/editor.js"></script>
         <title>Article Editor</title>
         <script src="../scripts/jquery-ui.min.js"></script>
         <script>
@@ -78,8 +77,14 @@
         </nav>
         <script src="../scripts/navbar.js"></script>
         <!--  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ EVERY PAGE MUST HAVE THE ABOVE CODE ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ -->
-        <div class="title"><span>Editor</span></div>
-        <div class="fileselector"></div>
-        <div class="editor"></div>
+        <div class="title"><span>Markdown Editor</span></div>
+        <div class="editor">
+            <textarea class="input-area" placeholder="Input Markdown Here"></textarea>
+            
+            <div class="output" data-placeholder="You'll see the preview here!"></div>
+        </div>
+
+        <script src="https://unpkg.com/showdown/dist/showdown.min.js"></script>
+        <script src="../scripts/editor.js"></script>
     </body>
 </html>

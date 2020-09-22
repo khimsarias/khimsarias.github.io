@@ -224,6 +224,13 @@ function btn_clicked(){
         else
         window.open('../commands.txt','_blank');
     }
+    else if(msg == "edit" || msg == "editor")
+    {
+        if(document.title == "Saumya Khimsaria")
+        window.open('pages/editor.html','_self');
+        else
+        window.open('editor.html','_self')
+    }
     else if (msg == "cd blogs" || msg == "cd blog" || msg == "accio blogs" || msg == "accio blog")
     {
         if(document.title == "Saumya Khimsaria")

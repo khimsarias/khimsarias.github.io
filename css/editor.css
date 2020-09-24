@@ -100,6 +100,7 @@ nav
    -6px -6px 12px var(--shadow-down);
    word-wrap: break-word;
    overflow-y: scroll;
+   font-family: cursive;
 }
 
   .input-area::-webkit-scrollbar {
@@ -143,12 +144,17 @@ nav
 	  
 	.editor
 	{
+		
 		flex-direction: column;
+		margin: auto;
+		width: 100vw;
+		align-items: center;
 	}
 	.input-area , .output
 	{
-		width: 95vw;
-		margin-bottom: 10px;
+		width: 90vw;
+		margin-bottom: 15px;
+		border: 1px solid var(--text-color);
 	}
 
   }

@@ -60,7 +60,7 @@ pre[class*="language-"] {
 	margin: auto;
 	/* width: 80vw; */
 	width: 50%;
-	/* height: 80vh; */
+	height: 50vh;
 	border-radius: 12px;
 	background: var(--nav-bg-color);
 	box-shadow: inset 6px 4px 12px var(--shadow-up),

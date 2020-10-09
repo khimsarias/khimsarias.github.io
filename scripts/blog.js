@@ -9,6 +9,9 @@ function blogLoader(x)
 		case 1: 
 			window.open('blog1.html','_self');	
 			break;
+		case 2: 
+			window.open('blog2.html','_self');	
+			break;
 		default:
 			window.open('comingsoon.html','_blank');	
 			break;

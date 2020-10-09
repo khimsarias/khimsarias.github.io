@@ -446,9 +446,9 @@ function socialfunction(x)
         case "resume" :
         {
             if(document.title == "Saumya Khimsaria")
-            window.open(`pages/resume.pdf`,'_blank');
+            window.open(`pages/Resume.pdf`,'_blank');
             else
-            window.open(`resume.pdf`,'_blank');
+            window.open(`Resume.pdf`,'_blank');
             break;
         }
     }

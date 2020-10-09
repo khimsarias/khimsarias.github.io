@@ -24,7 +24,6 @@ Total Money Spent
 
 </panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>520</x><y>30</y><w>260</w><h>100</h></coordinates><panel_attributes>Company (US)
 --
-
 </panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1100</x><y>430</y><w>260</w><h>100</h></coordinates><panel_attributes>Grocery Used
 --
 Items Used

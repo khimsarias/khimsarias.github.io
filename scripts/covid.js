@@ -208,5 +208,7 @@ function DarkMode(){
 
 
 
+function Graph(){
+document.getElementById("axes_line_chart").scrollIntoView({behavior: 'smooth'});
 
-  
+}

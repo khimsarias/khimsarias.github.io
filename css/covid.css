@@ -208,13 +208,17 @@ margin: auto;
 
 }
 
-#dm
+#dm, #mg
 {
     transform: translateX(50vw);
     margin: auto;
     background-color: white;
     padding: 0 2px;
     margin-top: 2vh;
+}
+#mg
+{
+    display: none;
 }
 .DarkMode
 {
@@ -255,5 +259,122 @@ margin: auto;
     to
     {
         opacity: 0;
+    }
+}
+
+
+@media screen and (max-width:767px){
+  
+    body
+    {
+        padding: 0;
+        margin: 0;
+    }
+header
+{
+    flex-direction: column;
+    align-content: center;
+    align-content: space-between;
+    margin: auto;
+    height: 10vh;
+    padding: 0;
+}
+.logo
+{
+    width: 100vw;
+    height: 10vh;
+    text-align: center;
+    padding: 0;
+    margin-top: 10px;
+    font-size: 25px;
+}
+.country
+{
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    font-size: larger;
+    margin-top: 10px;
+    padding: 0;
+    text-align: center;
+}
+.change-country
+{
+    opacity: 0.7;
+    font-size: 14px;
+}
+
+.latest-report
+{
+    width: 100vw;
+    height: 60vh;
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+    justify-content: space-around;
+    margin-top: 4vh;
+}
+
+main > div > div
+{
+    margin: auto;
+    width: 80vw;
+    border: 2px solid black;
+    border-radius: 12px;
+    height: 15vh;
+    padding-top: 1vh;
+}
+.func_button
+{
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0;
+}
+.func_button button
+{
+    padding: 2vh;
+}
+#dm
+{
+    width: 40vw;
+    transform: translateX(0);
+    background-color: white;
+    padding: 0 2px;
+    margin: auto;
+}
+
+#mg
+{
+    width: 40vw;
+    transform: translateX(0);
+    display: inline;
+    background-color: white;
+    padding: 0 2px;
+    margin: auto;
+}
+.chart
+{
+    top: 100vh;
+    width: 90vw;
+    position: absolute;
+    height: 50vh;
+    padding-bottom: 5vh;
+    margin-left: 5vw;
+}
+}
+
+@media screen and (max-width:325px){
+    
+.latest-report
+{
+    margin-top: 8vh;
+}
+
+    main > div > div
+    {
+        height: 18vh;
+    
     }
 }

@@ -224,6 +224,13 @@ function btn_clicked(){
         else
         window.open('../commands.txt','_blank');
     }
+    else if (msg == "covid")
+    {
+        if(document.title == "Saumya Khimsaria")
+        window.open('pages/covid.html','_self');
+        else
+        window.open('covid.html','_self');
+    }
     else if(msg == "edit" || msg == "editor")
     {
         if(document.title == "Saumya Khimsaria")

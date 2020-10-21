@@ -8,58 +8,252 @@ body
 {
     height: 100vh;
     width: 100vw;
-    background: #4AC29A;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom, #BDFFF3, #4AC29A);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, #BDFFF3, #4AC29A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 header
 {
-    display: flex;
-    align-items: center;
     width: 100vw;
-    height: 15vh;
-    margin: 0 auto;
-    padding: 20px;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2em;
+}
+
+.overlay
+{
+    width: 100vw;
+    height: 100vh;
+    /* z-index: 2; */
+    background-color: white;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    opacity: 0;
+}
+.hide
+{
+    display: none;
+}
+.close 
+{
+    width: 43px;
+    height: 50px;
+    display: flex;
+    align-content: center;
+    justify-content:center;
+    padding: 0;
+    cursor: pointer;
+    margin-left: 95vw;
+    margin-top: 2vw;
+    /* background-color: thistle; */
+}
+.l1
+{
+    /* position: relative; */
+    height: 50px;
+    width: 10px;
+    background-color: black;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    /* cursor: pointer; */
+}
+.l2
+{
+    position: relative;
+    height: 50px;
+    width: 10px;
+    background-color: black;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    /* cursor: pointer; */
+    right: 8px;
+}
+
+.search
+{
+    /* position: absolute; */
+    width: 100vw;
+    height: 10vh;
+    /* top: 10vh; */
+    display: flex;
+    justify-content: space-around;
+}
+
+.search input
+{
+    width: 80vw;
+    height: 8vh;
+    align-self: center;
+    padding: 1em;
+    border: none;
+    font-size: 18px;
+    background-color: rgb(248, 244, 244);
+    border-radius: 50px;
+}
+
+.search input:focus
+{
+    outline: 0;
+}
+
+.country-list
+{
+    width: 80vw;
+    height: 70vh;
+    margin: auto;
+    /* background-color: tomato; */
+    display: flex;
+    justify-content: space-around;
+    overflow-x: hidden;
+}
+.country-list::-webkit-scrollbar {
+	width: 11px;
+  }
+  .country-list {
+	scrollbar-width: thin;
+	scrollbar-color: white black;
+  }
+  .country-list::-webkit-scrollbar-track {
+	background: black;
+  }
+  .country-list::-webkit-scrollbar-thumb {
+	background-color: white ;
+	border-radius: 6px;
+	border: 3px solid black;
+  }
+
+.country-list ul li
+{
+    font-size: 25px;
+    list-style: none;
+    cursor: pointer;
+    padding: 10px 0;
+}
+
+.country-list ul li:hover
+{
+   background-color:black;
+   color: white;
 }
 
 .logo
 {
-    display: flex;
-    align-items: center;
-    margin: auto;
-}
-.logo img
-{
-    width: 60px;
-    height: 60px;
-
-}
-
-.logo p
-{
-    font-size: 40px;
     font-weight: bold;
-    padding-left: 15px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 35px;
+}
+
+.name
+{
+    font-weight: bold;
+}
+
+.change-country
+{
+    font-weight: bold;
+    cursor: pointer;
 }
 
 main
 {
+    display: flex;
+    flex-direction: column;
+}
+.latest-report
+{
+    display: flex;
+    justify-content: space-evenly;
     width: 100vw;
-    margin: auto;
-    background: #B2FEFA;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom, #0ED2F7, #B2FEFA);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, #0ED2F7, #B2FEFA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    
+    height: 10vh;
+}
+.title
+{
+    font-weight: bold;
+    font-size: 25px;
 }
 
-.stats
+.value
 {
-    width: 100vw;
-    background-image: url(../images/covidBG.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+.new-value
+{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.recovered > .value
+{
+    color: #009688;
+}
+
+.deaths > .value
+{
+    color: #f44336;
+}
+
+.chart
+{
+width: 80vw;
+height: 73vh;
+background-color: white;
+margin: auto;
+
+}
+
+#dm
+{
+    transform: translateX(50vw);
+    margin: auto;
+    background-color: white;
+    padding: 0 2px;
+    margin-top: 2vh;
+}
+.DarkMode
+{
+    filter: invert(1) hue-rotate(180deg);
+    background-color: black;
+}
+
+.fade_anim
+{
+	animation: test .5s;
+	animation-fill-mode: forwards;
+}
+
+.fade_anim_back
+{
+    animation: test_back 1.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes test
+{
+   from
+    {
+        opacity: 0;
+    }
+    to
+    {
+        opacity: 1;
+    }
+}
+
+@keyframes test_back
+{
+   from
+    {
+        opacity: 1;
+    }
+    to
+    {
+        opacity: 0;
+    }
 }

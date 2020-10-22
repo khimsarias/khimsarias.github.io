@@ -32,6 +32,7 @@ header
     flex-direction: column;
     position: absolute;
     opacity: 0;
+    z-index: 3;
 }
 .hide
 {
@@ -92,7 +93,7 @@ header
     height: 8vh;
     align-self: center;
     padding: 1em;
-    border: none;
+    border: 3px solid black;
     font-size: 18px;
     background-color: rgb(248, 244, 244);
     border-radius: 50px;
@@ -265,11 +266,11 @@ margin: auto;
 
 @media screen and (max-width:767px){
   
-    body
-    {
-        padding: 0;
-        margin: 0;
-    }
+body
+{
+    padding: 0;
+    margin: 0;
+}
 header
 {
     flex-direction: column;
@@ -362,6 +363,26 @@ main > div > div
     height: 50vh;
     padding-bottom: 5vh;
     margin-left: 5vw;
+    z-index: 0;
+}
+canvas
+{
+    z-index: 0;
+}
+.overlay
+{
+    height: 100vh;
+    z-index: 3;
+}
+.country-list
+{
+    flex-direction: column;
+    justify-content: end;
+}
+.close
+{
+    margin-left: 45vw;
+    margin-top: 2vw;
 }
 }
 

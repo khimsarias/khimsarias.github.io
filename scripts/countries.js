@@ -210,6 +210,7 @@ const closeButton = document.querySelector(".close");
 const countryList = document.querySelector(".country-list");
 const countrySearch = document.querySelector(".country-search");
 const changeCountry = document.querySelector(".change-country");
+const chart = document.querySelector(".chart");
 
 function createCountryList(){
     const numOfCountries = country_list.length;
@@ -240,6 +241,7 @@ changeCountry.addEventListener("click" , function(){
 
     overlay.classList.toggle("hide");
     overlay.classList.add("fade_anim");
+    chart.classList.toggle("hide");
 });
 
 closeButton.addEventListener("click" , function(){
@@ -277,4 +279,6 @@ countrySearch.addEventListener("input", function () {
     country_list.forEach( country => {
             document.getElementById(country.name).classList.remove("hide");
   })
+  chart.classList.remove("hide");
+
 }

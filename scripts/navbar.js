@@ -95,7 +95,7 @@ function themeLoader()
     if (localStorage.getItem("mode") == "dark")
     {
         document.documentElement.setAttribute('data-theme', 'dark');
-        document.getElementById("wand").setAttribute("style", "filter:invert(1)");
+        document.getElementById("wand").setAttribute("style", "filter:invert(0)");
         try{
         container.setAttribute("class","flip");
         }

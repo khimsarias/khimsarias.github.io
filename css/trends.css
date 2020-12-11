@@ -1,0 +1,147 @@
+html
+{
+	/* Light Mode */
+	--bg-color: white;
+	--text-color: black;
+	--shadow-up:#8a8888;
+    --shadow-down:#ffffff;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+}
+
+html[data-theme="dark"]
+{
+	/* Dark Mode */
+	--bg-color: #292929;
+	--text-color: #ccc;
+	--shadow-up:#1c1c1c;
+	--shadow-down:#363636;
+}
+
+body
+{
+    background-color: var(--bg-color);
+    color: var(--text-color);
+	width: 100%;
+	overflow-x: hidden;
+	
+}
+body::-webkit-scrollbar {display:none;}
+nav
+{
+	scroll-snap-align: start;
+	z-index: 2;
+}
+.main-title
+{
+	display: flex;
+	width: 100vw;
+	height: 92vh;
+	padding: 0;
+	margin: 0;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	font-size: 50px;
+	cursor: pointer;
+	z-index: 1;
+}
+
+#arrow
+{
+	transform: rotate(-90deg);
+}
+
+#neumorphism
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	scroll-snap-align: start;
+	width: 100vw;
+	height: 100vh;
+	
+}
+.div-title-neu
+{
+	position: absolute;
+	left: 10px;
+	font-size: 45px;
+	text-align: left;
+	opacity: 0.5;
+}
+#glassmorphism
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	scroll-snap-align: start;
+	width: 100vw;
+	height: 100vh;
+	background: no-repeat center url(../images/blog-3.jpg);
+}
+.div-title-glass
+{
+	position:absolute;
+	font-size: 450px;
+	text-align: center;
+	opacity: 0.5;
+	color: black
+}
+#material
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	scroll-snap-align: start;
+	width: 100vw;
+	height: 100vh;
+
+}
+
+.div-title-material
+{
+	position: absolute;
+	right: 10px;
+	font-size: 45px;
+	text-align: left;
+	opacity: 0.5;
+}
+
+.mobile-neumorphism
+{
+	transform-style: preserve-3d;
+	z-index: 1;
+	height: 812px;
+	width: 375px;
+	border-radius: 50px;
+	background-color: var(--bg-color);
+	background-repeat: repeat-y;
+	box-shadow:  -30px -30px 100px var(--shadow-down), 
+				 30px 30px 100px var(--shadow-up);
+}
+.mobile-glassmorphism
+{
+	transform-style: preserve-3d;
+	z-index: 2;
+	height: 812px;
+	width: 375px;
+	border-radius: 50px;
+	background-color: rgba(255,255,255,0.2);
+	backdrop-filter: blur(40px);
+	background-repeat: repeat-y;
+	border: 2px solid transparent;
+	background-clip: padding-box;
+}
+.mobile-material
+{
+	transform-style: preserve-3d;
+	z-index: 1;
+	height: 812px;
+	width: 375px;
+	border-radius: 50px;
+	background-color: var(--shadow-up);
+	background-repeat: repeat-y;
+	box-sizing: border-box;
+	box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16), 0px 3px 6px rgba(0, 0, 0, 0.23);
+}

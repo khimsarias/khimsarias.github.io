@@ -207,8 +207,12 @@ nav
 	height: 75%;
 	border-radius: 50px;
 	margin-bottom: 50px;
+	padding: 35px;
 }
-
+.card p
+{
+	transform: translateZ(20px)
+}
 #neu-1, #neu-2
 {
 	box-shadow:  -10px -10px 30px var(--shadow-down), 

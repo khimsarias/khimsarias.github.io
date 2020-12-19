@@ -36,7 +36,7 @@
             } );
         </script>
     </head>
-    <body onload="themeLoader();">
+    <body onload="themeLoader(); mobile_dims();">
         <nav>
             <div class="logo">
                 <h4>
@@ -127,6 +127,11 @@
             </div>
         </div>
     </div>
-    <script src="../scripts/tilt.jquery.js"></script>
+    <script src="../scripts/tilt.jquery.js">
+    $('.js-tilt').tilt({
+    glare: true,
+    maxGlare: .5
+})
+    </script>
     </body>
 </html>

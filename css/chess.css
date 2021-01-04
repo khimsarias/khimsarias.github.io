@@ -71,7 +71,7 @@ body::-webkit-scrollbar {display:none;}
     width: 72vw; */
     /* background-color: blanchedalmond; */
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     margin: auto;
     align-self: center;
     justify-self: center;
@@ -92,8 +92,7 @@ body::-webkit-scrollbar {display:none;}
 {
     width:6vw;
     height: 6vw;
-    background-color: black;
-    color: white;
+    background-color: rgb(209, 137, 44);
     padding: 2px;
     cursor: pointer;
 }
@@ -103,17 +102,42 @@ body::-webkit-scrollbar {display:none;}
     padding: 2px;
     width: 6vw;
     height: 6vw;
-    background-color: white;
-    color: black;
+    background-color: burlywood;
     
 }
 
 .position
 {
-    position:absolute;
+    position: relative;
 }
 
-.black:hover, .white:hover
+
+.piece
 {
-    background-color: grey;
+    height: 70%;
+    width: 70%;
+    font-size: 50px;
+    display: flex;
+    margin: auto;
+    padding: auto;
+    justify-content: center;
+    text-justify: center;
+    /* background-color: rebeccapurple; */
+    z-index: 2;
+}
+.piece img
+{
+    width: 4vw;
+    height: 4vw;
+}
+.white-piece{
+color: white;
+}
+.black-piece{
+    color: black;
+}
+
+.reset
+{
+    scroll-snap-align: start;
 }

@@ -85,7 +85,7 @@
         <!--  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ EVERY PAGE MUST HAVE THE ABOVE CODE ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ -->
         <div class="mainpage">
             <div class="title"><span>About Me</span></div>
-            <img class="profile_img" src="../images/profile.jpg">
+            <img data-tilt class="profile_img" src="../images/profile.jpg">
             <p class="info">I'm a university junior based in the DFW metroplex pursuing a degree in Computer Science.</p>
             <button onclick="socialfunction(`resume`);">Résumé</button>
             <ul class="social" style="filter: invert(0);">
@@ -115,9 +115,9 @@
             <div class="info">
                 <li>Dell EMC TechDirect certified technician.</li>
                 <li>Co-Managed university wide OS upgrade to Windows 10 w/ data backup, software management, user management, encryption management, etc.</li>
-                <li>Resolved 400+ tickets ranging from basic re-image to user specific errors.</li>
+                <li>Resolved 550+ tickets ranging from basic re-image to user specific errors.</li>
                 <li>Extensive and in-depth testing of new software, OS, etc.</li>
-                <li>Worked on 100+ laptops, desktop towers, etc with hardware troubleshooting.</li>
+                <li>Worked on 100+ laptops, desktop towers, printers, etc with hardware troubleshooting.</li>
                 <li>Hands On experience with following industry softwares/OS: Windows 10 Enterprise 1803+, MacOS 10.13+, ADUC, Azure AD, Intune, WinMagic SecureDoc 7.0+, Code42 CrashPlan 6.0+, JAMF, etc </li>
             </div>
             <br><br>
@@ -166,7 +166,30 @@
             <div class="info">
                 <li>Managed Student Check-In and Check-Out as well as sorting them based on various criteria.</li>
             </div>
+            <br><br>
+            <div class="place">
+                <span class="name">UTA E-Sports Club</span><span class="partition">|</span>
+                <span class="job-title">Staff Volunteer</span><span class="partition">|</span>
+                <span class="period">2020-Present</span>
+            </div>
+            <br><hr><br>
+            <div class="info">
+                <li>Helped in organizing various online events for the university students.</li>
+                <li>Managed online Counter Strike : Global Offensive (CS:GO) matches for events.</li>
+            </div>
+            <br><br>
+            <div class="place">
+                <span class="name">CS:GO Invictus Collegiate Team</span><span class="partition">|</span>
+                <span class="job-title">Ameture Player</span><span class="partition">|</span>
+                <span class="period">2020-Present</span>
+            </div>
+            <br><hr><br>
+            <div class="info">
+                <li>Played as flex/secondary AWP for collegiate CS:GO team.</li>
+                <li>Represented UTA at various CSL Events</li>
+            </div>
         </div>
+        
         <hr><hr><hr>
     <div class="education">
         <h1>Education</h1><br>
@@ -262,5 +285,11 @@
                 </div>
             </div>
         </div>
+        <script src="../scripts/tilt.jquery.js">
+            $('.js-tilt').tilt({
+            glare: true,
+            maxGlare: .9
+        })
+            </script>
     </body>
 </html>

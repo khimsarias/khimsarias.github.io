@@ -11,7 +11,7 @@
         <div class="menu"></div>
         <div class="content">
             <div class="name">
-                <p id="name">SAUMYA KHIMSARIA</p>
+                <p id="name" class="anim_down">SAUMYA KHIMSARIA</p>
             </div>
             <div class="mouse">
                 <div class="chevron"></div>
@@ -23,21 +23,21 @@
     <div class="page" id="2">
         <div class="menu"></div>
         <div class="content">
-            <div class="title"><p>COMPUTER<br>SCIENTIST</p></div>
+            <div class="title anim_right"><p>COMPUTER<br>SCIENTIST</p></div>
             <div class="main">
                 <div class="photo">
-                    <img src="images/test.jpg" alt="">
+                    <img src="images/test.jpg" alt="" class="anim_right">
                 </div>
                 <div class="para">
-                    <div class="paragraph">
+                    <div class="paragraph anim_left">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse voluptas doloremque maxime harum, fuga dicta facere omnis tenetur, sed accusantium recusandae nulla odit ea perferendis consectetur ratione minus quaerat ipsum ab maiores beatae! Sed voluptatem quis, commodi deleniti nam eaque eligendi assumenda dolore architecto qui. Porro consequatur repellendus hic. Perferendis deleniti, neque accusamus sapiente consequuntur fugiat quaerat. Vel facilis ab enim laboriosam, deleniti culpa eum. Minus aliquam nostrum unde praesentium, blanditiis consequuntur adipisci quia similique pariatur recusandae quo sunt sed ut accusantium libero fugiat ipsum delectus iste voluptatum fugit animi sit quos sapiente!</p>
                 </div>
                 <div class="cta">
-                    <a href="#">
+                    <a href="#" class="anim_left">
                         <span>Projects</span>
                         <div class="liquid"></div>
                       </a>
-                      <a href="#">
+                      <a href="#" class="anim_left">
                         <span>About Me</span>
                         <div class="liquid"></div>
                       </a>
@@ -54,23 +54,23 @@
     <div class="page" id="3">
         <div class="menu"></div>
         <div class="content">
-            <div class="title">
+            <div class="title anim_right">
                 <p>FREELANCE<br>PHOTOGRAPHER</p>
             </div>
             <div class="main">
                 <div class="photo">
-                    <img src="images/test.jpg" alt="">
+                    <img src="images/test.jpg" alt="" class="anim_right">
                 </div>
                 <div class="para">
-                    <div class="paragraph">
+                    <div class="paragraph anim_left">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse voluptas doloremque maxime harum, fuga dicta facere omnis tenetur, sed accusantium recusandae nulla odit ea perferendis consectetur ratione minus quaerat ipsum ab maiores beatae! Sed voluptatem quis, commodi deleniti nam eaque eligendi assumenda dolore architecto qui. Porro consequatur repellendus hic. Perferendis deleniti, neque accusamus sapiente consequuntur fugiat quaerat. Vel facilis ab enim laboriosam, deleniti culpa eum. Minus aliquam nostrum unde praesentium, blanditiis consequuntur adipisci quia similique pariatur recusandae quo sunt sed ut accusantium libero fugiat ipsum delectus iste voluptatum fugit animi sit quos sapiente!</p>
                 </div>
                 <div class="cta">
-                    <a href="#">
+                    <a href="#" class="anim_left">
                         <span>Projects</span>
                         <div class="liquid"></div>
                       </a>
-                      <a href="#">
+                      <a href="#" class="anim_left">
                         <span>About Me</span>
                         <div class="liquid"></div>
                       </a>
@@ -87,21 +87,21 @@
     <div class="page" id="4">
         <div class="menu"></div>
         <div class="content">
-            <div class="title"><p>AMETURE CS:GO<br>PLAYER</p></div>
+            <div class="title anim_right"><p>AMETURE CS:GO<br>PLAYER</p></div>
             <div class="main">
                 <div class="photo">
-                    <img src="images/test.jpg" alt="">
+                    <img src="images/test.jpg" alt="" class="anim_right">
                 </div>
                 <div class="para">
-                    <div class="paragraph">
+                    <div class="paragraph anim_left">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse voluptas doloremque maxime harum, fuga dicta facere omnis tenetur, sed accusantium recusandae nulla odit ea perferendis consectetur ratione minus quaerat ipsum ab maiores beatae! Sed voluptatem quis, commodi deleniti nam eaque eligendi assumenda dolore architecto qui. Porro consequatur repellendus hic. Perferendis deleniti, neque accusamus sapiente consequuntur fugiat quaerat. Vel facilis ab enim laboriosam, deleniti culpa eum. Minus aliquam nostrum unde praesentium, blanditiis consequuntur adipisci quia similique pariatur recusandae quo sunt sed ut accusantium libero fugiat ipsum delectus iste voluptatum fugit animi sit quos sapiente!</p>
                 </div>
                 <div class="cta">
-                    <a href="#">
+                    <a href="#" class="anim_left">
                         <span>Projects</span>
                         <div class="liquid"></div>
                       </a>
-                      <a href="#">
+                      <a href="#" class="anim_left">
                         <span>About Me</span>
                         <div class="liquid"></div>
                       </a>
@@ -116,5 +116,91 @@
             </div>
         </div>
     </div>
+    <script>
+
+        const images = document.querySelectorAll('.anim_right');
+        observer = new IntersectionObserver((entries)=>
+        {
+            console.log(entries);
+            entries.forEach(entry => {
+          
+                if(entry.intersectionRatio > 0)
+            {
+                entry.target.style.animation = `fly_right 0.75s forwards ease-out`;
+            }
+            else
+            {
+                entry.target.style.animation = `none`;
+            }
+        })
+            
+        })
+        images.forEach(image => {
+        observer.observe(image);
+    })
+
+    const para = document.querySelectorAll('.anim_left');
+        observer = new IntersectionObserver((entries)=>
+        {
+            console.log(entries);
+            entries.forEach(entry => {
+          
+                if(entry.intersectionRatio > 0)
+            {
+                entry.target.style.animation = `fly_left 0.75s forwards ease-out`;
+            }
+            else
+            {
+                entry.target.style.animation = `none`;
+            }
+        })
+            
+        })
+        para.forEach(image => {
+        observer.observe(image);
+    })
+
+    const buttons = document.querySelectorAll('.anim_up');
+        observer = new IntersectionObserver((entries)=>
+        {
+            console.log(entries);
+            entries.forEach(entry => {
+          
+                if(entry.intersectionRatio > 0)
+            {
+                entry.target.style.animation = `fly_up 0.75s forwards ease-out`;
+            }
+            else
+            {
+                entry.target.style.animation = `none`;
+            }
+        })
+            
+        })
+        buttons.forEach(image => {
+        observer.observe(image);
+    })    
+
+    const title = document.querySelectorAll('.anim_down');
+        observer = new IntersectionObserver((entries)=>
+        {
+            console.log(entries);
+            entries.forEach(entry => {
+          
+                if(entry.intersectionRatio > 0)
+            {
+                entry.target.style.animation = `fly_down 0.75s forwards ease-out`;
+            }
+            else
+            {
+                entry.target.style.animation = `none`;
+            }
+        })
+            
+        })
+        title.forEach(image => {
+        observer.observe(image);
+    })
+    </script>
 </body>
 </html>

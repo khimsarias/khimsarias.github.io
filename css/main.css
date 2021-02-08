@@ -6,7 +6,17 @@
 }
 html
 {
+    
+    -o-scroll-behavior: smooth;
+    -ms-scroll-behavior: smooth;
+    -webkit-scroll-behavior: smooth;
+    -moz-scroll-behavior: smooth;
     scroll-behavior: smooth;
+   
+    -o-scroll-snap-type: y mandatory;
+    -ms-scroll-snap-type: y mandatory;
+    -webkit-scroll-snap-type: y mandatory;
+    -moz-scroll-snap-type: y mandatory;
     scroll-snap-type: y mandatory;
 }
 body
@@ -123,6 +133,54 @@ body::-webkit-scrollbar {display:none;}
     align-items: center;
     justify-content: center;
     padding-bottom: 5%;
+}
+
+
+@keyframes fly_right
+{
+  from{
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  to{
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fly_left
+{
+  from{
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  to{
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fly_down
+{
+  from{
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  to{
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes fly_up
+{
+  from{
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  to{
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 /* SCROLL DOWN ANIMATION */

@@ -18,6 +18,7 @@ html
     -webkit-scroll-snap-type: y mandatory;
     -moz-scroll-snap-type: y mandatory;
     scroll-snap-type: y mandatory;
+    cursor: none;
 }
 body
 {
@@ -261,6 +262,7 @@ body::-webkit-scrollbar {display:none;}
     height: 50px;
     overflow: hidden;
     border-radius: 40px;
+    cursor: none;
   }
   
   a span {

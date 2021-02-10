@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/covid.css">
+    <title>Covid Tracker</title>
+</head>
+<body>
+    <header>
+        <p class="logo">COVID-19 Tracker</p>
+        <div class="country">
+            <div class="name">Loading...</div>
+            <div class="change-country">Change</div>
+        </div>
+    </header>
+
+    <div class="overlay hide">
+        <div class="close">
+            <div class="l1"></div>
+            <div class="l2"></div>
+        </div>
+
+        <div class="search">
+            <input type="text" value="" class="country-search" name="country-search" placeholder="Start Typing...">
+        </div>
+        <div class="country-list">
+        </div>
+    </div>
+
+    <main>
+        <div class="latest-report">
+            <div class="total-cases">
+                <div class="title">Total Cases</div>
+                <div class="value">0</div>
+                <div class="new-value">+0</div>
+            </div>
+            <div class="recovered">
+                <div class="title">Recovered</div>
+                <div class="value">0</div>
+                <div class="new-value">+0</div>
+            </div>
+            <div class="deaths">
+                <div class="title">Deaths</div>
+                <div class="value">0</div>
+                <div class="new-value">+0</div>
+            </div>
+        </div>
+        <div class="chart">
+            <canvas id="axes_line_chart"></canvas>
+          </div>
+        </div>
+    </main>
+    <div class="func_button">
+    <button id="mg" onclick="Graph()">
+        SHOW GRAPH
+    </button>
+    <button id="dm" onclick="DarkMode()">
+        DARK MODE
+    </button>
+</div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js" integrity="sha512-d9xgZrVZpmmQlfonhQUvTR7lMPtO7NkZMkA0ABN3PHCbKA5nqylQ/yWlFAyY6hYgdF1Qh6nYiuADWwKB4C2WSw==" crossorigin="anonymous"></script>
+    <!-- <script language="JavaScript" src="http://www.geoplugin.net/javascript.gp" type="text/javascript"></script> -->
+    <script src="../scripts/countries.js"></script>
+    <script src="../scripts/covid.js"></script>
+</body>
+</html>

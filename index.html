@@ -6,24 +6,43 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://unpkg.com/kursor/dist/kursor.css">
     <title>Saumya Khimsaria</title>
-    
+    <script src="scripts/main.js"></script>
 </head>
 <body>
     <div class="page" id="1">
-        <div class="menu"></div>
+        <div class="menu">
+            
+                <ul class="anim_right">
+                    <li><div class="circle 1" onclick="scrollto('1')"style="background-color:white"></div></li>
+                    <li><div class="circle 2" onclick="scrollto('2')"></div></li>
+                    <li><div class="circle 3" onclick="scrollto('3')"></div></li>
+                    <li><div class="circle 4" onclick="scrollto('4')"></div></li>
+                </ul>
+            
+        </div>
         <div class="content">
             <div class="name">
                 <p id="name" class="anim_down">SAUMYA KHIMSARIA</p>
             </div>
             <div class="mouse">
+                <div class="down" onclick="scrollto('2')"><div class="chevron"></div>
                 <div class="chevron"></div>
-                <div class="chevron"></div>
-                <div class="chevron"></div>
+                <div class="chevron"></div></div>
+                
             </div>
         </div>
     </div>
-    <div class="page" id="2">
-        <div class="menu"></div>
+    <div class="page" id="2" >
+        <div class="menu">
+            
+            <ul class="anim_right">
+                <li><div class="circle 1" onclick="scrollto('1')"></div></li>
+                <li><div class="circle 2" onclick="scrollto('2')"style="background-color:white"></div></li>
+                <li><div class="circle 3" onclick="scrollto('3')"></div></li>
+                <li><div class="circle 4" onclick="scrollto('4')"></div></li>
+            </ul>
+        
+    </div>
         <div class="content">
             <div class="title anim_right"><p>COMPUTER<br>SCIENTIST</p></div>
             <div class="main">
@@ -47,14 +66,27 @@
                 </div>
             </div>
             <div class="mouse">
+                <div class="up" onclick="scrollto('1')"><div class="chevron"></div>
                 <div class="chevron"></div>
+                <div class="chevron"></div></div>
+                <div class="down" onclick="scrollto('3')"><div class="chevron"></div>
                 <div class="chevron"></div>
-                <div class="chevron"></div>
+                <div class="chevron"></div></div>
+                
             </div>
         </div>
     </div>
     <div class="page" id="3">
-        <div class="menu"></div>
+        <div class="menu">
+            
+            <ul class="anim_right">
+                <li><div class="circle 1" onclick="scrollto('1')"></div></li>
+                <li><div class="circle 2" onclick="scrollto('2')"></div></li>
+                <li><div class="circle 3" onclick="scrollto('3')"style="background-color:white"></div></li>
+                <li><div class="circle 4" onclick="scrollto('4')"></div></li>
+            </ul>
+        
+    </div>
         <div class="content">
             <div class="title anim_right">
                 <p>FREELANCE<br>PHOTOGRAPHER</p>
@@ -80,14 +112,27 @@
                 </div>
             </div>
             <div class="mouse">
+                <div class="up" onclick="scrollto('2')"><div class="chevron"></div>
                 <div class="chevron"></div>
+                <div class="chevron"></div></div>
+                <div class="down" onclick="scrollto('4')"><div class="chevron"></div>
                 <div class="chevron"></div>
-                <div class="chevron"></div>
+                <div class="chevron"></div></div>
+                
             </div>
         </div>
     </div>
     <div class="page" id="4">
-        <div class="menu"></div>
+        <div class="menu">
+            
+            <ul class="anim_right">
+                <li><div class="circle 1" onclick="scrollto('1')"></div></li>
+                <li><div class="circle 2" onclick="scrollto('2')"></div></li>
+                <li><div class="circle 3" onclick="scrollto('3')"></div></li>
+                <li><div class="circle 4" onclick="scrollto('4')" style="background-color:white"></div></li>
+            </ul>
+        
+    </div>
         <div class="content">
             <div class="title anim_right"><p>AMETURE CS:GO<br>PLAYER</p></div>
             <div class="main">
@@ -111,15 +156,15 @@
                 </div>
             </div>
             <div class="mouse">
-                <!-- <div class="chevron"></div>
+                <div class="up" onclick="scrollto('3')"><div class="chevron"></div>
                 <div class="chevron"></div>
-                <div class="chevron"></div> -->
+                <div class="chevron"></div></div>
                 
             </div>
         </div>
     </div>
     <script>
-
+        
         const images = document.querySelectorAll('.anim_right');
         observer = new IntersectionObserver((entries)=>
         {
@@ -207,8 +252,9 @@
     <script src="https://cdn.jsdelivr.net/npm/kursor@0.0.14/dist/kursor.js"></script>
     <script>
         new kursor({
-            type: 2
+            type: 1,
+            removeDefaultCursor: true,
+            color: '#000'
         })
     </script>
-</body>
 </html>
